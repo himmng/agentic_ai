@@ -1,1036 +1,4070 @@
 [
   {
-    "response_id": "WA-R-0000",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2024-07-12T02:56:15.192704",
-    "answers": {
-      "csat": 1,
-      "ces": 1,
-      "comment": "The live chat feature on the website is useful, but the waiting time can be very long during peak hours. On one occasion, I waited over 40 minutes only to be disconnected and had to start again."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 0,
+    "uuid": "WA-RESP-000000",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.014119+00:00",
+    "lastModTime": "2026-01-30T11:29:15.014119+00:00",
+    "dateOfService": "2026-01-30T11:29:15.014119+00:00",
+    "ipAddress": "213.121.88.105",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I have generally had a good experience, but response times during peak summer periods seem to drop significantly. Additional staffing during these times might help."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000000",
+      "organizationId": 999,
+      "email": "jennifergillespie@example.org",
+      "phone": "001-335-945-6806x260",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0001",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1987-06-25T11:57:13.246775",
-    "answers": {
-      "csat": 1,
-      "ces": 3,
-      "comment": "There was a planned outage in my area, but the notification came very late and only via email, which I missed. As a result, my home office setup was disrupted during working hours. I understand outages are sometimes necessary, but clearer and earlier communication through multiple channels would have helped a lot."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 1,
+    "uuid": "WA-RESP-000001",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.019957+00:00",
+    "lastModTime": "2026-01-30T11:29:15.019957+00:00",
+    "dateOfService": "2026-01-30T11:29:15.019957+00:00",
+    "ipAddress": "59.35.212.233",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The support agent I dealt with during a billing dispute was knowledgeable and patient, which made a big difference in resolving the issue calmly."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000001",
+      "organizationId": 999,
+      "email": "leonardhannah@example.com",
+      "phone": "+1-659-581-7335x0971",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0002",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2011-09-27T02:29:44.638624",
-    "answers": {
-      "csat": 1,
-      "ces": 4,
-      "comment": "The support agent I dealt with during a billing dispute was knowledgeable and patient, which made a big difference in resolving the issue calmly."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 2,
+    "uuid": "WA-RESP-000002",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.022254+00:00",
+    "lastModTime": "2026-01-30T11:29:15.022254+00:00",
+    "dateOfService": "2026-01-30T11:29:15.022254+00:00",
+    "ipAddress": "76.142.225.117",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "Despite setting up direct debit, my last payment failed without any notification until I saw a late fee on my bill. I would have appreciated an SMS or email alert so I could fix the issue before being penalised."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000002",
+      "organizationId": 999,
+      "email": "howeryan@example.org",
+      "phone": "276-462-3792x84233",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0003",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1994-03-15T01:16:38.531751",
-    "answers": {
-      "csat": 5,
-      "ces": 7,
-      "comment": "The technician who came to inspect my meter was professional and explained what he was doing, which I appreciated. However, the appointment window was very broad, and I had to take almost a full day off work to be available. More precise scheduling would make this process much easier for customers."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 3,
+    "uuid": "WA-RESP-000003",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.022452+00:00",
+    "lastModTime": "2026-01-30T11:29:15.022452+00:00",
+    "dateOfService": "2026-01-30T11:29:15.022452+00:00",
+    "ipAddress": "125.208.214.84",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "There was a planned outage in my area, but the notification came very late and only via email, which I missed. As a result, my home office setup was disrupted during working hours. I understand outages are sometimes necessary, but clearer and earlier communication through multiple channels would have helped a lot."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.022452+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000003",
+      "organizationId": 999,
+      "email": "emccoy@example.com",
+      "phone": "+1-774-453-8970",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0004",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1977-04-22T23:09:56.535710",
-    "answers": {
-      "csat": 4,
-      "ces": 7,
-      "comment": "I recently upgraded to a smart meter, and the installation process itself was smooth. However, the promised real-time usage data took weeks to appear in my account, and no one could give me a clear explanation as to why."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 4,
+    "uuid": "WA-RESP-000004",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.022597+00:00",
+    "lastModTime": "2026-01-30T11:29:15.022597+00:00",
+    "dateOfService": "2026-01-30T11:29:15.022597+00:00",
+    "ipAddress": "216.137.21.159",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The process for disputing a bill is not very clear on the website, and I had to search through several pages to find the right form. Simplifying this would improve the experience."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000004",
+      "organizationId": 999,
+      "email": "averymegan@example.net",
+      "phone": "001-773-815-8096x3497",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0005",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1986-09-20T01:24:19.782594",
-    "answers": {
-      "csat": 3,
-      "ces": 3,
-      "comment": "My main frustration has been with inconsistent advice from different customer service agents. Depending on who I speak to, I receive different answers to the same question, which makes it hard to trust the information provided."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 5,
+    "uuid": "WA-RESP-000005",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.022819+00:00",
+    "lastModTime": "2026-01-30T11:29:15.022819+00:00",
+    "dateOfService": "2026-01-30T11:29:15.022819+00:00",
+    "ipAddress": "197.214.151.160",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The sign-up process was straightforward, but the welcome information pack contained a lot of jargon that was hard to follow."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.022819+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000005",
+      "organizationId": 999,
+      "email": "isaacclark@example.com",
+      "phone": "568.703.6899",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0006",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1970-01-19T06:55:53.056929",
-    "answers": {
-      "csat": 2,
-      "ces": 3,
-      "comment": "After a recent storm, the power was out for an extended period. While I understand the circumstances, communication during the outage was minimal, leaving many residents frustrated."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 6,
+    "uuid": "WA-RESP-000006",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.023019+00:00",
+    "lastModTime": "2026-01-30T11:29:15.023019+00:00",
+    "dateOfService": "2026-01-30T11:29:15.023019+00:00",
+    "ipAddress": "198.84.27.188",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "There was a planned outage in my area, but the notification came very late and only via email, which I missed. As a result, my home office setup was disrupted during working hours. I understand outages are sometimes necessary, but clearer and earlier communication through multiple channels would have helped a lot."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.023019+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000006",
+      "organizationId": 999,
+      "email": "diana92@example.net",
+      "phone": "(875)537-2635",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0007",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2017-07-04T22:55:00.453758",
-    "answers": {
-      "csat": 4,
-      "ces": 4,
-      "comment": "The technician who came to inspect my meter was professional and explained what he was doing, which I appreciated. However, the appointment window was very broad, and I had to take almost a full day off work to be available. More precise scheduling would make this process much easier for customers."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 7,
+    "uuid": "WA-RESP-000007",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.023145+00:00",
+    "lastModTime": "2026-01-30T11:29:15.023145+00:00",
+    "dateOfService": "2026-01-30T11:29:15.023145+00:00",
+    "ipAddress": "143.16.57.7",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The process for disputing a bill is not very clear on the website, and I had to search through several pages to find the right form. Simplifying this would improve the experience."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.023145+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000007",
+      "organizationId": 999,
+      "email": "johnsonmelissa@example.net",
+      "phone": "001-511-872-5097x10672",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0008",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1971-11-23T04:14:47.281813",
-    "answers": {
-      "csat": 2,
-      "ces": 6,
-      "comment": "I was pleased with how quickly my gas connection was handled compared to electricity, which seemed to involve more delays and confusion."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 8,
+    "uuid": "WA-RESP-000008",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.024911+00:00",
+    "lastModTime": "2026-01-30T11:29:15.024911+00:00",
+    "dateOfService": "2026-01-30T11:29:15.024911+00:00",
+    "ipAddress": "195.240.13.6",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "7"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I appreciate the polite tone of communications, but sometimes the emails are too long and bury the key information."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 7,
+        "points": 7,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000008",
+      "organizationId": 999,
+      "email": "kristen95@example.com",
+      "phone": "+1-297-842-8860",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0009",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1993-07-26T20:37:39.643300",
-    "answers": {
-      "csat": 4,
-      "ces": 1,
-      "comment": "I had to repeat my issue multiple times after being transferred between departments, which suggests that internal notes are not being shared effectively."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 9,
+    "uuid": "WA-RESP-000009",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.025045+00:00",
+    "lastModTime": "2026-01-30T11:29:15.025045+00:00",
+    "dateOfService": "2026-01-30T11:29:15.025045+00:00",
+    "ipAddress": "197.19.189.45",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The follow-up survey after my support interaction was easy to complete, and I felt it genuinely reflected my experience."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000009",
+      "organizationId": 999,
+      "email": "matthew05@example.net",
+      "phone": "4048178977",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0010",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2013-01-19T08:37:36.545989",
-    "answers": {
-      "csat": 5,
-      "ces": 4,
-      "comment": "The overall cost of electricity is high, which I understand is influenced by many factors, but clearer explanations of price increases would help customers feel more informed rather than surprised."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 10,
+    "uuid": "WA-RESP-000010",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.025182+00:00",
+    "lastModTime": "2026-01-30T11:29:15.025182+00:00",
+    "dateOfService": "2026-01-30T11:29:15.025182+00:00",
+    "ipAddress": "48.135.20.122",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I experienced a brief outage that was not listed on the outage map, which made me wonder how comprehensive the reporting is."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.025182+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000010",
+      "organizationId": 999,
+      "email": "creynolds@example.net",
+      "phone": "977-632-5914x36137",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0011",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2011-02-13T13:42:11.916945",
-    "answers": {
-      "csat": 3,
-      "ces": 5,
-      "comment": "The follow-up survey after my support interaction was easy to complete, and I felt it genuinely reflected my experience."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 11,
+    "uuid": "WA-RESP-000011",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.025324+00:00",
+    "lastModTime": "2026-01-30T11:29:15.025324+00:00",
+    "dateOfService": "2026-01-30T11:29:15.025324+00:00",
+    "ipAddress": "223.77.201.16",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I experienced a brief outage that was not listed on the outage map, which made me wonder how comprehensive the reporting is."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000011",
+      "organizationId": 999,
+      "email": "harrischristian@example.net",
+      "phone": "001-365-572-3874",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0012",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2001-02-13T15:32:51.595141",
-    "answers": {
-      "csat": 2,
-      "ces": 4,
-      "comment": "The agent I spoke with regarding my final bill after moving out was excellent and resolved everything in a single call. This efficiency made the move much less stressful."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 12,
+    "uuid": "WA-RESP-000012",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.025530+00:00",
+    "lastModTime": "2026-01-30T11:29:15.025530+00:00",
+    "dateOfService": "2026-01-30T11:29:15.025530+00:00",
+    "ipAddress": "221.77.30.57",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I was pleased with how quickly my gas connection was handled compared to electricity, which seemed to involve more delays and confusion."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.025530+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000012",
+      "organizationId": 999,
+      "email": "ryan70@example.com",
+      "phone": "546.603.4266",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0013",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1987-10-31T16:11:52.091672",
-    "answers": {
-      "csat": 3,
-      "ces": 4,
-      "comment": "I have generally had a good experience, but response times during peak summer periods seem to drop significantly. Additional staffing during these times might help."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 13,
+    "uuid": "WA-RESP-000013",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.025655+00:00",
+    "lastModTime": "2026-01-30T11:29:15.025655+00:00",
+    "dateOfService": "2026-01-30T11:29:15.025655+00:00",
+    "ipAddress": "13.3.228.20",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I contacted Synergy to ask about hardship support options due to temporary financial difficulties. The representative was empathetic and took the time to explain the available plans without making me feel uncomfortable. This was a very positive experience during a stressful time."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.025655+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000013",
+      "organizationId": 999,
+      "email": "edward00@example.org",
+      "phone": "+1-758-752-4447x3470",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0014",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1980-11-09T14:41:44.213175",
-    "answers": {
-      "csat": 4,
-      "ces": 3,
-      "comment": "The electricity supply itself has been stable, but my concern is with the billing system. Over the last three months, my bills have fluctuated wildly without any clear explanation, despite my usage being fairly consistent. I tried checking the online portal, but the breakdowns were hard to interpret and did not clearly show peak versus off-peak consumption."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 14,
+    "uuid": "WA-RESP-000014",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.025789+00:00",
+    "lastModTime": "2026-01-30T11:29:15.025789+00:00",
+    "dateOfService": "2026-01-30T11:29:15.025789+00:00",
+    "ipAddress": "81.74.187.149",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The delay in processing my meter read adjustment caused confusion and made me doubt whether my issue was being actively handled."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000014",
+      "organizationId": 999,
+      "email": "aguirrejasmine@example.com",
+      "phone": "910.847.3355x51054",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0015",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1993-12-09T05:51:39.668246",
-    "answers": {
-      "csat": 1,
-      "ces": 4,
-      "comment": "The estimated bill I received was significantly higher than usual, and it turned out the meter read was incorrect. Although the correction was eventually made, the process took several weeks and multiple follow-ups, which was quite inconvenient."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 15,
+    "uuid": "WA-RESP-000015",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.025970+00:00",
+    "lastModTime": "2026-01-30T11:29:15.025970+00:00",
+    "dateOfService": "2026-01-30T11:29:15.025970+00:00",
+    "ipAddress": "14.78.27.95",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "7"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I had an issue with incorrect concession details on my account, which meant I was not receiving the discount I was entitled to. Resolving this required submitting documents multiple times, as they kept getting marked as incomplete without clear reasons."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 7,
+        "points": 7,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000015",
+      "organizationId": 999,
+      "email": "danielunderwood@example.com",
+      "phone": "970-292-5058x750",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0016",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2010-10-20T17:16:34.788771",
-    "answers": {
-      "csat": 2,
-      "ces": 2,
-      "comment": "The paper bill layout is cluttered and difficult to read, especially for elderly members of my household. A clearer design with larger fonts and simpler summaries would be more accessible."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 16,
+    "uuid": "WA-RESP-000016",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.026150+00:00",
+    "lastModTime": "2026-01-30T11:29:15.026150+00:00",
+    "dateOfService": "2026-01-30T11:29:15.026150+00:00",
+    "ipAddress": "210.196.239.36",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The notifications about upcoming maintenance work were clear and detailed, which I appreciated. This allowed me to plan around the interruption."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000016",
+      "organizationId": 999,
+      "email": "blakedaniel@example.com",
+      "phone": "001-408-829-3854x703",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0017",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1971-06-12T01:05:09.242482",
-    "answers": {
-      "csat": 1,
-      "ces": 5,
-      "comment": "I recently upgraded to a smart meter, and the installation process itself was smooth. However, the promised real-time usage data took weeks to appear in my account, and no one could give me a clear explanation as to why."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 17,
+    "uuid": "WA-RESP-000017",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.026342+00:00",
+    "lastModTime": "2026-01-30T11:29:15.026342+00:00",
+    "dateOfService": "2026-01-30T11:29:15.026342+00:00",
+    "ipAddress": "180.142.165.52",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I had to repeat my issue multiple times after being transferred between departments, which suggests that internal notes are not being shared effectively."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000017",
+      "organizationId": 999,
+      "email": "logan79@example.org",
+      "phone": "320-525-4285x95857",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0018",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2006-08-20T08:57:31.323266",
-    "answers": {
-      "csat": 3,
-      "ces": 5,
-      "comment": "The outage alerts via SMS are helpful, but sometimes they arrive after the power has already gone out. Receiving alerts slightly earlier would allow customers to prepare better."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 18,
+    "uuid": "WA-RESP-000018",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.026451+00:00",
+    "lastModTime": "2026-01-30T11:29:15.026451+00:00",
+    "dateOfService": "2026-01-30T11:29:15.026451+00:00",
+    "ipAddress": "217.193.45.26",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I find it challenging to understand how my usage compares to similar households, as the benchmarks provided are vague and not well explained."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000018",
+      "organizationId": 999,
+      "email": "traci10@example.net",
+      "phone": "(590)664-3862x5923",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0019",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2000-01-14T20:32:18.172073",
-    "answers": {
-      "csat": 4,
-      "ces": 1,
-      "comment": "The notifications about upcoming maintenance work were clear and detailed, which I appreciated. This allowed me to plan around the interruption."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 19,
+    "uuid": "WA-RESP-000019",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.026579+00:00",
+    "lastModTime": "2026-01-30T11:29:15.026579+00:00",
+    "dateOfService": "2026-01-30T11:29:15.026579+00:00",
+    "ipAddress": "32.225.184.224",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I would like to see more proactive communication when there are known system issues affecting the online portal, rather than discovering them myself."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000019",
+      "organizationId": 999,
+      "email": "denise74@example.org",
+      "phone": "564-274-3123x435",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0020",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1998-05-20T13:37:31.559808",
-    "answers": {
-      "csat": 1,
-      "ces": 6,
-      "comment": "On the positive side, outages in my area are rare, and when they do happen, restoration is usually faster than expected. This reliability is one of the main reasons I have stayed with Synergy."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 20,
+    "uuid": "WA-RESP-000020",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.026689+00:00",
+    "lastModTime": "2026-01-30T11:29:15.026689+00:00",
+    "dateOfService": "2026-01-30T11:29:15.026689+00:00",
+    "ipAddress": "195.124.163.216",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I recently received a disconnection warning notice that appeared to be sent in error, as my account was fully paid. This caused unnecessary stress, and it took several phone calls to resolve. While the issue was eventually fixed, I believe such serious notices should have stronger validation checks before being sent."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000020",
+      "organizationId": 999,
+      "email": "cassidy52@example.com",
+      "phone": "(652)528-4851",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0021",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1988-02-15T06:58:49.728856",
-    "answers": {
-      "csat": 1,
-      "ces": 4,
-      "comment": "I recently received a disconnection warning notice that appeared to be sent in error, as my account was fully paid. This caused unnecessary stress, and it took several phone calls to resolve. While the issue was eventually fixed, I believe such serious notices should have stronger validation checks before being sent."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 21,
+    "uuid": "WA-RESP-000021",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.026827+00:00",
+    "lastModTime": "2026-01-30T11:29:15.026827+00:00",
+    "dateOfService": "2026-01-30T11:29:15.026827+00:00",
+    "ipAddress": "108.176.201.10",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I had to repeat my issue multiple times after being transferred between departments, which suggests that internal notes are not being shared effectively."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.026827+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000021",
+      "organizationId": 999,
+      "email": "jeanettehernandez@example.com",
+      "phone": "+1-419-585-2608",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0022",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1972-02-19T04:23:07.778351",
-    "answers": {
-      "csat": 1,
-      "ces": 4,
-      "comment": "The follow-up survey after my support interaction was easy to complete, and I felt it genuinely reflected my experience."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 22,
+    "uuid": "WA-RESP-000022",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.027004+00:00",
+    "lastModTime": "2026-01-30T11:29:15.027004+00:00",
+    "dateOfService": "2026-01-30T11:29:15.027004+00:00",
+    "ipAddress": "181.167.254.221",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "7"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "After a recent storm, the power was out for an extended period. While I understand the circumstances, communication during the outage was minimal, leaving many residents frustrated."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 7,
+        "points": 7,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000022",
+      "organizationId": 999,
+      "email": "melissa63@example.net",
+      "phone": "+1-508-754-3943x57039",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0023",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2021-03-26T07:14:28.020661",
-    "answers": {
-      "csat": 3,
-      "ces": 6,
-      "comment": "I was pleased with how quickly my gas connection was handled compared to electricity, which seemed to involve more delays and confusion."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 23,
+    "uuid": "WA-RESP-000023",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.027118+00:00",
+    "lastModTime": "2026-01-30T11:29:15.027118+00:00",
+    "dateOfService": "2026-01-30T11:29:15.027118+00:00",
+    "ipAddress": "34.107.118.54",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "After a recent storm, the power was out for an extended period. While I understand the circumstances, communication during the outage was minimal, leaving many residents frustrated."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000023",
+      "organizationId": 999,
+      "email": "johnsonbrian@example.com",
+      "phone": "9259426378",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0024",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1980-01-26T09:42:18.447898",
-    "answers": {
-      "csat": 5,
-      "ces": 3,
-      "comment": "The support agent I dealt with during a billing dispute was knowledgeable and patient, which made a big difference in resolving the issue calmly."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 24,
+    "uuid": "WA-RESP-000024",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.027295+00:00",
+    "lastModTime": "2026-01-30T11:29:15.027295+00:00",
+    "dateOfService": "2026-01-30T11:29:15.027295+00:00",
+    "ipAddress": "95.255.213.37",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "While the frontline staff are generally helpful, the systems they use seem to slow them down, leading to longer call times."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.027295+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000024",
+      "organizationId": 999,
+      "email": "todd66@example.org",
+      "phone": "001-250-261-3029",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0025",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2007-05-11T16:22:29.996151",
-    "answers": {
-      "csat": 1,
-      "ces": 2,
-      "comment": "I recently upgraded to a smart meter, and the installation process itself was smooth. However, the promised real-time usage data took weeks to appear in my account, and no one could give me a clear explanation as to why."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 25,
+    "uuid": "WA-RESP-000025",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.027399+00:00",
+    "lastModTime": "2026-01-30T11:29:15.027399+00:00",
+    "dateOfService": "2026-01-30T11:29:15.027399+00:00",
+    "ipAddress": "41.97.127.182",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "On the positive side, outages in my area are rare, and when they do happen, restoration is usually faster than expected. This reliability is one of the main reasons I have stayed with Synergy."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.027399+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000025",
+      "organizationId": 999,
+      "email": "laura13@example.net",
+      "phone": "001-608-748-5588",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0026",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1991-03-13T13:53:04.018226",
-    "answers": {
-      "csat": 1,
-      "ces": 6,
-      "comment": "I recently received a disconnection warning notice that appeared to be sent in error, as my account was fully paid. This caused unnecessary stress, and it took several phone calls to resolve. While the issue was eventually fixed, I believe such serious notices should have stronger validation checks before being sent."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 26,
+    "uuid": "WA-RESP-000026",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.027507+00:00",
+    "lastModTime": "2026-01-30T11:29:15.027507+00:00",
+    "dateOfService": "2026-01-30T11:29:15.027507+00:00",
+    "ipAddress": "67.133.118.248",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The customer portal provides a lot of data, but it is not very intuitive. For example, comparing my current usage to last year takes several clicks and is not visually clear. Better charts and summaries would make it much easier to understand my consumption patterns."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000026",
+      "organizationId": 999,
+      "email": "qlopez@example.org",
+      "phone": "+1-626-538-4231x1864",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0027",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1973-10-17T17:46:03.668639",
-    "answers": {
-      "csat": 5,
-      "ces": 6,
-      "comment": "I contacted customer support to ask about solar feed-in tariffs, as I recently installed panels on my roof. The agent was friendly but did not seem confident in the information they provided and had to place me on hold multiple times. I eventually got an answer, but it left me unsure whether I am actually receiving the correct credits."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 27,
+    "uuid": "WA-RESP-000027",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.027648+00:00",
+    "lastModTime": "2026-01-30T11:29:15.027648+00:00",
+    "dateOfService": "2026-01-30T11:29:15.027648+00:00",
+    "ipAddress": "185.118.170.152",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I would like to see more proactive communication when there are known system issues affecting the online portal, rather than discovering them myself."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000027",
+      "organizationId": 999,
+      "email": "campbelldavid@example.org",
+      "phone": "001-548-970-6457x18921",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0028",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2004-12-15T10:52:44.025313",
-    "answers": {
-      "csat": 4,
-      "ces": 6,
-      "comment": "I contacted customer support to ask about solar feed-in tariffs, as I recently installed panels on my roof. The agent was friendly but did not seem confident in the information they provided and had to place me on hold multiple times. I eventually got an answer, but it left me unsure whether I am actually receiving the correct credits."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 28,
+    "uuid": "WA-RESP-000028",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.027845+00:00",
+    "lastModTime": "2026-01-30T11:29:15.027845+00:00",
+    "dateOfService": "2026-01-30T11:29:15.027845+00:00",
+    "ipAddress": "197.209.69.128",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The energy-saving recommendations in my account are useful, but I am not sure how accurate they are without more context on how they are calculated."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.027845+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000028",
+      "organizationId": 999,
+      "email": "ielliott@example.org",
+      "phone": "+1-437-777-9523x445",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0029",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1993-03-29T04:35:07.447434",
-    "answers": {
-      "csat": 1,
-      "ces": 3,
-      "comment": "I contacted Synergy to ask about hardship support options due to temporary financial difficulties. The representative was empathetic and took the time to explain the available plans without making me feel uncomfortable. This was a very positive experience during a stressful time."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 29,
+    "uuid": "WA-RESP-000029",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.028044+00:00",
+    "lastModTime": "2026-01-30T11:29:15.028044+00:00",
+    "dateOfService": "2026-01-30T11:29:15.028044+00:00",
+    "ipAddress": "217.166.101.5",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "Overall, my experience has been positive, especially with the reliability of supply. However, the mobile app feels outdated and slow, making it difficult to quickly check my balance or recent usage. Improving the app usability would significantly enhance the overall customer experience."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000029",
+      "organizationId": 999,
+      "email": "alexisreese@example.com",
+      "phone": "474.423.3854x0440",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0030",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2025-04-16T13:45:36.832862",
-    "answers": {
-      "csat": 2,
-      "ces": 4,
-      "comment": "I appreciate the polite tone of communications, but sometimes the emails are too long and bury the key information."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 30,
+    "uuid": "WA-RESP-000030",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.028235+00:00",
+    "lastModTime": "2026-01-30T11:29:15.028235+00:00",
+    "dateOfService": "2026-01-30T11:29:15.028235+00:00",
+    "ipAddress": "18.105.136.49",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The agent I spoke with regarding my final bill after moving out was excellent and resolved everything in a single call. This efficiency made the move much less stressful."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.028235+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000030",
+      "organizationId": 999,
+      "email": "gschwartz@example.com",
+      "phone": "714-699-4720x618",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0031",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1976-07-11T05:26:30.317108",
-    "answers": {
-      "csat": 2,
-      "ces": 3,
-      "comment": "Despite setting up direct debit, my last payment failed without any notification until I saw a late fee on my bill. I would have appreciated an SMS or email alert so I could fix the issue before being penalised."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 31,
+    "uuid": "WA-RESP-000031",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.028374+00:00",
+    "lastModTime": "2026-01-30T11:29:15.028374+00:00",
+    "dateOfService": "2026-01-30T11:29:15.028374+00:00",
+    "ipAddress": "216.7.40.47",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "While the frontline staff are generally helpful, the systems they use seem to slow them down, leading to longer call times."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000031",
+      "organizationId": 999,
+      "email": "diana46@example.com",
+      "phone": "337-295-2531x6517",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0032",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1976-03-20T01:57:16.102148",
-    "answers": {
-      "csat": 3,
-      "ces": 4,
-      "comment": "I appreciate the sustainability tips included in the newsletters, but they often feel generic. More personalised advice based on my actual usage would be more valuable."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 32,
+    "uuid": "WA-RESP-000032",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.028507+00:00",
+    "lastModTime": "2026-01-30T11:29:15.028507+00:00",
+    "dateOfService": "2026-01-30T11:29:15.028507+00:00",
+    "ipAddress": "36.115.229.122",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The paper bill layout is cluttered and difficult to read, especially for elderly members of my household. A clearer design with larger fonts and simpler summaries would be more accessible."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.028507+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000032",
+      "organizationId": 999,
+      "email": "colecharles@example.com",
+      "phone": "978-218-8365x050",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0033",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2012-08-11T16:25:54.208563",
-    "answers": {
-      "csat": 5,
-      "ces": 4,
-      "comment": "The delay in processing my meter read adjustment caused confusion and made me doubt whether my issue was being actively handled."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 33,
+    "uuid": "WA-RESP-000033",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.028681+00:00",
+    "lastModTime": "2026-01-30T11:29:15.028681+00:00",
+    "dateOfService": "2026-01-30T11:29:15.028681+00:00",
+    "ipAddress": "39.242.144.164",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "7"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I had to repeat my issue multiple times after being transferred between departments, which suggests that internal notes are not being shared effectively."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 7,
+        "points": 7,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000033",
+      "organizationId": 999,
+      "email": "rachelcobb@example.org",
+      "phone": "3098271946",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0034",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2019-02-09T16:24:41.141111",
-    "answers": {
-      "csat": 5,
-      "ces": 4,
-      "comment": "Overall, my experience has been positive, especially with the reliability of supply. However, the mobile app feels outdated and slow, making it difficult to quickly check my balance or recent usage. Improving the app usability would significantly enhance the overall customer experience."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 34,
+    "uuid": "WA-RESP-000034",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.028874+00:00",
+    "lastModTime": "2026-01-30T11:29:15.028874+00:00",
+    "dateOfService": "2026-01-30T11:29:15.028874+00:00",
+    "ipAddress": "138.197.220.242",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "While the frontline staff are generally helpful, the systems they use seem to slow them down, leading to longer call times."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000034",
+      "organizationId": 999,
+      "email": "underwoodbreanna@example.net",
+      "phone": "202-465-6958x46524",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0035",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1973-02-25T20:09:58.174371",
-    "answers": {
-      "csat": 5,
-      "ces": 1,
-      "comment": "I appreciate the polite tone of communications, but sometimes the emails are too long and bury the key information."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 35,
+    "uuid": "WA-RESP-000035",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.029053+00:00",
+    "lastModTime": "2026-01-30T11:29:15.029053+00:00",
+    "dateOfService": "2026-01-30T11:29:15.029053+00:00",
+    "ipAddress": "95.110.161.180",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "On the positive side, outages in my area are rare, and when they do happen, restoration is usually faster than expected. This reliability is one of the main reasons I have stayed with Synergy."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000035",
+      "organizationId": 999,
+      "email": "harrischelsea@example.net",
+      "phone": "+1-795-696-6796x0319",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0036",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2009-06-02T01:44:09.524895",
-    "answers": {
-      "csat": 5,
-      "ces": 2,
-      "comment": "The automatic phone system is difficult to navigate, and it often takes several attempts to reach the right department. This adds to the overall frustration when calling for support."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 36,
+    "uuid": "WA-RESP-000036",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.029226+00:00",
+    "lastModTime": "2026-01-30T11:29:15.029226+00:00",
+    "dateOfService": "2026-01-30T11:29:15.029226+00:00",
+    "ipAddress": "193.230.105.6",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "While the frontline staff are generally helpful, the systems they use seem to slow them down, leading to longer call times."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.029226+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000036",
+      "organizationId": 999,
+      "email": "velezgregory@example.net",
+      "phone": "+1-746-281-6509x9852",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0037",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1991-08-25T02:35:27.851162",
-    "answers": {
-      "csat": 3,
-      "ces": 3,
-      "comment": "The paper bill layout is cluttered and difficult to read, especially for elderly members of my household. A clearer design with larger fonts and simpler summaries would be more accessible."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 37,
+    "uuid": "WA-RESP-000037",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.029420+00:00",
+    "lastModTime": "2026-01-30T11:29:15.029420+00:00",
+    "dateOfService": "2026-01-30T11:29:15.029420+00:00",
+    "ipAddress": "194.102.115.18",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I contacted Synergy to ask about hardship support options due to temporary financial difficulties. The representative was empathetic and took the time to explain the available plans without making me feel uncomfortable. This was a very positive experience during a stressful time."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.029420+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000037",
+      "organizationId": 999,
+      "email": "hvelez@example.com",
+      "phone": "001-341-474-7793x2144",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0038",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2009-05-31T21:47:37.065207",
-    "answers": {
-      "csat": 2,
-      "ces": 3,
-      "comment": "I had to repeat my issue multiple times after being transferred between departments, which suggests that internal notes are not being shared effectively."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 38,
+    "uuid": "WA-RESP-000038",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.029565+00:00",
+    "lastModTime": "2026-01-30T11:29:15.029565+00:00",
+    "dateOfService": "2026-01-30T11:29:15.029565+00:00",
+    "ipAddress": "173.245.151.210",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "5"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The electricity supply itself has been stable, but my concern is with the billing system. Over the last three months, my bills have fluctuated wildly without any clear explanation, despite my usage being fairly consistent. I tried checking the online portal, but the breakdowns were hard to interpret and did not clearly show peak versus off-peak consumption."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 5,
+        "points": 5,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000038",
+      "organizationId": 999,
+      "email": "samantha61@example.net",
+      "phone": "001-499-842-0649x568",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0039",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1981-12-18T22:50:19.644761",
-    "answers": {
-      "csat": 1,
-      "ces": 2,
-      "comment": "I tried to change my contact details through the online portal, but the changes did not save properly. I only realised this when I missed an important notification, which could have been avoided with a more reliable system."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 39,
+    "uuid": "WA-RESP-000039",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.029678+00:00",
+    "lastModTime": "2026-01-30T11:29:15.029678+00:00",
+    "dateOfService": "2026-01-30T11:29:15.029678+00:00",
+    "ipAddress": "206.148.186.156",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I experienced a brief outage that was not listed on the outage map, which made me wonder how comprehensive the reporting is."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_MEDIUM",
+        "label": "Priority MEDIUM",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000039",
+      "organizationId": 999,
+      "email": "joshua63@example.org",
+      "phone": "953.666.3827x64249",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0040",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2025-07-22T19:19:02.362531",
-    "answers": {
-      "csat": 5,
-      "ces": 4,
-      "comment": "The notifications about upcoming maintenance work were clear and detailed, which I appreciated. This allowed me to plan around the interruption."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 40,
+    "uuid": "WA-RESP-000040",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.029821+00:00",
+    "lastModTime": "2026-01-30T11:29:15.029821+00:00",
+    "dateOfService": "2026-01-30T11:29:15.029821+00:00",
+    "ipAddress": "46.30.44.9",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The support agent I dealt with during a billing dispute was knowledgeable and patient, which made a big difference in resolving the issue calmly."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.029821+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000040",
+      "organizationId": 999,
+      "email": "xwhite@example.org",
+      "phone": "+1-951-940-2825x09281",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0041",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2019-06-16T10:51:05.512326",
-    "answers": {
-      "csat": 2,
-      "ces": 7,
-      "comment": "I would like to see more proactive communication when there are known system issues affecting the online portal, rather than discovering them myself."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 41,
+    "uuid": "WA-RESP-000041",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.029953+00:00",
+    "lastModTime": "2026-01-30T11:29:15.029953+00:00",
+    "dateOfService": "2026-01-30T11:29:15.029953+00:00",
+    "ipAddress": "203.107.191.208",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "2"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The process for disputing a bill is not very clear on the website, and I had to search through several pages to find the right form. Simplifying this would improve the experience."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 2,
+        "points": 2,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.029953+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000041",
+      "organizationId": 999,
+      "email": "alejandroclark@example.org",
+      "phone": "961-313-9630x4086",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0042",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "2021-12-26T08:23:30.338464",
-    "answers": {
-      "csat": 1,
-      "ces": 1,
-      "comment": "The electricity supply itself has been stable, but my concern is with the billing system. Over the last three months, my bills have fluctuated wildly without any clear explanation, despite my usage being fairly consistent. I tried checking the online portal, but the breakdowns were hard to interpret and did not clearly show peak versus off-peak consumption."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 42,
+    "uuid": "WA-RESP-000042",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.030149+00:00",
+    "lastModTime": "2026-01-30T11:29:15.030149+00:00",
+    "dateOfService": "2026-01-30T11:29:15.030149+00:00",
+    "ipAddress": "216.3.36.77",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The delay in processing my meter read adjustment caused confusion and made me doubt whether my issue was being actively handled."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.030149+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000042",
+      "organizationId": 999,
+      "email": "mmorris@example.com",
+      "phone": "894-235-0680",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0043",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1980-03-25T13:58:15.668168",
-    "answers": {
-      "csat": 5,
-      "ces": 3,
-      "comment": "The automatic phone system is difficult to navigate, and it often takes several attempts to reach the right department. This adds to the overall frustration when calling for support."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 43,
+    "uuid": "WA-RESP-000043",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.030301+00:00",
+    "lastModTime": "2026-01-30T11:29:15.030301+00:00",
+    "dateOfService": "2026-01-30T11:29:15.030301+00:00",
+    "ipAddress": "206.60.9.36",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "1"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The electricity supply itself has been stable, but my concern is with the billing system. Over the last three months, my bills have fluctuated wildly without any clear explanation, despite my usage being fairly consistent. I tried checking the online portal, but the breakdowns were hard to interpret and did not clearly show peak versus off-peak consumption."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 1,
+        "points": 1,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.030301+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000043",
+      "organizationId": 999,
+      "email": "ssmith@example.com",
+      "phone": "+1-979-767-6904x355",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0044",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1996-02-03T05:45:48.398022",
-    "answers": {
-      "csat": 3,
-      "ces": 6,
-      "comment": "My main frustration has been with inconsistent advice from different customer service agents. Depending on who I speak to, I receive different answers to the same question, which makes it hard to trust the information provided."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 44,
+    "uuid": "WA-RESP-000044",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.030458+00:00",
+    "lastModTime": "2026-01-30T11:29:15.030458+00:00",
+    "dateOfService": "2026-01-30T11:29:15.030458+00:00",
+    "ipAddress": "150.243.175.192",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "7"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "The customer portal provides a lot of data, but it is not very intuitive. For example, comparing my current usage to last year takes several clicks and is not visually clear. Better charts and summaries would make it much easier to understand my consumption patterns."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 7,
+        "points": 7,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000044",
+      "organizationId": 999,
+      "email": "nelsonkatherine@example.org",
+      "phone": "7592683537",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0045",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1977-08-21T04:20:32.722645",
-    "answers": {
-      "csat": 5,
-      "ces": 5,
-      "comment": "After a recent storm, the power was out for an extended period. While I understand the circumstances, communication during the outage was minimal, leaving many residents frustrated."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 45,
+    "uuid": "WA-RESP-000045",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.030630+00:00",
+    "lastModTime": "2026-01-30T11:29:15.030630+00:00",
+    "dateOfService": "2026-01-30T11:29:15.030630+00:00",
+    "ipAddress": "86.19.19.242",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "3"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "I appreciate the polite tone of communications, but sometimes the emails are too long and bury the key information."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 3,
+        "points": 3,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_HIGH",
+        "label": "Priority HIGH",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [
+      {
+        "dateTimeUTC": "2026-01-30T11:29:15.030630+00:00",
+        "incidentManagementState": "OPEN",
+        "comment": "Low CES score triggered automated escalation"
+      }
+    ],
+    "contact": {
+      "id": "CUST-000045",
+      "organizationId": 999,
+      "email": "rmckay@example.com",
+      "phone": "906.404.6196",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   },
   {
-    "response_id": "WA-R-0046",
-    "survey_id": "SYNERGY-WA-2026",
-    "region": "WA",
-    "submitted_at": "1988-04-01T23:38:38.265800",
-    "answers": {
-      "csat": 5,
-      "ces": 6,
-      "comment": "I experienced a power outage late at night, and while the online outage map acknowledged it quickly, there was little follow-up communication. I would have liked periodic updates even if there was no new information, just to know the issue was still being worked on."
-    },
-    "tags": [],
-    "case": {
-      "priority": "normal",
-      "incident": false,
-      "notes": []
-    },
-    "workflow": {
-      "assigned_team": null,
-      "sla_hours": null,
-      "escalation": false
+    "id": 46,
+    "uuid": "WA-RESP-000046",
+    "surveyId": 2026,
+    "surveyName": "Synergy WA Digital CX Survey",
+    "complete": true,
+    "exclusionReason": "NONE",
+    "beginTime": "2026-01-30T11:29:15.030772+00:00",
+    "lastModTime": "2026-01-30T11:29:15.030772+00:00",
+    "dateOfService": "2026-01-30T11:29:15.030772+00:00",
+    "ipAddress": "222.100.30.79",
+    "url": "https://www.synergy.net.au/my-account",
+    "answers": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "fieldType": "scale",
+        "literalValue": "6"
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "fieldType": "scale",
+        "literalValue": "4"
+      },
+      {
+        "fieldId": 103,
+        "fieldName": "Customer Comment",
+        "fieldType": "text",
+        "literalValue": "While the frontline staff are generally helpful, the systems they use seem to slow them down, leading to longer call times."
+      }
+    ],
+    "scores": [
+      {
+        "fieldId": 101,
+        "fieldName": "CES",
+        "score": 6,
+        "points": 6,
+        "pointsPossible": 7
+      },
+      {
+        "fieldId": 102,
+        "fieldName": "CSAT",
+        "score": 4,
+        "points": 4,
+        "pointsPossible": 5
+      }
+    ],
+    "tags": [
+      {
+        "name": "PRIORITY_LOW",
+        "label": "Priority LOW",
+        "enabled": true,
+        "visibleInInbox": true
+      },
+      {
+        "name": "DIGITAL_CHANNEL",
+        "label": "Website / My Account",
+        "enabled": true,
+        "visibleInInbox": false
+      }
+    ],
+    "incidents": [],
+    "contact": {
+      "id": "CUST-000046",
+      "organizationId": 999,
+      "email": "medinajason@example.com",
+      "phone": "001-573-303-3070x63928",
+      "fields": [
+        {
+          "fieldId": 201,
+          "value": "WA"
+        },
+        {
+          "fieldId": 202,
+          "value": "Residential"
+        },
+        {
+          "fieldId": 203,
+          "value": "Electricity"
+        }
+      ]
     }
   }
 ]

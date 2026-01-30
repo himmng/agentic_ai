@@ -134,5 +134,5 @@ if __name__ == "__main__":
     with open(DATA_DIR / "random_comments.json") as f:
         comments = json.load(f)
     surveys = [generate_survey(i, comments) for i in range(len(comments))]
-    with open(DATA_DIR / "inmoment_surveys.json", "w") as f:
+    with open(DATA_DIR / "inmoment_surveys.jsonl", "w") as f:
         json.dump(surveys, f, indent=2)

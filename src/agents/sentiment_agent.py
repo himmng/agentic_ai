@@ -31,14 +31,3 @@ print(
     f"name={sentiment_agent.name}, version={sentiment_agent.version})"
 )
 
-# ---- Agent invocation function ----
-def sentiment_agent_run(comment: str, csat: int) -> str:
-    response = project_client.agents.run(
-        agent_id=sentiment_agent.id,
-        input={
-            "comment": comment,
-            "csat": csat
-        }
-    )
-
-    return response.output_text.strip().lower()

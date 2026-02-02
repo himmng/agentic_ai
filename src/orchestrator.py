@@ -1,9 +1,12 @@
 from pseudo_api import get_surveys, write_back_augmented
-from agents.sentiment_agent import sentiment_agent
-from agents.priority_agent import priority_agent
-from agents.summary_agent import summary_agent
-from agents.recommendation_agent import recommendation_agent
-from agents.escalation_agent import escalation_agent
+# from agents.sentiment_agent import sentiment_agent
+# from agents.priority_agent import priority_agent
+# from agents.summary_agent import summary_agent
+# from agents.recommendation_agent import recommendation_agent
+# from agents.escalation_agent import escalation_agent
+
+## all agents above use the new Azure AI Projects SDK pattern
+from agents.invoke_agents import sentiment_agent, priority_agent, summary_agent, recommendation_agent, escalation_agent
 
 def run_pipeline(overwrite=False):
     surveys = get_surveys()

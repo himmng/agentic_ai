@@ -1,21 +1,69 @@
 # agent_tester.py
+import os
 from dotenv import load_dotenv
-from invoke_agents import sentiment_agent_run
+from azure.identity import DefaultAzureCredential
+from azure.ai.projects import AIProjectClient
 
-# Load environment variables from .env
+# --------------------------------------------------
+# Load environment variables
+# --------------------------------------------------
 load_dotenv()
 
-# --- Example comment to test sentiment ---
-test_comment = (
-    "Overall, my experience has been positive, especially with the reliability of supply. "
-    "However, the mobile app feels outdated and slow, making it difficult to quickly check my balance or recent usage. "
-    "Improving the app usability would significantly enhance the overall customer experience. I am not okay with the service outages though."
-)
-test_csat = 3
+# --------------------------------------------------
+# Initialize Azure AI Project client
+# --------------------------------------------------
+PROJECT_ENDPOINT = os.environ.get("PROJECT_ENDPOINT")
+if not PROJECT_ENDPOINT:
+    raise ValueError("PROJECT_ENDPOINT not set in .env")
 
-# --- Run the agent using helper function ---
+project_client = AIProjectClient(
+    endpoint=PROJECT_ENDPOINT,
+    credential=DefaultAzureCredential(),
+)
+
+openai_client = project_client.get_openai_client()
+
+# --------------------------------------------------
+# Select agent dynamically (same style as agent_creator)
+# --------------------------------------------------
+AGENT_KEY = input("Provide AGENT_KEY (e.g. DATA_CREATION_AGENT): ").strip().upper()
+
+if AGENT_KEY not in os.environ:
+    raise ValueError(f"{AGENT_KEY} not found in .env")
+
+AGENT_NAME = os.environ[AGENT_KEY]
+print(f"Using agent: {AGENT_NAME}")
+
+# --------------------------------------------------
+# Get user prompt
+# --------------------------------------------------
+USER_PROMPT = input("\nEnter the prompt to send to the agent:\n").strip()
+if not USER_PROMPT:
+    raise ValueError("Prompt cannot be empty")
+
+# --------------------------------------------------
+# Create conversation (recommended)
+# --------------------------------------------------
+conversation = openai_client.conversations.create()
+print(f"\nConversation ID: {conversation.id}")
+
+# --------------------------------------------------
+# Invoke agent
+# --------------------------------------------------
 try:
-    sentiment = sentiment_agent_run(test_comment, test_csat)  # Uses env SENTIMENT_AGENT_NAME automatically
-    print("Sentiment:", sentiment)
+    response = openai_client.responses.create(
+        conversation=conversation.id,
+        extra_body={
+            "agent": {
+                "name": AGENT_NAME,
+                "type": "agent_reference"
+            }
+        },
+        input=USER_PROMPT
+    )
+
+    print("\n===== AGENT OUTPUT =====")
+    print(response.output_text)
+
 except Exception as e:
-    print("Error running sentiment agent:", e)
+    print("\nError running agent:", e)

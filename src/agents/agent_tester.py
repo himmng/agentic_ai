@@ -3,7 +3,10 @@ import os
 from dotenv import load_dotenv
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
-
+from pathlib import Path
+#---------------------------------------------------
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = PROJECT_ROOT / "data" / "raw"
 # --------------------------------------------------
 # Load environment variables
 # --------------------------------------------------
@@ -63,7 +66,14 @@ try:
     )
 
     print("\n===== AGENT OUTPUT =====")
-    print(response.output_text)
+    if AGENT_KEY == "DATA_CREATION_AGENT":
+        output_file = DATA_DIR / "synergy_inmoment.json"
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_file, "w") as f:
+            f.write(response.output_text)
+        print(f"\nAgent response written to: {output_file}")
+    else:
+        print(response.output_text)
 
 except Exception as e:
     print("\nError running agent:", e)

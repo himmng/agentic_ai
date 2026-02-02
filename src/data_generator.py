@@ -1,4 +1,3 @@
-# agent_tester.py
 import os
 from dotenv import load_dotenv
 from azure.identity import DefaultAzureCredential

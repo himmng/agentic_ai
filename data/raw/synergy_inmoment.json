@@ -327,5 +327,284 @@
         "tenure_years": 7
       }
     }
+  },
+  {
+    "id": 1004,
+    "uuid": "550e8400-e29b-41d4-a716-446655440001",
+    "surveyGatewayId": 101,
+    "surveyGatewayName": "Synergy WA Gateway",
+    "surveyGatewayAlias": "synergy-wa",
+    "surveyGatewayDnis": "+1-800-555-0101",
+    "surveyId": 501,
+    "surveyName": "Synergy WA Customer Feedback - May 2026",
+    "surveyDescription": "Post-service customer feedback survey",
+    "externalId": "ext-8910",
+    "externalCallRecordingId": "rec-8910",
+    "lastModTime": "2026-02-02T15:04:05Z",
+    "beginTime": "2026-02-02T14:50:00Z",
+    "dateOfService": "2026-02-02",
+    "redemptionCode": "RC-1001",
+    "employeeCode": "EMP1001",
+    "loyaltyNumber": "LOY-123456",
+    "minutes": 9,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "closed",
+    "ani": "1111111111",
+    "ipAddress": "203.0.113.12",
+    "cookieUID": "cookie-abc-123",
+    "offerId": 1001,
+    "offerName": "Smart Savings",
+    "offerCode": "SS-01",
+    "unitId": 201,
+    "unitExternalId": "UNIT-201",
+    "unitName": "WA Service Center 1",
+    "locationId": 301,
+    "languageCode": "en",
+    "deviceType": "mobile",
+    "organizationId": 601,
+    "organizationName": "Synergy WA",
+    "assignedUserId": 701,
+    "assignedUserName": "Mary Smith",
+    "assignedUserEmail": "mary.smith@example.com",
+    "exclusionReason": "",
+    "mode": "Phone",
+    "answers": [
+      {
+        "questionId": 1,
+        "text": "From start to finish, the agent listened carefully and asked clarifying questions when needed. They explained the options clearly and walked me through the next steps. I never felt rushed and appreciated the respectful tone. The information provided was thorough and easy to understand, even for someone not technically savvy. The resolution to my issue was smooth, and I was left with a positive impression of the service. The follow-up was timely and appreciated.",
+        "score": 5
+      },
+      {
+        "questionId": 2,
+        "text": "The billing issue took longer to fix than I expected. I had to explain my case several times and still received inconsistent answers. The process felt disjointed across departments, which was frustrating. I worry that similar mistakes could happen again if care isn't taken with billing details. Overall, this experience was below my expectations.",
+        "score": 2
+      },
+      {
+        "questionId": 3,
+        "text": "I use the mobile app to check usage and pay bills, but it sometimes crashes when I view recent statements. Navigation is not as intuitive as I had hoped and features seem buried. The app generally works, but reliability could improve, especially during high-traffic periods. There is potential, but I am not fully impressed yet. I expect more consistent performance moving forward.",
+        "score": 3
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": 801,
+        "type": "outage",
+        "description": "Minor regional outage on 2026-01-25, restored within 90 minutes."
+      },
+      {
+        "incidentId": 802,
+        "type": "billing",
+        "description": "Billing discrepancy in the last cycle was detected and corrected."
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": 901,
+        "type": "outage_alert",
+        "message": "Outage in your area resolved."
+      },
+      {
+        "alertId": 902,
+        "type": "billing_alert",
+        "message": "Billing adjustment completed."
+      }
+    ],
+    "scores": [
+      {
+        "name": "Overall Experience",
+        "score": 5
+      },
+      {
+        "name": "Agent Responsiveness",
+        "score": 5
+      },
+      {
+        "name": "Billing Issue Resolution",
+        "score": 3
+      },
+      {
+        "name": "Mobile App Experience",
+        "score": 3
+      }
+    ],
+    "tags": [
+      {
+        "tagId": 1,
+        "name": "positive",
+        "type": "sentiment"
+      },
+      {
+        "tagId": 2,
+        "name": "outage",
+        "type": "root_cause"
+      },
+      {
+        "tagId": 3,
+        "name": "billing",
+        "type": "root_cause"
+      },
+      {
+        "tagId": 5,
+        "name": "mobile",
+        "type": "channel"
+      }
+    ],
+    "url": "https://survey.example.com/responses/1001",
+    "tagsString": "positive; outage; billing; mobile",
+    "socialReview": {
+      "rating": 5,
+      "content": "Outstanding experience. The agent was patient, knowledgeable, and resolved the issue quickly. I would definitely recommend this provider to family and friends."
+    },
+    "contactId": "C-1001",
+    "contact": {
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "phone": "+1-555-0101",
+      "end_user": {
+        "properties": {
+          "customer_type": "residential",
+          "region": "metro",
+          "tenure_years": 3
+        }
+      }
+    }
+  },
+  {
+    "id": 1005,
+    "uuid": "6f5e4d3c-2b1a-4a5d-9e23-6a1b2c3d4e5f",
+    "surveyGatewayId": 102,
+    "surveyGatewayName": "Synergy WA Gateway 2",
+    "surveyGatewayAlias": "synergy-wa-2",
+    "surveyGatewayDnis": "+1-800-555-0102",
+    "surveyId": 502,
+    "surveyName": "Synergy WA Customer Feedback - May 2026 (Second)",
+    "surveyDescription": "Second post-service survey",
+    "externalId": "ext-9012",
+    "externalCallRecordingId": "rec-9012",
+    "lastModTime": "2026-02-02T16:20:00Z",
+    "beginTime": "2026-02-02T15:50:00Z",
+    "dateOfService": "2026-02-02",
+    "redemptionCode": "RC-1002",
+    "employeeCode": "EMP1002",
+    "loyaltyNumber": "LOY-789012",
+    "minutes": 12,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "open",
+    "ani": "2222222222",
+    "ipAddress": "198.51.100.23",
+    "cookieUID": "cookie-def-456",
+    "offerId": 1002,
+    "offerName": "Premium Unlimited",
+    "offerCode": "PU-02",
+    "unitId": 202,
+    "unitExternalId": "UNIT-202",
+    "unitName": "WA Service Center 2",
+    "locationId": 302,
+    "languageCode": "en",
+    "deviceType": "desktop",
+    "organizationId": 601,
+    "organizationName": "Synergy WA",
+    "assignedUserId": 702,
+    "assignedUserName": "Liam Chen",
+    "assignedUserEmail": "liam.chen@example.com",
+    "exclusionReason": "",
+    "mode": "Web",
+    "answers": [
+      {
+        "questionId": 1,
+        "text": "The initial contact seemed okay, but I encountered several issues from start to finish. I felt the agent didn't fully listen to my concerns, and I had to repeat details. The information provided was inconsistent, which increased my frustration. The process felt slow and not well organized. Overall, this experience was disappointing and I would not say it exceeded my expectations.",
+        "score": 2
+      },
+      {
+        "questionId": 2,
+        "text": "Billing issues popped up again and the team started to resolve things after multiple follow-ups. The service quality was mixed, with some helpful staff but a few miscommunications. I did not feel entirely confident about the fix, but it did progress.",
+        "score": 3
+      },
+      {
+        "questionId": 3,
+        "text": "I use the mobile web app to track usage and pay bills, but it often crashes when I view recent statements. The app experience is not intuitive and some features are hard to locate. It sometimes logs me out unexpectedly, which is frustrating. I hope for improved stability and easier navigation in future updates.",
+        "score": 2
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": 803,
+        "type": "app_issue",
+        "description": "Mobile app crash reported during statements view."
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": 903,
+        "type": "billing_alert",
+        "message": "Billing adjustments issued."
+      }
+    ],
+    "scores": [
+      {
+        "name": "Overall Experience",
+        "score": 2
+      },
+      {
+        "name": "Agent Responsiveness",
+        "score": 2
+      },
+      {
+        "name": "Billing Issue Resolution",
+        "score": 2
+      },
+      {
+        "name": "Mobile App Experience",
+        "score": 2
+      }
+    ],
+    "tags": [
+      {
+        "tagId": 6,
+        "name": "negative",
+        "type": "sentiment"
+      },
+      {
+        "tagId": 7,
+        "name": "outage",
+        "type": "root_cause"
+      },
+      {
+        "tagId": 8,
+        "name": "billing",
+        "type": "root_cause"
+      },
+      {
+        "tagId": 9,
+        "name": "app",
+        "type": "root_cause"
+      },
+      {
+        "tagId": 10,
+        "name": "mobile",
+        "type": "channel"
+      }
+    ],
+    "url": "https://survey.example.com/responses/1002",
+    "tagsString": "negative; outage; billing; app; mobile",
+    "socialReview": {
+      "rating": 2,
+      "content": "Not satisfied with the resolution; improvements needed. The overall experience was disappointing and would not recommend at this time."
+    },
+    "contactId": "C-1002",
+    "contact": {
+      "name": "Priya Kapoor",
+      "email": "priya.kapoor@example.com",
+      "phone": "+1-555-0102",
+      "end_user": {
+        "properties": {
+          "customer_type": "business",
+          "region": "metro",
+          "tenure_years": 1
+        }
+      }
+    }
   }
 ]

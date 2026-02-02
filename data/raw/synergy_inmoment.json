@@ -1,64 +1,330 @@
 [
   {
-    "id": 101,
-    "end_user_id": 10001,
-    "survey_id": 1001,
-    "score": 5,
-    "text": "Overall, I am very happy with Synergy's service. The price and billing are clear most of the time, and I appreciate the straightforward statements. The mobile app, however, crashed several times when I tried to check my usage. It sometimes takes too long to load my account details, which is frustrating during peak hours. Despite these app issues, the support team was friendly and resolved questions quickly, and I still feel confident about the service.",
-    "completed": true,
-    "excluded_from_calculations": false,
-    "ip_address": "203.0.113.45",
-    "origin_url": "https://survey.synergy.example/response/101",
-    "created_at": "2026-01-15T10:30:00Z",
-    "updated_at": "2026-01-15T10:45:00Z",
-    "tags": ["sentiment:positive","billing","app","mobile"],
+    "id": 1001,
+    "uuid": "d4f9b3d2-6b7d-4f4a-9d62-1a2b3c4d5e6f",
+    "surveyGatewayId": 501,
+    "surveyGatewayName": "SynergySurveyGateway",
+    "surveyGatewayAlias": "SSGateway",
+    "surveyGatewayDnis": "+1-555-0001",
+    "surveyId": 9002,
+    "surveyName": "Synergy WA Electricity Customer Survey",
+    "surveyDescription": "InMoment-based feedback survey",
+    "externalId": "EXT-1001",
+    "externalCallRecordingId": "REC-EXT-1001",
+    "lastModTime": "2026-02-02T12:30:00Z",
+    "beginTime": "2026-02-02T12:00:00Z",
+    "dateOfService": "2026-02-02",
+    "redemptionCode": "RC-NEG-1001",
+    "employeeCode": "EMP-001",
+    "loyaltyNumber": "LOY-123456",
+    "minutes": 12,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "resolved",
+    "ani": "1234567890",
+    "ipAddress": "203.0.113.25",
+    "cookieUID": "cookie-001-xyz",
+    "offerId": 201,
+    "offerName": "No-Surcharge Basic Plan",
+    "offerCode": "NSB",
+    "unitId": 301,
+    "unitExternalId": "UNIT-EX-301",
+    "unitName": "WA North Unit",
+    "locationId": 401,
+    "languageCode": "en",
+    "deviceType": "Desktop",
+    "organizationId": 7001,
+    "organizationName": "Synergy WA",
+    "assignedUserId": 8001,
+    "assignedUserName": "Alice Smith",
+    "assignedUserEmail": "alice.smith@synergywa.com",
+    "exclusionReason": "",
+    "mode": "online",
+    "answers": [
+      {
+        "questionId": 1,
+        "text": "I am glad to be able to share feedback, but I had several issues that left me frustrated. The account billing appeared incorrect on my latest statement, which caused confusion and extra follow-up. The outage events were poorly communicated, so I found myself waiting for an update that never arrived. The support team eventually clarified some details, but the resolution left me unsatisfied. Overall, this experience was not what I expected, and I am concerned about future bills.",
+        "score": 2
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": 601,
+        "type": "outage",
+        "description": "Customer portal outage prevented accessing billing details for several hours during the last weekend.",
+        "status": "resolved",
+        "startTime": "2026-01-31T14:00:00Z",
+        "endTime": "2026-01-31T16:15:00Z"
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": 701,
+        "type": "billing_alert",
+        "message": "Unusual charge detected on last invoice; customer flagged potential billing error."
+      }
+    ],
+    "scores": [
+      {
+        "name": "Overall Experience",
+        "score": 2
+      }
+    ],
+    "tags": [
+      {
+        "tag": "negative",
+        "type": "sentiment"
+      },
+      {
+        "tag": "outage",
+        "type": "root_cause"
+      },
+      {
+        "tag": "billing",
+        "type": "root_cause"
+      },
+      {
+        "tag": "web",
+        "type": "channel"
+      }
+    ],
+    "url": "https://survey.example.com/response/NEG-1001",
+    "tagsString": "negative;outage;billing;web",
+    "socialReview": {
+      "rating": 1,
+      "platform": "web",
+      "comment": "The experience was disappointing due to billing issues and poor outage communication."
+    },
+    "contactId": "C-NEG-1001",
+    "contact": {
+      "name": "John Doe",
+      "phone": "+1-555-0101",
+      "email": "john.doe@example.com",
+      "preferredContact": "email"
+    },
     "end_user": {
       "properties": {
         "customer_type": "residential",
         "region": "metro",
-        "tenure_years": 3
+        "tenure_years": 2
       }
     }
   },
   {
-    "id": 102,
-    "end_user_id": 10002,
-    "survey_id": 1002,
-    "score": 3,
-    "text": "I found the service adequate for my needs, with no major surprises. The billing process was a bit confusing at times, and I would appreciate clearer explanations of changes. There have been small outages in my area that affected my usage, though the service generally recovered quickly. The pricing conversation hasn't been very clear, which left me with questions about my bill. Overall, I feel neutral about the experience and hope communication improves in the next quarter.",
-    "completed": true,
-    "excluded_from_calculations": false,
-    "ip_address": "203.0.113.22",
-    "origin_url": "https://survey.synergy.example/response/102",
-    "created_at": "2026-01-16T11:00:00Z",
-    "updated_at": "2026-01-16T11:30:00Z",
-    "tags": ["sentiment:neutral","billing","outage","web"],
+    "id": 1002,
+    "uuid": "e7f8a9b0-1a2b-3c4d-5e6f-708090a0b0c2",
+    "surveyGatewayId": 502,
+    "surveyGatewayName": "SynergySurveyGateway",
+    "surveyGatewayAlias": "SSGateway",
+    "surveyGatewayDnis": "+1-555-0002",
+    "surveyId": 9002,
+    "surveyName": "Synergy WA Electricity Customer Survey",
+    "surveyDescription": "InMoment-based feedback survey",
+    "externalId": "EXT-1002",
+    "externalCallRecordingId": "REC-EXT-1002",
+    "lastModTime": "2026-02-02T14:20:00Z",
+    "beginTime": "2026-02-02T14:00:00Z",
+    "dateOfService": "2026-02-02",
+    "redemptionCode": "RC-NEU-1002",
+    "employeeCode": "EMP-002",
+    "loyaltyNumber": "LOY-987654",
+    "minutes": 9,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "closed",
+    "ani": "2345678901",
+    "ipAddress": "198.51.100.12",
+    "cookieUID": "cookie-002-abc",
+    "offerId": 202,
+    "offerName": "Loyalty Discount",
+    "offerCode": "LD",
+    "unitId": 302,
+    "unitExternalId": "UNIT-EX-302",
+    "unitName": "WA South Unit",
+    "locationId": 402,
+    "languageCode": "en",
+    "deviceType": "Mobile",
+    "organizationId": 7002,
+    "organizationName": "Synergy WA",
+    "assignedUserId": 8002,
+    "assignedUserName": "Bea Johnson",
+    "assignedUserEmail": "bea.johnson@synergywa.com",
+    "exclusionReason": "",
+    "mode": "web",
+    "answers": [
+      {
+        "questionId": 1,
+        "text": "I appreciate the opportunity to provide feedback. The service experience was adequate, not outstanding, but steady throughout the process. The billing was clear, and the statements arrived on time without surprises. The app and online portal functioned reliably most of the time, though I did encounter a minor glitch once. I would be comfortable with using the service again, though I would not consider it exceptional.",
+        "score": 3
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": 602,
+        "type": "app_issue",
+        "description": "Minor bug in the mobile app that briefly delayed usage checks.",
+        "status": "resolved",
+        "startTime": "2026-01-28T11:00:00Z",
+        "endTime": "2026-01-28T11:15:00Z"
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": 702,
+        "type": "service_alert",
+        "message": "App performance within normal range; no urgent issues detected."
+      }
+    ],
+    "scores": [
+      {
+        "name": "Overall Experience",
+        "score": 3
+      }
+    ],
+    "tags": [
+      {
+        "tag": "neutral",
+        "type": "sentiment"
+      },
+      {
+        "tag": "app",
+        "type": "root_cause"
+      },
+      {
+        "tag": "web",
+        "type": "channel"
+      }
+    ],
+    "url": "https://survey.example.com/response/NEU-1002",
+    "tagsString": "neutral;app;web",
+    "socialReview": {
+      "rating": 3,
+      "platform": "web",
+      "comment": "Experience was fine overall, with solid app performance most days."
+    },
+    "contactId": "C-NEU-1002",
+    "contact": {
+      "name": "Jane Smith",
+      "phone": "+1-555-0202",
+      "email": "jane.smith@example.com",
+      "preferredContact": "email"
+    },
     "end_user": {
       "properties": {
-        "customer_type": "business",
-        "region": "regional",
+        "customer_type": "residential",
+        "region": "metro",
         "tenure_years": 5
       }
     }
   },
   {
-    "id": 103,
-    "end_user_id": 10003,
-    "survey_id": 1003,
-    "score": 1,
-    "text": "I am very disappointed with my overall experience. The billing charges have been inconsistent and confusing for months, and I spent a lot of time on hold with customer service. The outages in my area have been frequent and disruptive, making it hard to rely on the service for critical needs. The online portal is slow and unhelpful, which makes tracking usage frustrating. I feel the company is failing to communicate clearly about price changes and outage notices, and I am considering switching providers.",
-    "completed": true,
-    "excluded_from_calculations": false,
-    "ip_address": "198.51.100.7",
-    "origin_url": "https://survey.synergy.example/response/103",
-    "created_at": "2026-01-17T09:15:00Z",
-    "updated_at": "2026-01-17T09:45:00Z",
-    "tags": ["sentiment:negative","billing","outage","web"],
+    "id": 1003,
+    "uuid": "f1e2d3c4-b5a6-7d8e-9f0a-123456789abc",
+    "surveyGatewayId": 503,
+    "surveyGatewayName": "SynergySurveyGateway",
+    "surveyGatewayAlias": "SSGateway",
+    "surveyGatewayDnis": "+1-555-0003",
+    "surveyId": 9002,
+    "surveyName": "Synergy WA Electricity Customer Survey",
+    "surveyDescription": "InMoment-based feedback survey",
+    "externalId": "EXT-1003",
+    "externalCallRecordingId": "REC-EXT-1003",
+    "lastModTime": "2026-02-02T16:40:00Z",
+    "beginTime": "2026-02-02T16:30:00Z",
+    "dateOfService": "2026-02-02",
+    "redemptionCode": "RC-POS-1003",
+    "employeeCode": "EMP-003",
+    "loyaltyNumber": "LOY-564738",
+    "minutes": 15,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "resolved",
+    "ani": "3456789012",
+    "ipAddress": "203.0.113.77",
+    "cookieUID": "cookie-003-xyz",
+    "offerId": 203,
+    "offerName": "Premium Saver",
+    "offerCode": "PS",
+    "unitId": 303,
+    "unitExternalId": "UNIT-EX-303",
+    "unitName": "WA East Unit",
+    "locationId": 403,
+    "languageCode": "en",
+    "deviceType": "Desktop",
+    "organizationId": 7003,
+    "organizationName": "Synergy WA",
+    "assignedUserId": 8003,
+    "assignedUserName": "Carlos Rivera",
+    "assignedUserEmail": "carlos.rivera@synergywa.com",
+    "exclusionReason": "",
+    "mode": "online",
+    "answers": [
+      {
+        "questionId": 1,
+        "text": "I am extremely satisfied with the service overall. From the moment I contacted support to the final invoice, everything was smooth and efficient. The billing was transparent, and the charges matched the plan I subscribed to without surprises. The outage issues we faced earlier were resolved quickly, and the portal updates were timely, which built trust. The pricing options available matched my needs, and the mobile app worked flawlessly for checking usage. I would definitely recommend Synergy WA based on this experience.",
+        "score": 5
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": 603,
+        "type": "pricing_issue",
+        "description": "Pricing adjustments applied correctly after review.",
+        "status": "resolved",
+        "startTime": "2026-01-28T10:00:00Z",
+        "endTime": "2026-01-28T10:30:00Z"
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": 703,
+        "type": "service_alert",
+        "message": "Pricing and billing queries resolved; no immediate actions required."
+      }
+    ],
+    "scores": [
+      {
+        "name": "Overall Experience",
+        "score": 5
+      }
+    ],
+    "tags": [
+      {
+        "tag": "positive",
+        "type": "sentiment"
+      },
+      {
+        "tag": "pricing",
+        "type": "root_cause"
+      },
+      {
+        "tag": "customer_service",
+        "type": "root_cause"
+      },
+      {
+        "tag": "mobile",
+        "type": "channel"
+      }
+    ],
+    "url": "https://survey.example.com/response/POS-1003",
+    "tagsString": "positive;pricing;customer_service;mobile",
+    "socialReview": {
+      "rating": 5,
+      "platform": "mobile",
+      "comment": "Excellent service with clear pricing and responsive support."
+    },
+    "contactId": "C-POS-1003",
+    "contact": {
+      "name": "Alex Kim",
+      "phone": "+1-555-0303",
+      "email": "alex.kim@example.com",
+      "preferredContact": "phone"
+    },
     "end_user": {
       "properties": {
-        "customer_type": "residential",
-        "region": "metro",
-        "tenure_years": 1
+        "customer_type": "business",
+        "region": "regional",
+        "tenure_years": 7
       }
     }
   }

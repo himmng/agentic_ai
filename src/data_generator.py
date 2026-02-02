@@ -1,138 +1,121 @@
-import random
-import json
-from faker import Faker
+# agent_tester.py
+import os
+from dotenv import load_dotenv
+from azure.identity import DefaultAzureCredential
+from azure.ai.projects import AIProjectClient
 from pathlib import Path
+import json
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data" / "augmented"
+# --------------------------------------------------
+# Project and data paths
+# --------------------------------------------------
+PROJECT_ROOT = Path(__file__).resolve().parents[0]
+print("PROJECT_ROOT:", PROJECT_ROOT)
+DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "raw"
+print("DATA_DIR:", DATA_DIR)
+# --------------------------------------------------
+# Load environment variables
+# --------------------------------------------------
+load_dotenv(PROJECT_ROOT / "agents" / ".env")
 
-fake = Faker("en_AU")
+# --------------------------------------------------
+# Initialize Azure AI Project client
+# --------------------------------------------------
+PROJECT_ENDPOINT = os.environ.get("PROJECT_ENDPOINT")
+if not PROJECT_ENDPOINT:
+    raise ValueError("PROJECT_ENDPOINT not set in .env")
 
-import random
-from datetime import datetime, timezone
-from faker import Faker
+project_client = AIProjectClient(
+    endpoint=PROJECT_ENDPOINT,
+    credential=DefaultAzureCredential(),
+)
 
-fake = Faker()
+openai_client = project_client.get_openai_client()
 
-def generate_survey(i, comments, seed=None):
-    if seed is not None:
-        random.seed(seed + i)
+# --------------------------------------------------
+# Select agent dynamically
+# --------------------------------------------------
+AGENT_KEY = "DATA_CREATION_AGENT"  # Example: hardcoded for testing
 
-    csat = random.randint(1, 5)
-    ces = random.randint(1, 7)
+if AGENT_KEY not in os.environ:
+    raise ValueError(f"{AGENT_KEY} not found in .env")
 
-    priority = (
-        "HIGH" if ces <= 3 else
-        "MEDIUM" if ces <= 5 else
-        "LOW"
+AGENT_NAME = os.environ[AGENT_KEY]
+print(f"Using agent: {AGENT_NAME}")
+
+# --------------------------------------------------
+# Get user prompt
+# --------------------------------------------------
+USER_PROMPT = input("\nEnter the prompt to send to the agent:\n").strip()
+if not USER_PROMPT:
+    raise ValueError("Prompt cannot be empty")
+
+# --------------------------------------------------
+# Create conversation
+# --------------------------------------------------
+conversation = openai_client.conversations.create()
+print(f"\nConversation ID: {conversation.id}")
+
+# --------------------------------------------------
+# Invoke agent
+# --------------------------------------------------
+try:
+    response = openai_client.responses.create(
+        conversation=conversation.id,
+        extra_body={
+            "agent": {
+                "name": AGENT_NAME,
+                "type": "agent_reference"
+            }
+        },
+        input=USER_PROMPT
     )
 
-    escalation = ces <= 3
+    print("\n===== AGENT OUTPUT =====")
+    
+    # -----------------------------
+    # Special handling for DATA_CREATION_AGENT
+    # -----------------------------
+    if AGENT_KEY == "DATA_CREATION_AGENT":
+        output_file = DATA_DIR / "synergy_inmoment.json"
+        output_file.parent.mkdir(parents=True, exist_ok=True)
 
-    now = datetime.now(timezone.utc).isoformat()
+        # Load new data from agent
+        try:
+            new_data = json.loads(response.output_text)
+            if not isinstance(new_data, list):
+                raise ValueError("Agent output must be a JSON array!")
+        except json.JSONDecodeError as e:
+            print("Error parsing agent output:", e)
+            new_data = []
 
-    return {
-        # ---- Core response identity ----
-        "id": i,
-        "uuid": f"WA-RESP-{i:06d}",
-        "surveyId": 2026,
-        "surveyName": "Synergy WA Digital CX Survey",
+        # Load existing data if file exists
+        if output_file.exists():
+            try:
+                with open(output_file, "r", encoding="utf-8") as f:
+                    existing_data = json.load(f)
+                    if not isinstance(existing_data, list):
+                        raise ValueError("Existing JSON file is not an array!")
+            except json.JSONDecodeError:
+                existing_data = []
+        else:
+            existing_data = []
 
-        # ---- Status ----
-        "complete": True,
-        "exclusionReason": "NONE",
+        # Append new objects
+        combined_data = existing_data + new_data
 
-        # ---- Timing ----
-        "beginTime": now,
-        "lastModTime": now,
-        "dateOfService": now,
+        # Write combined array back to file
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(combined_data, f, indent=2, ensure_ascii=False)
 
-        # ---- Network / origin ----
-        "ipAddress": fake.ipv4_public(),
-        "url": "https://www.synergy.net.au/my-account",
+        print(f"\nAppended {len(new_data)} new objects. Total now: {len(combined_data)}")
+        print(f"Data saved to: {output_file}")
 
-        # ---- Answers (free-text + structured) ----
-        "answers": [
-            {
-                "fieldId": 101,
-                "fieldName": "CES",
-                "fieldType": "scale",
-                "literalValue": str(ces)
-            },
-            {
-                "fieldId": 102,
-                "fieldName": "CSAT",
-                "fieldType": "scale",
-                "literalValue": str(csat)
-            },
-            {
-                "fieldId": 103,
-                "fieldName": "Customer Comment",
-                "fieldType": "text",
-                "literalValue": random.choice(comments)
-            }
-        ],
+    # -----------------------------
+    # Other agents: just print output
+    # -----------------------------
+    else:
+        print(response.output_text)
 
-        # ---- Scores (InMoment-native analytics) ----
-        "scores": [
-            {
-                "fieldId": 101,
-                "fieldName": "CES",
-                "score": ces,
-                "points": ces,
-                "pointsPossible": 7
-            },
-            {
-                "fieldId": 102,
-                "fieldName": "CSAT",
-                "score": csat,
-                "points": csat,
-                "pointsPossible": 5
-            }
-        ],
-
-        # ---- Tags (used for AI + dashboards + routing) ----
-        "tags": [
-            {
-                "name": f"PRIORITY_{priority}",
-                "label": f"Priority {priority}",
-                "enabled": True,
-                "visibleInInbox": True
-            },
-            {
-                "name": "DIGITAL_CHANNEL",
-                "label": "Website / My Account",
-                "enabled": True,
-                "visibleInInbox": False
-            }
-        ],
-
-        # ---- Incidents (InMoment escalation model) ----
-        "incidents": (
-            [{
-                "dateTimeUTC": now,
-                "incidentManagementState": "OPEN",
-                "comment": "Low CES score triggered automated escalation"
-            }] if escalation else []
-        ),
-
-        # ---- End user snapshot ----
-        "contact": {
-            "id": f"CUST-{i:06d}",
-            "organizationId": 999,
-            "email": fake.email(),
-            "phone": fake.phone_number(),
-            "fields": [
-                {"fieldId": 201, "value": "WA"},
-                {"fieldId": 202, "value": "Residential"},
-                {"fieldId": 203, "value": "Electricity"}
-            ]
-        }
-    }
-
-if __name__ == "__main__":
-    with open(DATA_DIR / "random_comments.json") as f:
-        comments = json.load(f)
-    surveys = [generate_survey(i, comments) for i in range(len(comments))]
-    with open(DATA_DIR / "inmoment_surveys.jsonl", "w") as f:
-        json.dump(surveys, f, indent=2)
+except Exception as e:
+    print("\nError running agent:", e)

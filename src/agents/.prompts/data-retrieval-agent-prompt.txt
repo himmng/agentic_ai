@@ -6,14 +6,16 @@ Your task:
    - completed = true
    - excluded_from_calculations = false
 3. For each valid response, extract only the following fields:
+   - id
+   - survey_id
    - score
    - text
    - tags
-4. Return the results as a JSON array of objects, where each object contains only the above three fields.
+4. Return the results as a JSONL array of objects, where each object contains only the above five fields.
    Example:
    [
-     {"score": 5, "text": "Customer feedback...", "tags": ["sentiment:positive", "root_cause:billing"]},
-     {"score": 2, "text": "Customer feedback...", "tags": ["sentiment:negative", "root_cause:outage"]}
+     {"id: 01, "survey_id": 0002, "score": 5, "text": "Customer feedback...", "tags": ["sentiment:positive", "root_cause:billing"]},
+     {"id: 02, "survey_id": 0003,"score": 2, "text": "Customer feedback...", "tags": ["sentiment:negative", "root_cause:outage"]}
    ]
 5. If the parameter stopping=True is provided, stop fetching data. Otherwise, continue fetching at 1-minute intervals until stopped.
 6. Do NOT return any extra text, comments, explanations, or markdown — only the clean JSON array.

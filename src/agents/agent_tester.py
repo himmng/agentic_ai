@@ -66,14 +66,7 @@ try:
     )
 
     print("\n===== AGENT OUTPUT =====")
-    if AGENT_KEY == "DATA_CREATION_AGENT":
-        output_file = DATA_DIR / "synergy_inmoment2.json"
-        output_file.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_file, "w") as f:
-            f.write(response.output_text)
-        print(f"\nAgent response written to: {output_file}")
-    else:
-        print(response.output_text)
+    print(response.output_text)
 
 except Exception as e:
     print("\nError running agent:", e)

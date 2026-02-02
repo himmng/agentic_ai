@@ -67,7 +67,7 @@ try:
 
     print("\n===== AGENT OUTPUT =====")
     if AGENT_KEY == "DATA_CREATION_AGENT":
-        output_file = DATA_DIR / "synergy_inmoment.json"
+        output_file = DATA_DIR / "synergy_inmoment2.json"
         output_file.parent.mkdir(parents=True, exist_ok=True)
         with open(output_file, "w") as f:
             f.write(response.output_text)

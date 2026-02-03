@@ -2,7 +2,7 @@
   {
     "session_id": "fs_sess_1001_web_01",
     "device_id": "dev_1001_web",
-    "customer_id": 101,
+    "customer_id": 1001,
     "platform": "web",
     "app_version": "3.12.4",
     "region": "WA-Metro",
@@ -172,7 +172,7 @@
   {
     "session_id": "fs_sess_1002_web_02",
     "device_id": "dev_1002_web",
-    "customer_id": 102,
+    "customer_id": 1002,
     "platform": "web",
     "app_version": "3.14.0",
     "region": "WA-Regional",
@@ -328,7 +328,7 @@
   {
     "session_id": "fs_sess_1003_mobile_01",
     "device_id": "dev_1003_mobile",
-    "customer_id": 103,
+    "customer_id": 1003,
     "platform": "mobile",
     "app_version": "4.2.0",
     "region": "WA-Metro",

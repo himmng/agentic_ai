@@ -13,7 +13,7 @@ Agentic Workflow is developed inside a full-code python environment which can be
 #### current capabilities
 
 * **Agent Creator/Tester**: Create and Test Agents in Azure
-* **data_creation_agent**: Generate real-world syntheic data for synergy (InMoment style)
+* **data_creation_agent**: Generate real-world syntheic data for synergy (InMoment and Fullstory style)
 * **Pseudo API call**: Mimic real-world api call to get data.
 * **data_extraction**: Extract key-fields for processing
 * **survey_intelligence_agent**: Generate AI summary, recommendation and sentiment 

@@ -1,6 +1,6 @@
 # Agentic AI Solution
 Developing agentic AI solution for businesses to help with
-* Sentiment Analysis/Intent Regonsition
+* Sentiment Analysis/Intent Recognition
 * Priority/Incident Determination
 * Content Summarisation
 * Recommendation

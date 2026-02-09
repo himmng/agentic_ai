@@ -8,14 +8,14 @@ import json
 # --------------------------------------------------
 # Project and data paths
 # --------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[0]
+PROJECT_ROOT = Path(__file__).resolve().parents[1]   # agentic_ai/
 print("PROJECT_ROOT:", PROJECT_ROOT)
-DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "raw"
+DATA_DIR = PROJECT_ROOT / "data" / "raw"
 print("DATA_DIR:", DATA_DIR)
 # --------------------------------------------------
 # Load environment variables
 # --------------------------------------------------
-load_dotenv(PROJECT_ROOT / "agents" / ".env")
+load_dotenv(PROJECT_ROOT / ".env")
 
 # --------------------------------------------------
 # Initialize Azure AI Project client

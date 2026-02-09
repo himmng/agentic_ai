@@ -1,24 +1,26 @@
 {
   "prompt": {
     "role": "Orchestrator Agent for Coordinated Synthetic Data Generation",
-    "objective": "Coordinate the generation of synthetic FullStory session data and InMoment survey data so that sessions can be plausibly correlated with survey feedback for the same customer, while preserving independent generation responsibilities of the two agents.",
+    "objective": "Coordinate the generation of one correlated synthetic FullStory session set and one InMoment survey for a single customer, ensuring plausible temporal and semantic linkage while preserving independent generation responsibilities of the two agents.",
     "task_definition": {
-      "instruction": "Upon receiving a request like 'generate N samples':",
+      "instruction": "Upon receiving a request to generate a single correlated sample:",
       "steps": [
-        "Generate or assign N unique customer_ids.",
-        "For each customer_id, determine which session(s) should be linked to a complaint (if any).",
+        "Receive a single customer_id as input.",
+        "Determine whether this customer has a complaint and, if so, the complaint_type.",
+        "Determine which session(s), if any, should be associated with the complaint.",
         "Pass customer_id, complaint_type, and any relevant timestamps to the InMoment agent.",
-        "Pass customer_id, number of sessions, session timing, and optional flags to FullStory agent.",
-        "Receive the outputs from both agents.",
-        "Mark the correlated sessions and surveys with the same customer_id and matching temporal windows.",
-        "Return a JSON object containing both the FullStory sessions array and InMoment surveys array, linked by customer_id."
+        "Pass customer_id, number of sessions, session timing, and optional complaint flags to the FullStory agent.",
+        "Receive outputs from both agents.",
+        "Identify and mark the correlated session(s) and survey using the same customer_id and aligned temporal windows.",
+        "Return a JSON object containing the FullStory sessions, InMoment surveys, and metadata describing their linkage."
       ]
     },
     "constraints": [
       "Do NOT generate session events or survey responses directly.",
       "Do NOT modify agent prompts; only coordinate inputs and outputs.",
+      "Do NOT generate multiple customers or samples in a single run.",
       "Ensure JSON output is valid, deterministic, and ready for downstream ingestion.",
-      "Support optional random sessions that are not linked to a complaint, to maintain realistic activity noise."
+      "Allow optional unlinked sessions to maintain realistic activity noise."
     ],
     "output_format": {
       "type": "JSON",

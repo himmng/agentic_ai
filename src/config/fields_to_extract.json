@@ -1,6 +1,7 @@
 {
   "inmoment": [
-    "contact.id",                
+    "id",  
+    "externalId" ,            
     "survey_id",
     "overall_score",
     "answers",             

@@ -1,355 +1,441 @@
 [
   {
-    "session_id": "sess_A1B2C3D4",
-    "device_id": "dev_01_10001",
-    "customer_id": 10001,
-    "platform": "web",
-    "app_version": "3.4.1",
-    "region": "WA-Metro",
-    "session_start_time": "2026-02-01T09:00:00Z",
-    "session_end_time": "2026-02-01T09:14:30Z",
-    "session_url": "https://app.fullstory.com/ui/session/sess_A1B2C3D4",
-    "events": [
-      {
-        "event_id": "evt_10001_1",
-        "event_time": "2026-02-01T09:00:05Z",
-        "event_type": "page_view",
-        "view_id": "view_dashboard",
-        "page_url": "https://billingapp.example.com/dashboard",
-        "event_properties": {
-          "page_name": "Dashboard",
-          "referrer": "https://www.google.com/search?q=example"
-        }
-      },
-      {
-        "event_id": "evt_10001_2",
-        "event_time": "2026-02-01T09:01:10Z",
-        "event_type": "click",
-        "view_id": "view_dashboard",
-        "page_url": "https://billingapp.example.com/dashboard",
-        "event_properties": {
-          "element": "BillingNav_ViewBills",
-          "element_type": "link",
-          "x_position": 220,
-          "y_position": 180
-        }
-      },
-      {
-        "event_id": "evt_10001_3",
-        "event_time": "2026-02-01T09:02:45Z",
-        "event_type": "custom_event",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "name": "Login_Success",
-          "properties": {
-            "login_method": "password",
-            "device_verified": true
-          }
-        }
-      },
-      {
-        "event_id": "evt_10001_4",
-        "event_time": "2026-02-01T09:04:00Z",
-        "event_type": "page_view",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "page_name": "Billing Overview",
-          "referrer": "https://billingapp.example.com/dashboard"
-        }
-      },
-      {
-        "event_id": "evt_10001_5",
-        "event_time": "2026-02-01T09:06:10Z",
-        "event_type": "input_change",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "field_name": "search_invoices",
-          "interaction_type": "type"
-        }
-      },
-      {
-        "event_id": "evt_10001_6",
-        "event_time": "2026-02-01T09:07:05Z",
-        "event_type": "click",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "element": "ViewInvoiceButton",
-          "element_type": "button",
-          "x_position": 320,
-          "y_position": 260
-        }
-      },
-      {
-        "event_id": "evt_10001_7",
-        "event_time": "2026-02-01T09:11:20Z",
-        "event_type": "page_view",
-        "view_id": "view_bill_details",
-        "page_url": "https://billingapp.example.com/billing/details/INV10001",
-        "event_properties": {
-          "page_name": "Bill Details",
-          "referrer": "https://billingapp.example.com/billing"
-        }
-      },
-      {
-        "event_id": "evt_10001_8",
-        "event_time": "2026-02-01T09:12:30Z",
-        "event_type": "custom_event",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "name": "View_Bill",
-          "properties": {
-            "bill_id": "INV10001"
-          }
-        }
-      },
-      {
-        "event_id": "evt_10001_9",
-        "event_time": "2026-02-01T09:13:50Z",
-        "event_type": "click",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "element": "LogoutLink",
-          "element_type": "link",
-          "x_position": 50,
-          "y_position": 540
-        }
-      }
-    ]
-  },
-  {
-    "session_id": "sess_A2B2C2E3",
-    "device_id": "dev_02_10002",
-    "customer_id": 10002,
-    "platform": "mobile",
-    "app_version": "3.4.2",
-    "region": "WA-Regional",
-    "session_start_time": "2026-02-02T11:20:00Z",
-    "session_end_time": "2026-02-02T11:34:00Z",
-    "session_url": "https://app.fullstory.com/ui/session/sess_A2B2C2E3",
-    "events": [
-      {
-        "event_id": "evt_20002_1",
-        "event_time": "2026-02-02T11:20:05Z",
-        "event_type": "page_view",
-        "view_id": "view_home",
-        "page_url": "https://billingapp.example.com/home",
-        "event_properties": {
-          "page_name": "Home",
-          "referrer": ""
-        }
-      },
-      {
-        "event_id": "evt_20002_2",
-        "event_time": "2026-02-02T11:21:20Z",
-        "event_type": "click",
-        "view_id": "view_home",
-        "page_url": "https://billingapp.example.com/home",
-        "event_properties": {
-          "element": "BillingNav_ViewBills",
-          "element_type": "link",
-          "x_position": 100,
-          "y_position": 340
-        }
-      },
-      {
-        "event_id": "evt_20002_3",
-        "event_time": "2026-02-02T11:22:40Z",
-        "event_type": "custom_event",
-        "view_id": "view_login",
-        "page_url": "https://billingapp.example.com/login",
-        "event_properties": {
-          "name": "Login_Success",
-          "properties": {
-            "login_method": "otp"
-          }
-        }
-      },
-      {
-        "event_id": "evt_20002_4",
-        "event_time": "2026-02-02T11:24:00Z",
-        "event_type": "page_view",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "page_name": "Billing Overview",
-          "referrer": "https://billingapp.example.com/home"
-        }
-      },
-      {
-        "event_id": "evt_20002_5",
-        "event_time": "2026-02-02T11:25:20Z",
-        "event_type": "input_change",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "field_name": "search_invoices",
-          "interaction_type": "type"
-        }
-      },
-      {
-        "event_id": "evt_20002_6",
-        "event_time": "2026-02-02T11:26:50Z",
-        "event_type": "click",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "element": "ViewInvoiceButton",
-          "element_type": "button",
-          "x_position": 260,
-          "y_position": 190
-        }
-      },
-      {
-        "event_id": "evt_20002_7",
-        "event_time": "2026-02-02T11:30:10Z",
-        "event_type": "page_view",
-        "view_id": "view_bill_details",
-        "page_url": "https://billingapp.example.com/billing/details/INV10002",
-        "event_properties": {
-          "page_name": "Bill Details",
-          "referrer": "https://billingapp.example.com/billing"
-        }
-      },
-      {
-        "event_id": "evt_20002_8",
-        "event_time": "2026-02-02T11:33:15Z",
-        "event_type": "custom_event",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "name": "View_Bill",
-          "properties": {
-            "bill_id": "INV10002"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "session_id": "sess_C3D3E3F4",
-    "device_id": "dev_03_10003",
+    "survey_id": "SURV-WA-2026-02-09-10003-EXPR01",
     "customer_id": 10003,
+    "survey_type": "experience_survey",
+    "survey_trigger_time": "2026-02-09T12:10:00Z",
     "platform": "web",
-    "app_version": "3.4.3",
     "region": "WA-Metro",
-    "session_start_time": "2026-02-03T15:05:00Z",
-    "session_end_time": "2026-02-03T15:20:00Z",
-    "session_url": "https://app.fullstory.com/ui/session/sess_C3D3E3F4",
-    "events": [
+    "questions": [
       {
-        "event_id": "evt_30003_1",
-        "event_time": "2026-02-03T15:05:10Z",
-        "event_type": "page_view",
-        "view_id": "view_dashboard",
-        "page_url": "https://billingapp.example.com/dashboard",
-        "event_properties": {
-          "page_name": "Dashboard",
-          "referrer": ""
-        }
-      },
-      {
-        "event_id": "evt_30003_2",
-        "event_time": "2026-02-03T15:06:25Z",
-        "event_type": "click",
-        "view_id": "view_dashboard",
-        "page_url": "https://billingapp.example.com/dashboard",
-        "event_properties": {
-          "element": "BillingNav_ViewBills",
-          "element_type": "link",
-          "x_position": 150,
-          "y_position": 240
-        }
-      },
-      {
-        "event_id": "evt_30003_3",
-        "event_time": "2026-02-03T15:07:40Z",
-        "event_type": "custom_event",
-        "view_id": "view_login",
-        "page_url": "https://billingapp.example.com/login",
-        "event_properties": {
-          "name": "Login_Success",
-          "properties": {
-            "login_method": "password"
+        "question_id": "Q1",
+        "question_type": "rating",
+        "question_text": "Overall, how satisfied are you with your recent service experience?",
+        "answers": [
+          {
+            "answer_id": "A1",
+            "answer_value": 2,
+            "answer_time": "2026-02-09T12:11:30Z"
           }
-        }
+        ]
       },
       {
-        "event_id": "evt_30003_4",
-        "event_time": "2026-02-03T15:09:00Z",
-        "event_type": "page_view",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "page_name": "Billing Overview",
-          "referrer": "https://billingapp.example.com/dashboard"
-        }
-      },
-      {
-        "event_id": "evt_30003_5",
-        "event_time": "2026-02-03T15:10:15Z",
-        "event_type": "input_change",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "field_name": "search_invoices",
-          "interaction_type": "type"
-        }
-      },
-      {
-        "event_id": "evt_30003_6",
-        "event_time": "2026-02-03T15:12:03Z",
-        "event_type": "custom_event",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "name": "Download_Invoice",
-          "properties": {
-            "invoice_id": "INV10003"
+        "question_id": "Q2",
+        "question_type": "nps",
+        "question_text": "How likely are you to recommend us to a friend or colleague? (0-10)",
+        "answers": [
+          {
+            "answer_id": "A2",
+            "answer_value": 3,
+            "answer_time": "2026-02-09T12:12:15Z"
           }
-        }
+        ]
       },
       {
-        "event_id": "evt_30003_7",
-        "event_time": "2026-02-03T15:15:32Z",
-        "event_type": "page_view",
-        "view_id": "view_bill_details",
-        "page_url": "https://billingapp.example.com/billing/details/INV10003",
-        "event_properties": {
-          "page_name": "Bill Details",
-          "referrer": "https://billingapp.example.com/billing"
-        }
-      },
-      {
-        "event_id": "evt_30003_8",
-        "event_time": "2026-02-03T15:18:12Z",
-        "event_type": "custom_event",
-        "view_id": "view_billing",
-        "page_url": "https://billingapp.example.com/billing",
-        "event_properties": {
-          "name": "View_Bill",
-          "properties": {
-            "bill_id": "INV10003"
+        "question_id": "Q3",
+        "question_type": "multiple_choice",
+        "question_text": "What was the main reason for your billing-related dissatisfaction?",
+        "answers": [
+          {
+            "answer_id": "A3",
+            "answer_value": "Incorrect charges on latest invoice",
+            "answer_time": "2026-02-09T12:13:40Z"
           }
-        }
+        ]
+      }
+    ]
+  },
+  {
+    "survey_id": "SURV-20260208-10002-001",
+    "customer_id": 10002,
+    "survey_type": "Fullstory-Experience",
+    "survey_trigger_time": "2026-02-08T09:30:00Z",
+    "platform": "web",
+    "region": "WA-Metro",
+    "questions": [
+      {
+        "question_id": "Q1",
+        "question_type": "rating",
+        "question_text": "How would you rate your overall satisfaction with the latest billing experience in the online portal?",
+        "answers": [
+          {
+            "answer_id": "Q1-A1",
+            "answer_value": 2,
+            "answer_time": "2026-02-08T09:31:10Z"
+          }
+        ]
       },
       {
-        "event_id": "evt_30003_9",
-        "event_time": "2026-02-03T15:19:40Z",
-        "event_type": "custom_event",
-        "view_id": "view_support",
-        "page_url": "https://billingapp.example.com/contact-support",
-        "event_properties": {
-          "name": "Contact_Support",
-          "properties": {
-            "topic": "Billing"
+        "question_id": "Q2",
+        "question_type": "multiple_choice",
+        "question_text": "What billing issue did you encounter? (Select the option that best describes your experience)",
+        "answers": [
+          {
+            "answer_id": "Q2-A1",
+            "answer_value": "Incorrect charge",
+            "answer_time": "2026-02-08T09:32:05Z"
           }
-        }
+        ]
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "text",
+        "question_text": "Please describe what happened and what outcome would be satisfactory for you.",
+        "answers": [
+          {
+            "answer_id": "Q3-A1",
+            "answer_value": "There was a duplicate charge on my January bill that I discovered after the due date. I need a correction and a confirmation that no further charges will occur. Please issue a credit and send a written confirmation.",
+            "answer_time": "2026-02-08T09:33:40Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "survey_id": "SURV-10007-2026-02-09-01",
+    "customer_id": 10007,
+    "survey_type": "post_interaction",
+    "survey_trigger_time": "2026-02-09T15:30:00Z",
+    "platform": "web",
+    "region": "WA-Metro",
+    "questions": [
+      {
+        "question_id": "Q1",
+        "question_type": "rating",
+        "question_text": "How satisfied are you with the handling of your most recent billing issue on a scale from 1 (very dissatisfied) to 5 (very satisfied)?",
+        "answers": [
+          {
+            "answer_id": "A1-01",
+            "answer_value": 2,
+            "answer_time": "2026-02-09T15:30:10Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "rating",
+        "question_text": "Was the billing issue resolved to your expectations?",
+        "answers": [
+          {
+            "answer_id": "A2-01",
+            "answer_value": 2,
+            "answer_time": "2026-02-09T15:30:20Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "multiple_choice",
+        "question_text": "What best describes the billing concern you faced?",
+        "answers": [
+          {
+            "answer_id": "A3-01",
+            "answer_value": "Incorrect charge on the latest bill",
+            "answer_time": "2026-02-09T15:30:30Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "text",
+        "question_text": "Please provide any additional details about the billing issue and how it affected you.",
+        "answers": [
+          {
+            "answer_id": "A4-01",
+            "answer_value": "I was double-billed for the same cycle and was charged a late fee I didn’t incur. I contacted support but the issue remains unresolved.",
+            "answer_time": "2026-02-09T15:30:45Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "survey_id": "FS-EX-10008-20260209-001",
+    "customer_id": 10008,
+    "survey_type": "Fullstory Experience Survey",
+    "survey_trigger_time": "2026-02-09T12:15:00Z",
+    "platform": "web",
+    "region": "WA-Metro",
+    "questions": [
+      {
+        "question_id": "Q1",
+        "question_type": "rating",
+        "question_text": "Overall, how would you rate your billing experience this month?",
+        "answers": [
+          {
+            "answer_id": "A1",
+            "answer_value": 2,
+            "answer_time": "2026-02-09T12:15:40Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "nps",
+        "question_text": "How likely are you to recommend WA Electricity to a friend or family member?",
+        "answers": [
+          {
+            "answer_id": "A2",
+            "answer_value": 3,
+            "answer_time": "2026-02-09T12:16:05Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "multiple_choice",
+        "question_text": "What was the primary cause of your billing concern?",
+        "answers": [
+          {
+            "answer_id": "A3",
+            "answer_value": "Overcharge error",
+            "answer_time": "2026-02-09T12:16:40Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "text",
+        "question_text": "Please describe the issue you faced with billing, including any steps you took to resolve it.",
+        "answers": [
+          {
+            "answer_id": "A4",
+            "answer_value": "Charged twice on the latest bill; payment posted late, resulting in a late fee. Reached out to support via chat but was repeatedly transferred; still awaiting an adjustment.",
+            "answer_time": "2026-02-09T12:17:15Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "survey_id": "FS-EX-SURV-10006-2026-01",
+    "customer_id": 10006,
+    "survey_type": "Fullstory-Experience",
+    "survey_trigger_time": "2026-02-09T09:00:00Z",
+    "platform": "web",
+    "region": "WA-Metro",
+    "questions": [
+      {
+        "question_id": "Q1-EXP-01",
+        "question_type": "rating",
+        "question_text": "Overall, how would you rate your recent experience with Synergy WA's billing process?",
+        "answers": [
+          {
+            "answer_id": "A1-ANS-01",
+            "answer_value": 2,
+            "answer_time": "2026-02-09T09:03:00Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q2-NPS-02",
+        "question_type": "nps",
+        "question_text": "How likely are you to recommend Synergy WA to a friend or colleague?",
+        "answers": [
+          {
+            "answer_id": "A2-ANS-02",
+            "answer_value": 3,
+            "answer_time": "2026-02-09T09:05:00Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q3-BILL-03",
+        "question_type": "multiple_choice",
+        "question_text": "Which billing issue did you experience?",
+        "answers": [
+          {
+            "answer_id": "A3-ANS-03",
+            "answer_value": "Overcharged on last bill",
+            "answer_time": "2026-02-09T09:07:00Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q4-TEXT-04",
+        "question_type": "text",
+        "question_text": "Please describe what happened and how it affected you.",
+        "answers": [
+          {
+            "answer_id": "A4-ANS-04",
+            "answer_value": "I was charged twice for the same billing period; the duplicate charge appeared on my statement and took longer than expected to resolve after I contacted support.",
+            "answer_time": "2026-02-09T09:12:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "survey_id": "survey_10004_20260209T153000Z",
+    "customer_id": 10004,
+    "survey_type": "billing_experience_followup",
+    "survey_trigger_time": "2026-02-09T15:30:00Z",
+    "platform": "web",
+    "region": "WA-Metro",
+    "questions": [
+      {
+        "question_id": "q1",
+        "question_type": "rating",
+        "question_text": "Overall, how satisfied are you with your billing experience this month?",
+        "answers": [
+          {
+            "answer_id": "a1",
+            "answer_value": 2,
+            "answer_time": "2026-02-09T15:31:10Z"
+          }
+        ]
+      },
+      {
+        "question_id": "q2",
+        "question_type": "multiple_choice",
+        "question_text": "Which billing issue occurred most recently? (Select one)",
+        "answers": [
+          {
+            "answer_id": "a2",
+            "answer_value": "charged_twice",
+            "answer_time": "2026-02-09T15:32:20Z"
+          }
+        ]
+      },
+      {
+        "question_id": "q3",
+        "question_type": "text",
+        "question_text": "Please share any additional details about the billing issue you experienced.",
+        "answers": [
+          {
+            "answer_id": "a3",
+            "answer_value": "The latest invoice includes an extra charge I don't recognize, and it looks like I was billed twice. I need this corrected and a refund if appropriate.",
+            "answer_time": "2026-02-09T15:33:40Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "survey_id": "SURV-10001-2026-02-09-001",
+    "customer_id": 10001,
+    "survey_type": "Fullstory Experience Survey",
+    "survey_trigger_time": "2026-02-09T12:00:00Z",
+    "platform": "web",
+    "region": "WA-Metro",
+    "questions": [
+      {
+        "question_id": "Q1",
+        "question_type": "rating",
+        "question_text": "Overall, how satisfied are you with your most recent billing experience?",
+        "answers": [
+          {
+            "answer_id": "A1",
+            "answer_value": 2,
+            "answer_time": "2026-02-09T12:00:05Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "multiple_choice",
+        "question_text": "What billing issue did you notice?",
+        "answers": [
+          {
+            "answer_id": "A2",
+            "answer_value": "Billing discrepancy on latest invoice",
+            "answer_time": "2026-02-09T12:00:12Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "text",
+        "question_text": "Please describe what happened and how it affected you.",
+        "answers": [
+          {
+            "answer_id": "A3",
+            "answer_value": "The latest bill charged an amount that doesn't match my plan; I attempted to reach support but responses were slow, causing confusion and frustration.",
+            "answer_time": "2026-02-09T12:00:25Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "nps",
+        "question_text": "How likely are you to recommend our service to a friend after this billing experience? (0-10)",
+        "answers": [
+          {
+            "answer_id": "A4",
+            "answer_value": 3,
+            "answer_time": "2026-02-09T12:01:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "survey_id": "FS-EX-2026-10005-001",
+    "customer_id": 10005,
+    "survey_type": "experience_survey",
+    "survey_trigger_time": "2026-02-09T14:10:00Z",
+    "platform": "web",
+    "region": "WA-Metro",
+    "questions": [
+      {
+        "question_id": "Q1",
+        "question_type": "rating",
+        "question_text": "Overall, how satisfied are you with the billing experience on your last interaction?",
+        "answers": [
+          {
+            "answer_id": "A1",
+            "answer_value": 2,
+            "answer_time": "2026-02-09T14:12:30Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q2",
+        "question_type": "multiple_choice",
+        "question_text": "What billing issue did you encounter?",
+        "answers": [
+          {
+            "answer_id": "A2",
+            "answer_value": "Overcharge",
+            "answer_time": "2026-02-09T14:13:05Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q3",
+        "question_type": "nps",
+        "question_text": "On a scale from 0 to 10, how likely are you to recommend our billing experience to a friend?",
+        "answers": [
+          {
+            "answer_id": "A3",
+            "answer_value": 3,
+            "answer_time": "2026-02-09T14:14:10Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q4",
+        "question_type": "text",
+        "question_text": "Please describe in a few sentences what would improve your billing experience.",
+        "answers": [
+          {
+            "answer_id": "A4",
+            "answer_value": "I was charged a late fee with unclear justification; a detailed explanation or itemized breakdown would help.",
+            "answer_time": "2026-02-09T14:15:20Z"
+          }
+        ]
+      },
+      {
+        "question_id": "Q5",
+        "question_type": "rating",
+        "question_text": "How easy was it to find information about your bill online?",
+        "answers": [
+          {
+            "answer_id": "A5",
+            "answer_value": 1,
+            "answer_time": "2026-02-09T14:16:25Z"
+          }
+        ]
       }
     ]
   }

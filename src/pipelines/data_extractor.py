@@ -65,7 +65,7 @@ def extract_fields(records: List[Dict], fields: List[str]) -> List[Dict]:
 # Merge datasets by customer ID (InMoment.contact.id <-> FullStory.customer_id)
 # --------------------------------------------------
 def merge_datasets(inmoment_data: List[Dict], fullstory_data: List[Dict]) -> List[Dict]:
-    inmoment_lookup = {str(d.get("contact.id") or d.get("id")): d for d in inmoment_data}
+    inmoment_lookup = {str(d.get("externalId") or d.get("id")): d for d in inmoment_data}
     fullstory_lookup = {str(d.get("customer_id") or d.get("id")): d for d in fullstory_data}
 
     all_ids = set(inmoment_lookup.keys()).union(fullstory_lookup.keys())

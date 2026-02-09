@@ -19,4 +19,3 @@ src/pipelines/__init__.py
 src/pipelines/data_enricher.py
 src/pipelines/data_extractor.py
 src/pipelines/data_generator.py
-src/pipelines/orchestrator.py

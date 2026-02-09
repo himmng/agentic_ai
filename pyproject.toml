@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-ai"
+version = "0.1.0"
+description = "Agentic AI solution: agents, extractors, and data pipelines"
+requires-python = ">=3.9"
+
+dependencies = [
+    "python-dotenv",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+# --------------------------------------------------
+# CLI ENTRY POINTS (OPTIONAL BUT POWERFUL)
+# --------------------------------------------------
+
+[project.scripts]
+agent-create = "src.agents.agent_creator:main"
+agent-test = "src.agents.agent_tester:main"
+agent-orchestrate = "src.agents.orchestrator:main"
+
+extract-inmoment = "src.extractors.inmoment_extractor:main"
+extract-fullstory = "src.extractors.fullstory_extractor:main"
+
+data-generate = "src.pipelines.data_generator:main"

@@ -1,0 +1,7 @@
+[console_scripts]
+agent-create = src.agents.agent_creator:main
+agent-orchestrate = src.agents.orchestrator:main
+agent-test = src.agents.agent_tester:main
+data-generate = src.pipelines.data_generator:main
+extract-fullstory = src.extractors.fullstory_extractor:main
+extract-inmoment = src.extractors.inmoment_extractor:main

@@ -1,0 +1,299 @@
+[
+  {
+    "id": 1,
+    "uuid": "e4d1f9c2-7b5a-4d9a-b3c9-8a7aaf6a9f0d",
+    "surveyGatewayId": 101,
+    "surveyGatewayName": "Synergy WA Feedback Portal",
+    "surveyGatewayAlias": "SynergyPortal",
+    "surveyGatewayDnis": "1800-SYNERGY",
+    "surveyId": 501,
+    "surveyName": "Customer Experience Survey",
+    "surveyDescription": "Post-transaction feedback on electricity service",
+    "externalId": 10001,
+    "externalCallRecordingId": "REC-10001-1",
+    "lastModTime": "2026-02-09T12:34:56Z",
+    "beginTime": "2026-02-09T12:00:00Z",
+    "dateOfService": "2026-02-09",
+    "redemptionCode": "N/A",
+    "employeeCode": "EMP-01-10001",
+    "loyaltyNumber": "LOY-10001",
+    "minutes": 23,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "closed",
+    "ani": "1234567890",
+    "ipAddress": "198.51.100.101",
+    "cookieUID": "cookie-uid-10001-a",
+    "offerId": "OFF-1001",
+    "offerName": "Intro Offer",
+    "offerCode": "OFF-001",
+    "unitId": "UNIT-01",
+    "unitExternalId": "UNIT-EXT-01",
+    "unitName": "WA North Service Area",
+    "locationId": "LOC-01",
+    "languageCode": "en",
+    "deviceType": "mobile",
+    "organizationId": "ORG-01",
+    "organizationName": "Synergy WA",
+    "assignedUserId": "AUDITOR-01",
+    "assignedUserName": "Survey Bot",
+    "assignedUserEmail": "survey-bot@example",
+    "exclusionReason": "",
+    "mode": "digital",
+    "answers": [
+      {
+        "questionId": "Q1",
+        "text": "I recently contacted Synergy WA about my billing issue. The bill showed a charge I did not expect. It took longer than I anticipated to get a resolution. The follow-up communication was unclear and confusing. Overall, I am dissatisfied with the service experience."
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-1",
+        "type": "billing_discrepancy",
+        "description": "Billing discrepancy detected on account 10001; customer reports overcharge and slow resolution",
+        "status": "resolved"
+      }
+    ],
+    "alerts": [
+      {
+        "alertCode": "ALERT-1001",
+        "severity": "low",
+        "message": "Billing review in progress"
+      }
+    ],
+    "scores": [
+      {
+        "criterion": "overall",
+        "value": 2
+      }
+    ],
+    "tags": {
+      "root_cause": [
+        "billing"
+      ],
+      "channel_tags": [
+        "web"
+      ]
+    },
+    "url": "https://synergywa.example/survey/10001/response/1",
+    "tagsString": "billing|web",
+    "socialReview": {
+      "platform": "none",
+      "rating": 2,
+      "text": "Synthetic review data"
+    },
+    "contactId": "CONTACT-10001",
+    "contact": {
+      "id": 10001,
+      "name": "Synthetic Customer 10001",
+      "phone": "000-000-0001",
+      "email": "synthetic-10001@example.com",
+      "preferredContact": "email",
+      "address": "Synthetic address"
+    },
+    "end_user_properties": {
+      "customer_type": "residential",
+      "region": "metro",
+      "tenure_years": 2,
+      "data_quality": "synthetic"
+    }
+  },
+  {
+    "id": 2,
+    "uuid": "6a9d0d22-4f3b-4b8f-9e59-8b1b4a4c7a3a",
+    "surveyGatewayId": 101,
+    "surveyGatewayName": "Synergy WA Feedback Portal",
+    "surveyGatewayAlias": "SynergyPortal",
+    "surveyGatewayDnis": "1800-SYNERGY",
+    "surveyId": 501,
+    "surveyName": "Customer Experience Survey",
+    "surveyDescription": "Post-transaction feedback on electricity service",
+    "externalId": 10002,
+    "externalCallRecordingId": "REC-10002-1",
+    "lastModTime": "2026-02-10T09:45:00Z",
+    "beginTime": "2026-02-10T09:00:00Z",
+    "dateOfService": "2026-02-10",
+    "redemptionCode": "N/A",
+    "employeeCode": "EMP-01-10002",
+    "loyaltyNumber": "LOY-10002",
+    "minutes": 9,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "resolved",
+    "ani": "2345678901",
+    "ipAddress": "203.0.113.42",
+    "cookieUID": "cookie-uid-10002-b",
+    "offerId": "OFF-1002",
+    "offerName": "Outage Relief",
+    "offerCode": "OFF-002",
+    "unitId": "UNIT-02",
+    "unitExternalId": "UNIT-EXT-02",
+    "unitName": "WA Central Service Area",
+    "locationId": "LOC-02",
+    "languageCode": "en",
+    "deviceType": "web",
+    "organizationId": "ORG-01",
+    "organizationName": "Synergy WA",
+    "assignedUserId": "AUDITOR-02",
+    "assignedUserName": "Survey Bot",
+    "assignedUserEmail": "survey-bot@example",
+    "exclusionReason": "",
+    "mode": "web",
+    "answers": [
+      {
+        "questionId": "Q1",
+        "text": "I recently experienced an electrical outage in my area and was left without power for several hours. The outage was not communicated promptly, and I had to check updates repeatedly. When service returned, my bill did not reflect any adjustment for the outage period. I contacted support, but the guidance was unclear and progress was slow. Overall, the outage caused disruption to my day and I am dissatisfied with the handling."
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-2",
+        "type": "service_outage",
+        "description": "Power outage in customer's area affecting account 10002; resolution lag reported",
+        "status": "resolved"
+      }
+    ],
+    "alerts": [
+      {
+        "alertCode": "ALERT-1002",
+        "severity": "medium",
+        "message": "Outage acknowledged; updates provided"
+      }
+    ],
+    "scores": [
+      {
+        "criterion": "overall",
+        "value": 3
+      }
+    ],
+    "tags": {
+      "root_cause": [
+        "outage"
+      ],
+      "channel_tags": [
+        "web"
+      ]
+    },
+    "url": "https://synergywa.example/survey/10002/response/2",
+    "tagsString": "outage|web",
+    "socialReview": {
+      "platform": "none",
+      "rating": 3,
+      "text": "Synthetic review data"
+    },
+    "contactId": "CONTACT-10002",
+    "contact": {
+      "id": 10002,
+      "name": "Synthetic Customer 10002",
+      "phone": "000-000-0002",
+      "email": "synthetic-10002@example.com",
+      "preferredContact": "email",
+      "address": "Synthetic address"
+    },
+    "end_user_properties": {
+      "customer_type": "residential",
+      "region": "metro",
+      "tenure_years": 3,
+      "data_quality": "synthetic"
+    }
+  },
+  {
+    "id": 3,
+    "uuid": "4b7a1e3f-8c2b-4e7a-9a6d-7b6d4d9f1f2c",
+    "surveyGatewayId": 101,
+    "surveyGatewayName": "Synergy WA Feedback Portal",
+    "surveyGatewayAlias": "SynergyPortal",
+    "surveyGatewayDnis": "1800-SYNERGY",
+    "surveyId": 501,
+    "surveyName": "Customer Experience Survey",
+    "surveyDescription": "Post-transaction feedback on electricity service",
+    "externalId": 10003,
+    "externalCallRecordingId": "REC-10003-1",
+    "lastModTime": "2026-02-11T15:25:00Z",
+    "beginTime": "2026-02-11T15:00:00Z",
+    "dateOfService": "2026-02-11",
+    "redemptionCode": "N/A",
+    "employeeCode": "EMP-01-10003",
+    "loyaltyNumber": "LOY-10003",
+    "minutes": 14,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "open",
+    "ani": "3456789012",
+    "ipAddress": "198.51.100.77",
+    "cookieUID": "cookie-uid-10003-c",
+    "offerId": "OFF-1003",
+    "offerName": "App Issue Relief",
+    "offerCode": "OFF-003",
+    "unitId": "UNIT-03",
+    "unitExternalId": "UNIT-EXT-03",
+    "unitName": "WA South Service Area",
+    "locationId": "LOC-03",
+    "languageCode": "en",
+    "deviceType": "web",
+    "organizationId": "ORG-01",
+    "organizationName": "Synergy WA",
+    "assignedUserId": "AUDITOR-03",
+    "assignedUserName": "Survey Bot",
+    "assignedUserEmail": "survey-bot@example",
+    "exclusionReason": "",
+    "mode": "digital",
+    "answers": [
+      {
+        "questionId": "Q1",
+        "text": "I used the Synergy WA mobile app to view my usage and encountered frequent glitches. The app crashes when I try to view billing details and the data does not load reliably. The user interface feels unresponsive and updates take too long to reflect changes. I reported the issue through the app and received a slow response with little resolution. Overall, the app experience has been frustrating and negative."
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-3",
+        "type": "app_issue",
+        "description": "Mobile app instability affects account 10003; user reports crashes and slow data",
+        "status": "acknowledged"
+      }
+    ],
+    "alerts": [
+      {
+        "alertCode": "ALERT-1003",
+        "severity": "low",
+        "message": "App issue monitoring"
+      }
+    ],
+    "scores": [
+      {
+        "criterion": "overall",
+        "value": 4
+      }
+    ],
+    "tags": {
+      "root_cause": [
+        "app"
+      ],
+      "channel_tags": [
+        "mobile"
+      ]
+    },
+    "url": "https://synergywa.example/survey/10003/response/3",
+    "tagsString": "app|mobile",
+    "socialReview": {
+      "platform": "none",
+      "rating": 4,
+      "text": "Synthetic review data"
+    },
+    "contactId": "CONTACT-10003",
+    "contact": {
+      "id": 10003,
+      "name": "Synthetic Customer 10003",
+      "phone": "000-000-0003",
+      "email": "synthetic-10003@example.com",
+      "preferredContact": "email",
+      "address": "Synthetic address"
+    },
+    "end_user_properties": {
+      "customer_type": "residential",
+      "region": "metro",
+      "tenure_years": 1,
+      "data_quality": "synthetic"
+    }
+  }
+]

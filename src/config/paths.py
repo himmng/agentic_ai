@@ -6,7 +6,7 @@ import os
 #-----------------
 
 ## Get the project root directory
-PROJECT_ROOT = Path(__file__).resolve().parent[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 ## Data directory
 
@@ -30,4 +30,4 @@ NOTEBOOKS_DIR = PROJECT_ROOT / "notebooks"
 
 ## ENV configuration file
 
-ENV_FILE = PROJECT_ROOT / ".env"
+ENV = PROJECT_ROOT / ".env"

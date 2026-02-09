@@ -1,472 +1,354 @@
 [
   {
-    "session_id": "fs_sess_1001_web_01",
-    "device_id": "dev_1001_web",
-    "customer_id": 1001,
+    "session_id": "sess_A1B2C3D4",
+    "device_id": "dev_01_10001",
+    "customer_id": 10001,
     "platform": "web",
-    "app_version": "3.12.4",
+    "app_version": "3.4.1",
     "region": "WA-Metro",
-    "session_start_time": "2025-08-15T09:00:00Z",
-    "session_end_time": "2025-08-15T09:03:00Z",
-    "session_url": "https://app.fullstory.com/ui/session/fs_sess_1001_web_01",
+    "session_start_time": "2026-02-01T09:00:00Z",
+    "session_end_time": "2026-02-01T09:14:30Z",
+    "session_url": "https://app.fullstory.com/ui/session/sess_A1B2C3D4",
     "events": [
       {
-        "event_id": "evt_1001_01",
-        "event_time": "2025-08-15T09:00:10Z",
+        "event_id": "evt_10001_1",
+        "event_time": "2026-02-01T09:00:05Z",
         "event_type": "page_view",
-        "view_id": "view_login",
-        "page_url": "https://app.energyco/login",
-        "event_properties": {
-          "page_name": "Login",
-          "referrer": ""
-        }
-      },
-      {
-        "event_id": "evt_1001_02",
-        "event_time": "2025-08-15T09:00:20Z",
-        "event_type": "input_change",
-        "view_id": "view_login_email",
-        "page_url": "https://app.energyco/login",
-        "event_properties": {
-          "field_name": "email",
-          "interaction_type": "focus"
-        }
-      },
-      {
-        "event_id": "evt_1001_03",
-        "event_time": "2025-08-15T09:00:28Z",
-        "event_type": "input_change",
-        "view_id": "view_login_email",
-        "page_url": "https://app.energyco/login",
-        "event_properties": {
-          "field_name": "email",
-          "interaction_type": "change"
-        }
-      },
-      {
-        "event_id": "evt_1001_04",
-        "event_time": "2025-08-15T09:00:36Z",
-        "event_type": "input_change",
-        "view_id": "view_login_password",
-        "page_url": "https://app.energyco/login",
-        "event_properties": {
-          "field_name": "password",
-          "interaction_type": "focus"
-        }
-      },
-      {
-        "event_id": "evt_1001_05",
-        "event_time": "2025-08-15T09:00:44Z",
-        "event_type": "input_change",
-        "view_id": "view_login_password",
-        "page_url": "https://app.energyco/login",
-        "event_properties": {
-          "field_name": "password",
-          "interaction_type": "change"
-        }
-      },
-      {
-        "event_id": "evt_1001_06",
-        "event_time": "2025-08-15T09:00:50Z",
-        "event_type": "click",
-        "view_id": "view_login",
-        "page_url": "https://app.energyco/login",
-        "event_properties": {
-          "element": "Login Button",
-          "element_type": "button",
-          "x_position": 110,
-          "y_position": 320
-        }
-      },
-      {
-        "event_id": "evt_1001_07",
-        "event_time": "2025-08-15T09:00:58Z",
-        "event_type": "custom_event",
         "view_id": "view_dashboard",
-        "page_url": "https://app.energyco/dashboard",
+        "page_url": "https://billingapp.example.com/dashboard",
+        "event_properties": {
+          "page_name": "Dashboard",
+          "referrer": "https://www.google.com/search?q=example"
+        }
+      },
+      {
+        "event_id": "evt_10001_2",
+        "event_time": "2026-02-01T09:01:10Z",
+        "event_type": "click",
+        "view_id": "view_dashboard",
+        "page_url": "https://billingapp.example.com/dashboard",
+        "event_properties": {
+          "element": "BillingNav_ViewBills",
+          "element_type": "link",
+          "x_position": 220,
+          "y_position": 180
+        }
+      },
+      {
+        "event_id": "evt_10001_3",
+        "event_time": "2026-02-01T09:02:45Z",
+        "event_type": "custom_event",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
         "event_properties": {
           "name": "Login_Success",
           "properties": {
-            "method": "password"
+            "login_method": "password",
+            "device_verified": true
           }
         }
       },
       {
-        "event_id": "evt_1001_08",
-        "event_time": "2025-08-15T09:01:00Z",
+        "event_id": "evt_10001_4",
+        "event_time": "2026-02-01T09:04:00Z",
         "event_type": "page_view",
-        "view_id": "view_dashboard",
-        "page_url": "https://app.energyco/dashboard",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
         "event_properties": {
-          "page_name": "Dashboard",
-          "referrer": "Login"
+          "page_name": "Billing Overview",
+          "referrer": "https://billingapp.example.com/dashboard"
         }
       },
       {
-        "event_id": "evt_1001_09",
-        "event_time": "2025-08-15T09:01:15Z",
+        "event_id": "evt_10001_5",
+        "event_time": "2026-02-01T09:06:10Z",
+        "event_type": "input_change",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
+        "event_properties": {
+          "field_name": "search_invoices",
+          "interaction_type": "type"
+        }
+      },
+      {
+        "event_id": "evt_10001_6",
+        "event_time": "2026-02-01T09:07:05Z",
+        "event_type": "click",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
+        "event_properties": {
+          "element": "ViewInvoiceButton",
+          "element_type": "button",
+          "x_position": 320,
+          "y_position": 260
+        }
+      },
+      {
+        "event_id": "evt_10001_7",
+        "event_time": "2026-02-01T09:11:20Z",
+        "event_type": "page_view",
+        "view_id": "view_bill_details",
+        "page_url": "https://billingapp.example.com/billing/details/INV10001",
+        "event_properties": {
+          "page_name": "Bill Details",
+          "referrer": "https://billingapp.example.com/billing"
+        }
+      },
+      {
+        "event_id": "evt_10001_8",
+        "event_time": "2026-02-01T09:12:30Z",
         "event_type": "custom_event",
         "view_id": "view_billing",
-        "page_url": "https://app.energyco/billing",
+        "page_url": "https://billingapp.example.com/billing",
         "event_properties": {
           "name": "View_Bill",
           "properties": {
-            "bill_view": "current_bill"
+            "bill_id": "INV10001"
           }
         }
       },
       {
-        "event_id": "evt_1001_10",
-        "event_time": "2025-08-15T09:01:40Z",
-        "event_type": "page_view",
+        "event_id": "evt_10001_9",
+        "event_time": "2026-02-01T09:13:50Z",
+        "event_type": "click",
         "view_id": "view_billing",
-        "page_url": "https://app.energyco/billing",
+        "page_url": "https://billingapp.example.com/billing",
         "event_properties": {
-          "page_name": "Billing",
-          "referrer": "Dashboard"
-        }
-      },
-      {
-        "event_id": "evt_1001_11",
-        "event_time": "2025-08-15T09:02:10Z",
-        "event_type": "custom_event",
-        "view_id": "view_billing",
-        "page_url": "https://app.energyco/billing",
-        "event_properties": {
-          "name": "Payment_Attempt",
-          "properties": {
-            "amount": 120.5,
-            "currency": "USD",
-            "method": "card"
-          }
-        }
-      },
-      {
-        "event_id": "evt_1001_12",
-        "event_time": "2025-08-15T09:02:40Z",
-        "event_type": "error",
-        "view_id": "view_billing_payment",
-        "page_url": "https://app.energyco/billing/payment",
-        "event_properties": {
-          "error_type": "PaymentDeclined",
-          "error_message": "Card was declined",
-          "http_status": 402
-        }
-      },
-      {
-        "event_id": "evt_1001_13",
-        "event_time": "2025-08-15T09:02:50Z",
-        "event_type": "custom_event",
-        "view_id": "view_support",
-        "page_url": "https://app.energyco/support",
-        "event_properties": {
-          "name": "Contact_Support",
-          "properties": {
-            "channel": "chat",
-            "issue": "payment_failed"
-          }
+          "element": "LogoutLink",
+          "element_type": "link",
+          "x_position": 50,
+          "y_position": 540
         }
       }
     ]
   },
   {
-    "session_id": "fs_sess_1002_web_02",
-    "device_id": "dev_1002_web",
-    "customer_id": 1002,
-    "platform": "web",
-    "app_version": "3.14.0",
+    "session_id": "sess_A2B2C2E3",
+    "device_id": "dev_02_10002",
+    "customer_id": 10002,
+    "platform": "mobile",
+    "app_version": "3.4.2",
     "region": "WA-Regional",
-    "session_start_time": "2025-08-16T14:10:00Z",
-    "session_end_time": "2025-08-16T14:35:00Z",
-    "session_url": "https://app.fullstory.com/ui/session/fs_sess_1002_web_02",
+    "session_start_time": "2026-02-02T11:20:00Z",
+    "session_end_time": "2026-02-02T11:34:00Z",
+    "session_url": "https://app.fullstory.com/ui/session/sess_A2B2C2E3",
     "events": [
       {
-        "event_id": "evt_2002_01",
-        "event_time": "2025-08-16T14:10:10Z",
-        "event_type": "page_view",
-        "view_id": "view_outage_overview",
-        "page_url": "https://app.energyco/outages",
-        "event_properties": {
-          "page_name": "Outage Overview",
-          "referrer": ""
-        }
-      },
-      {
-        "event_id": "evt_2002_02",
-        "event_time": "2025-08-16T14:10:20Z",
-        "event_type": "custom_event",
-        "view_id": "view_outage_check1",
-        "page_url": "https://app.energyco/outages",
-        "event_properties": {
-          "name": "Outage_Status_Check",
-          "properties": {
-            "outage_id": "OUT-20250816-01"
-          }
-        }
-      },
-      {
-        "event_id": "evt_2002_03",
-        "event_time": "2025-08-16T14:10:40Z",
-        "event_type": "page_view",
-        "view_id": "view_outage_details",
-        "page_url": "https://app.energyco/outages/OUT-20250816-01",
-        "event_properties": {
-          "page_name": "Outage Details",
-          "referrer": "Outage Overview"
-        }
-      },
-      {
-        "event_id": "evt_2002_04",
-        "event_time": "2025-08-16T14:11:10Z",
-        "event_type": "click",
-        "view_id": "view_outage_details",
-        "page_url": "https://app.energyco/outages/OUT-20250816-01",
-        "event_properties": {
-          "element": "Refresh Status",
-          "element_type": "button",
-          "x_position": 60,
-          "y_position": 200
-        }
-      },
-      {
-        "event_id": "evt_2002_05",
-        "event_time": "2025-08-16T14:11:30Z",
-        "event_type": "custom_event",
-        "view_id": "view_outage_details",
-        "page_url": "https://app.energyco/outages/OUT-20250816-01",
-        "event_properties": {
-          "name": "Outage_Status_Check",
-          "properties": {
-            "status": "in_progress"
-          }
-        }
-      },
-      {
-        "event_id": "evt_2002_06",
-        "event_time": "2025-08-16T14:11:50Z",
-        "event_type": "rage_click",
-        "view_id": "view_outage_details",
-        "page_url": "https://app.energyco/outages/OUT-20250816-01",
-        "event_properties": {
-          "element": "Refresh Status",
-          "click_count": 3
-        }
-      },
-      {
-        "event_id": "evt_2002_07",
-        "event_time": "2025-08-16T14:12:10Z",
-        "event_type": "page_view",
-        "view_id": "view_outage_details2",
-        "page_url": "https://app.energyco/outages/OUT-20250816-01",
-        "event_properties": {
-          "page_name": "Outage Details",
-          "referrer": "Outage Details"
-        }
-      },
-      {
-        "event_id": "evt_2002_08",
-        "event_time": "2025-08-16T14:12:40Z",
-        "event_type": "custom_event",
-        "view_id": "view_outage_support",
-        "page_url": "https://app.energyco/support",
-        "event_properties": {
-          "name": "Outage_Status_Check",
-          "properties": {
-            "status": "partial_delay",
-            "escalated": true
-          }
-        }
-      },
-      {
-        "event_id": "evt_2002_09",
-        "event_time": "2025-08-16T14:13:00Z",
-        "event_type": "page_view",
-        "view_id": "view_support",
-        "page_url": "https://app.energyco/support",
-        "event_properties": {
-          "page_name": "Support",
-          "referrer": "Outage Details"
-        }
-      },
-      {
-        "event_id": "evt_2002_10",
-        "event_time": "2025-08-16T14:13:30Z",
-        "event_type": "custom_event",
-        "view_id": "view_support",
-        "page_url": "https://app.energyco/support",
-        "event_properties": {
-          "name": "Contact_Support",
-          "properties": {
-            "channel": "chat",
-            "issue": "outage_info"
-          }
-        }
-      },
-      {
-        "event_id": "evt_2002_11",
-        "event_time": "2025-08-16T14:14:50Z",
+        "event_id": "evt_20002_1",
+        "event_time": "2026-02-02T11:20:05Z",
         "event_type": "page_view",
         "view_id": "view_home",
-        "page_url": "https://app.energyco/home",
+        "page_url": "https://billingapp.example.com/home",
         "event_properties": {
           "page_name": "Home",
-          "referrer": "Support"
+          "referrer": ""
         }
       },
       {
-        "event_id": "evt_2002_12",
-        "event_time": "2025-08-16T14:15:20Z",
-        "event_type": "scroll",
+        "event_id": "evt_20002_2",
+        "event_time": "2026-02-02T11:21:20Z",
+        "event_type": "click",
         "view_id": "view_home",
-        "page_url": "https://app.energyco/home",
+        "page_url": "https://billingapp.example.com/home",
         "event_properties": {
-          "scroll_depth_percent": 70
+          "element": "BillingNav_ViewBills",
+          "element_type": "link",
+          "x_position": 100,
+          "y_position": 340
+        }
+      },
+      {
+        "event_id": "evt_20002_3",
+        "event_time": "2026-02-02T11:22:40Z",
+        "event_type": "custom_event",
+        "view_id": "view_login",
+        "page_url": "https://billingapp.example.com/login",
+        "event_properties": {
+          "name": "Login_Success",
+          "properties": {
+            "login_method": "otp"
+          }
+        }
+      },
+      {
+        "event_id": "evt_20002_4",
+        "event_time": "2026-02-02T11:24:00Z",
+        "event_type": "page_view",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
+        "event_properties": {
+          "page_name": "Billing Overview",
+          "referrer": "https://billingapp.example.com/home"
+        }
+      },
+      {
+        "event_id": "evt_20002_5",
+        "event_time": "2026-02-02T11:25:20Z",
+        "event_type": "input_change",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
+        "event_properties": {
+          "field_name": "search_invoices",
+          "interaction_type": "type"
+        }
+      },
+      {
+        "event_id": "evt_20002_6",
+        "event_time": "2026-02-02T11:26:50Z",
+        "event_type": "click",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
+        "event_properties": {
+          "element": "ViewInvoiceButton",
+          "element_type": "button",
+          "x_position": 260,
+          "y_position": 190
+        }
+      },
+      {
+        "event_id": "evt_20002_7",
+        "event_time": "2026-02-02T11:30:10Z",
+        "event_type": "page_view",
+        "view_id": "view_bill_details",
+        "page_url": "https://billingapp.example.com/billing/details/INV10002",
+        "event_properties": {
+          "page_name": "Bill Details",
+          "referrer": "https://billingapp.example.com/billing"
+        }
+      },
+      {
+        "event_id": "evt_20002_8",
+        "event_time": "2026-02-02T11:33:15Z",
+        "event_type": "custom_event",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
+        "event_properties": {
+          "name": "View_Bill",
+          "properties": {
+            "bill_id": "INV10002"
+          }
         }
       }
     ]
   },
   {
-    "session_id": "fs_sess_1003_mobile_01",
-    "device_id": "dev_1003_mobile",
-    "customer_id": 1003,
-    "platform": "mobile",
-    "app_version": "4.2.0",
+    "session_id": "sess_C3D3E3F4",
+    "device_id": "dev_03_10003",
+    "customer_id": 10003,
+    "platform": "web",
+    "app_version": "3.4.3",
     "region": "WA-Metro",
-    "session_start_time": "2025-08-17T10:00:00Z",
-    "session_end_time": "2025-08-17T10:22:50Z",
-    "session_url": "https://app.fullstory.com/ui/session/fs_sess_1003_mobile_01",
+    "session_start_time": "2026-02-03T15:05:00Z",
+    "session_end_time": "2026-02-03T15:20:00Z",
+    "session_url": "https://app.fullstory.com/ui/session/sess_C3D3E3F4",
     "events": [
       {
-        "event_id": "evt_3003_01",
-        "event_time": "2025-08-17T10:00:10Z",
+        "event_id": "evt_30003_1",
+        "event_time": "2026-02-03T15:05:10Z",
         "event_type": "page_view",
-        "view_id": "view_login_m",
-        "page_url": "https://app.energyco/login",
+        "view_id": "view_dashboard",
+        "page_url": "https://billingapp.example.com/dashboard",
         "event_properties": {
-          "page_name": "Login",
+          "page_name": "Dashboard",
           "referrer": ""
         }
       },
       {
-        "event_id": "evt_3003_02",
-        "event_time": "2025-08-17T10:00:20Z",
-        "event_type": "input_change",
-        "view_id": "view_login_phone",
-        "page_url": "https://app.energyco/login",
-        "event_properties": {
-          "field_name": "mobile_number",
-          "interaction_type": "focus"
-        }
-      },
-      {
-        "event_id": "evt_3003_03",
-        "event_time": "2025-08-17T10:00:30Z",
-        "event_type": "input_change",
-        "view_id": "view_login_phone",
-        "page_url": "https://app.energyco/login",
-        "event_properties": {
-          "field_name": "mobile_number",
-          "interaction_type": "change"
-        }
-      },
-      {
-        "event_id": "evt_3003_04",
-        "event_time": "2025-08-17T10:00:40Z",
+        "event_id": "evt_30003_2",
+        "event_time": "2026-02-03T15:06:25Z",
         "event_type": "click",
-        "view_id": "view_login",
-        "page_url": "https://app.energyco/login",
+        "view_id": "view_dashboard",
+        "page_url": "https://billingapp.example.com/dashboard",
         "event_properties": {
-          "element": "Login Button",
-          "element_type": "button",
-          "x_position": 90,
-          "y_position": 320
+          "element": "BillingNav_ViewBills",
+          "element_type": "link",
+          "x_position": 150,
+          "y_position": 240
         }
       },
       {
-        "event_id": "evt_3003_05",
-        "event_time": "2025-08-17T10:00:50Z",
+        "event_id": "evt_30003_3",
+        "event_time": "2026-02-03T15:07:40Z",
         "event_type": "custom_event",
-        "view_id": "view_dashboard",
-        "page_url": "https://app.energyco/dashboard",
+        "view_id": "view_login",
+        "page_url": "https://billingapp.example.com/login",
         "event_properties": {
           "name": "Login_Success",
           "properties": {
-            "method": "otp"
+            "login_method": "password"
           }
         }
       },
       {
-        "event_id": "evt_3003_06",
-        "event_time": "2025-08-17T10:01:05Z",
+        "event_id": "evt_30003_4",
+        "event_time": "2026-02-03T15:09:00Z",
         "event_type": "page_view",
-        "view_id": "view_dashboard",
-        "page_url": "https://app.energyco/dashboard",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
         "event_properties": {
-          "page_name": "Dashboard",
-          "referrer": "Login"
+          "page_name": "Billing Overview",
+          "referrer": "https://billingapp.example.com/dashboard"
         }
       },
       {
-        "event_id": "evt_3003_07",
-        "event_time": "2025-08-17T10:01:25Z",
+        "event_id": "evt_30003_5",
+        "event_time": "2026-02-03T15:10:15Z",
+        "event_type": "input_change",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
+        "event_properties": {
+          "field_name": "search_invoices",
+          "interaction_type": "type"
+        }
+      },
+      {
+        "event_id": "evt_30003_6",
+        "event_time": "2026-02-03T15:12:03Z",
         "event_type": "custom_event",
-        "view_id": "view_bill",
-        "page_url": "https://app.energyco/billing",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
+        "event_properties": {
+          "name": "Download_Invoice",
+          "properties": {
+            "invoice_id": "INV10003"
+          }
+        }
+      },
+      {
+        "event_id": "evt_30003_7",
+        "event_time": "2026-02-03T15:15:32Z",
+        "event_type": "page_view",
+        "view_id": "view_bill_details",
+        "page_url": "https://billingapp.example.com/billing/details/INV10003",
+        "event_properties": {
+          "page_name": "Bill Details",
+          "referrer": "https://billingapp.example.com/billing"
+        }
+      },
+      {
+        "event_id": "evt_30003_8",
+        "event_time": "2026-02-03T15:18:12Z",
+        "event_type": "custom_event",
+        "view_id": "view_billing",
+        "page_url": "https://billingapp.example.com/billing",
         "event_properties": {
           "name": "View_Bill",
           "properties": {
-            "bill_view": "current_bill"
+            "bill_id": "INV10003"
           }
         }
       },
       {
-        "event_id": "evt_3003_08",
-        "event_time": "2025-08-17T10:01:40Z",
-        "event_type": "page_view",
-        "view_id": "view_billing",
-        "page_url": "https://app.energyco/billing",
-        "event_properties": {
-          "page_name": "Billing",
-          "referrer": "Dashboard"
-        }
-      },
-      {
-        "event_id": "evt_3003_09",
-        "event_time": "2025-08-17T10:02:00Z",
+        "event_id": "evt_30003_9",
+        "event_time": "2026-02-03T15:19:40Z",
         "event_type": "custom_event",
-        "view_id": "view_billing",
-        "page_url": "https://app.energyco/billing",
+        "view_id": "view_support",
+        "page_url": "https://billingapp.example.com/contact-support",
         "event_properties": {
-          "name": "Payment_Attempt",
+          "name": "Contact_Support",
           "properties": {
-            "amount": 49.99,
-            "currency": "USD",
-            "method": "card"
+            "topic": "Billing"
           }
-        }
-      },
-      {
-        "event_id": "evt_3003_10",
-        "event_time": "2025-08-17T10:02:20Z",
-        "event_type": "custom_event",
-        "view_id": "view_payment",
-        "page_url": "https://app.energyco/billing/payment",
-        "event_properties": {
-          "name": "Payment_Success",
-          "properties": {
-            "transaction_id": "TXN-20250817-01"
-          }
-        }
-      },
-      {
-        "event_id": "evt_3003_11",
-        "event_time": "2025-08-17T10:02:50Z",
-        "event_type": "page_view",
-        "view_id": "view_receipt",
-        "page_url": "https://app.energyco/receipts/TXN-20250817-01",
-        "event_properties": {
-          "page_name": "Receipt",
-          "referrer": "Payment Confirmation"
         }
       }
     ]

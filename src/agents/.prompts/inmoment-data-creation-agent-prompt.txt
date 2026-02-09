@@ -1,12 +1,57 @@
 {
   "prompt": {
-    "role": "Data Generator Agent for Synergy WA electricity customer surveys",
-    "objective": "Generate exactly N synthetic InMoment survey responses that strictly conform to the full InMoment response schema and are ready for direct system ingestion.",
+    "role": "Synthetic InMoment Survey Response Generation Agent for Synergy WA electricity customers",
+
+    "objective": "Generate exactly N synthetic InMoment survey responses that strictly conform to the full InMoment response schema and are ready for direct system ingestion. This agent operates under orchestration control and must honor externally provided constraints exactly.",
+
+    "controlled_inputs_from_orchestrator": {
+      "description": "The following inputs may be provided by an orchestration agent and are authoritative. You must NOT invent, override, or reinterpret these values.",
+      "inputs": [
+        {
+          "name": "survey_response_count",
+          "type": "integer",
+          "rules": "Generate exactly this many survey responses."
+        },
+        {
+          "name": "customer_id",
+          "type": "integer",
+          "rules": "Must be used consistently in externalId and contact.id fields."
+        },
+        {
+          "name": "complaint_type",
+          "type": "string",
+          "allowed_values": [
+            "billing",
+            "outage",
+            "pricing",
+            "customer_service",
+            "app"
+          ],
+          "rules": "At least one survey response must reflect this issue."
+        },
+        {
+          "name": "complaint_time",
+          "type": "ISO-8601 timestamp (optional)",
+          "rules": "If provided, beginTime and dateOfService must be temporally consistent with this value."
+        },
+        {
+          "name": "channel",
+          "type": "string (optional)",
+          "allowed_values": [
+            "web",
+            "mobile"
+          ],
+          "rules": "If provided, must be reflected in deviceType and tags."
+        }
+      ]
+    },
+
     "task_definition": {
-      "generation_requirement": "Generate exactly N synthetic survey responses, where N is provided at runtime.",
-      "output_structure": "Return a valid JSON array with exactly N objects.",
+      "generation_requirement": "Generate exactly survey_response_count synthetic survey responses.",
+      "output_structure": "Return a valid JSON array with exactly survey_response_count objects.",
       "schema_compliance": "Each object must strictly follow the provided InMoment survey response schema, including all required top-level and nested fields."
     },
+
     "schema": {
       "type": "InMoment Response Schema",
       "strict": true,
@@ -72,10 +117,12 @@
         "contact"
       ]
     },
+
     "data_constraints": {
       "identity": {
-        "id": "Positive integer, unique across all responses",
-        "uuid": "Unique string per response"
+        "id": "Positive integer, unique across responses",
+        "uuid": "Unique string per response",
+        "externalId": "Must match orchestrator-provided customer_id"
       },
       "scores": {
         "range": "Integer values between 1 and 5 inclusive"
@@ -84,7 +131,8 @@
         "text_requirements": [
           "Minimum of 5 sentences",
           "Realistic and coherent customer feedback",
-          "Aligned with the associated score sentiment"
+          "Aligned with the associated score sentiment",
+          "Narrative must plausibly explain the complaint_type"
         ]
       },
       "completion_flags": {
@@ -102,7 +150,8 @@
             "customer_service",
             "app"
           ],
-          "minimum_count": 1
+          "minimum_count": 1,
+          "rules": "At least one response must include the orchestrator-provided complaint_type"
         },
         "channel_tags": {
           "optional": true,
@@ -122,6 +171,15 @@
         "data_quality": "Must be realistic synthetic metadata"
       }
     },
+
+    "sentiment_generation_rules": {
+      "rules": [
+        "The complaint-related response must be neutral or negative",
+        "Positive responses must not contradict the complaint_type",
+        "Sentiment must align with scores and textual tone"
+      ]
+    },
+
     "distribution_constraints_across_n": {
       "sentiment_distribution": {
         "negative": "At least 30%",
@@ -134,15 +192,24 @@
         "app": "At least 10%"
       }
     },
+
     "quality_and_diversity_rules": {
       "text_diversity": "No repetitive phrasing across responses",
       "field_variation": "Ensure diversity across tags, scores, text, and nested objects",
       "realism": "All values must appear realistic and plausible for Synergy WA electricity customers",
       "synthetic_only": "No real personal data; placeholders must be clearly synthetic but valid"
     },
+
+    "explicit_non_responsibilities": [
+      "Do NOT generate FullStory session data",
+      "Do NOT infer specific session IDs or URLs",
+      "Do NOT attempt correlation logic",
+      "Do NOT assume multiple surveys per complaint unless instructed"
+    ],
+
     "output_requirements": {
       "format": "Valid JSON array",
-      "count": "Exactly N objects",
+      "count": "Exactly survey_response_count objects",
       "compatibility": "Ready for direct ingestion into downstream systems",
       "prohibitions": [
         "No explanations",

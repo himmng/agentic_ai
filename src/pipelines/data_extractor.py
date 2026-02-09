@@ -1,31 +1,26 @@
-# src/data_extractor.py
-
 import json
 import requests
 from pathlib import Path
 from typing import List, Dict
+from src.config.paths import EXTRACTED_DATA_DIR
+from src.extractors.inmoment_extractor import extract_relevant_fields_inmoment
+from src.extractors.fullstory_extractor import extract_relevant_fields_fullstory
 
-# Import the extractors
-from .extractors.inmoment_extractor import extract_relevant_fields_inmoment
-from .extractors.fullstory_extractor import extract_relevant_fields_fullstory
+# --------------------------------------------------
+# Output file (ensure directory exists)
+# --------------------------------------------------
+EXTRACTED_DATA_DIR.mkdir(parents=True, exist_ok=True)
+OUTPUT_FILE = EXTRACTED_DATA_DIR / "synergy_extracted.jsonl"
 
-# -----------------------------
-# File paths
-# -----------------------------
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
-OUTPUT_DIR = PROJECT_ROOT / "data" / "extracted"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+# --------------------------------------------------
+# API URLs (local dev simulation)
+# --------------------------------------------------
+INMOMENT_API_URL = "http://127.0.0.1:8080/data/raw/synergy_inmoment.json"
+FULLSTORY_API_URL = "http://127.0.0.1:8080/data/raw/synergy_fullstory.json"
 
-# API URLs (simulate request)
-INMOMENT_API_URL = f"http://127.0.0.1:8080/data/raw/synergy_inmoment.json"
-FULLSTORY_API_URL = f"http://127.0.0.1:8080/data/raw/synergy_fullstory.json"
-
-OUTPUT_FILE = OUTPUT_DIR / "synergy_extracted.jsonl"
-
-# -----------------------------
-# Fetch JSON via requests
-# -----------------------------
+# --------------------------------------------------
+# Fetch JSON via API
+# --------------------------------------------------
 def fetch_json_via_api(url: str) -> List[Dict]:
     try:
         print(f"Fetching data from API: {url}")
@@ -37,9 +32,9 @@ def fetch_json_via_api(url: str) -> List[Dict]:
         print(f"API fetch failed ({e})")
         return []
 
-# -----------------------------
-# Merge datasets by customer id
-# -----------------------------
+# --------------------------------------------------
+# Merge datasets by customer ID
+# --------------------------------------------------
 def merge_datasets(inmoment_data: List[Dict], fullstory_data: List[Dict]) -> List[Dict]:
     inmoment_lookup = {str(d.get("id") or d.get("customer_id")): d for d in inmoment_data}
     fullstory_lookup = {str(d.get("customer_id") or d.get("id")): d for d in fullstory_data}
@@ -80,20 +75,20 @@ def merge_datasets(inmoment_data: List[Dict], fullstory_data: List[Dict]) -> Lis
 
     return enriched_data
 
-# -----------------------------
-# Save as JSONL
-# -----------------------------
+# --------------------------------------------------
+# Save JSONL safely
+# --------------------------------------------------
 def save_as_jsonl(data: List[Dict], path: Path):
-    with open(path, "w", encoding="utf-8") as f:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
         for record in data:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
     print(f"Saved enriched JSONL data to {path} ({len(data)} records)")
 
-# -----------------------------
+# --------------------------------------------------
 # Main runner
-# -----------------------------
-if __name__ == "__main__":
-
+# --------------------------------------------------
+def main():
     # Fetch data via API
     inmoment_raw = fetch_json_via_api(INMOMENT_API_URL)
     fullstory_raw = fetch_json_via_api(FULLSTORY_API_URL)
@@ -102,8 +97,11 @@ if __name__ == "__main__":
     inmoment_extracted = extract_relevant_fields_inmoment(inmoment_raw)
     fullstory_extracted = extract_relevant_fields_fullstory(fullstory_raw)
 
-    # Merge by customer id (overwrite-safe)
+    # Merge datasets
     enriched_data = merge_datasets(inmoment_extracted, fullstory_extracted)
 
-    # Save as JSONL
+    # Save output
     save_as_jsonl(enriched_data, OUTPUT_FILE)
+
+if __name__ == "__main__":
+    main()

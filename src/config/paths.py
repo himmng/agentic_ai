@@ -21,8 +21,18 @@ ENRICHED_DATA_DIR = DATA_DIR / "enriched"
 SRC_DIR = PROJECT_ROOT / "src"
 AGENTS_DIR = SRC_DIR / "agents"
 AGENT_PROMPTS_DIR = AGENTS_DIR / ".prompts"
-EXTRACTORS_DIR = SRC_DIR / "extractors"
 
+## pipelines directory
+PIPELINES_DIR = SRC_DIR / "pipelines"
+
+## logs directory
+LOGS_DIR = PROJECT_ROOT / "logs"
+
+## outputs directory
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+
+## field extraction configuration directory
+FIELD_EXTRACTION_CONFIG_DIR = SRC_DIR / "config"
 
 ## Notebooks directory
 

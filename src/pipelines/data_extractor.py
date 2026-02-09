@@ -2,21 +2,28 @@ import json
 import requests
 from pathlib import Path
 from typing import List, Dict
-from src.config.paths import EXTRACTED_DATA_DIR
-from src.extractors.inmoment_extractor import extract_relevant_fields_inmoment
-from src.extractors.fullstory_extractor import extract_relevant_fields_fullstory
+from src.config.paths import EXTRACTED_DATA_DIR, FIELD_EXTRACTION_CONFIG_DIR
 
 # --------------------------------------------------
-# Output file (ensure directory exists)
+# Config paths
 # --------------------------------------------------
-EXTRACTED_DATA_DIR.mkdir(parents=True, exist_ok=True)
+FIELDS_CONFIG_FILE = FIELD_EXTRACTION_CONFIG_DIR / "fields_to_extract.json"
 OUTPUT_FILE = EXTRACTED_DATA_DIR / "synergy_extracted.jsonl"
+EXTRACTED_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # --------------------------------------------------
 # API URLs (local dev simulation)
 # --------------------------------------------------
 INMOMENT_API_URL = "http://127.0.0.1:8080/data/raw/synergy_inmoment.json"
 FULLSTORY_API_URL = "http://127.0.0.1:8080/data/raw/synergy_fullstory.json"
+
+# --------------------------------------------------
+# Load fields configuration
+# --------------------------------------------------
+with FIELDS_CONFIG_FILE.open("r", encoding="utf-8") as f:
+    fields_to_extract = json.load(f)
+INMOMENT_FIELDS = fields_to_extract.get("inmoment", [])
+FULLSTORY_FIELDS = fields_to_extract.get("fullstory", [])
 
 # --------------------------------------------------
 # Fetch JSON via API
@@ -33,6 +40,15 @@ def fetch_json_via_api(url: str) -> List[Dict]:
         return []
 
 # --------------------------------------------------
+# Generic extractor based on fields config
+# --------------------------------------------------
+def extract_fields(records: List[Dict], fields: List[str]) -> List[Dict]:
+    extracted = []
+    for r in records:
+        extracted.append({k: r.get(k) for k in fields})
+    return extracted
+
+# --------------------------------------------------
 # Merge datasets by customer ID
 # --------------------------------------------------
 def merge_datasets(inmoment_data: List[Dict], fullstory_data: List[Dict]) -> List[Dict]:
@@ -43,34 +59,11 @@ def merge_datasets(inmoment_data: List[Dict], fullstory_data: List[Dict]) -> Lis
     enriched_data = []
 
     for cust_id in all_ids:
-        inmoment_rec = inmoment_lookup.get(cust_id, {})
-        fullstory_rec = fullstory_lookup.get(cust_id, {})
-
         combined = {
             "id": cust_id,
-            "inmoment": {
-                "survey_id": inmoment_rec.get("survey_id"),
-                "overall_score": inmoment_rec.get("overall_score"),
-                "answer_texts": inmoment_rec.get("answer_texts", []),
-                "answer_scores": inmoment_rec.get("answer_scores", []),
-                "combined_text": inmoment_rec.get("combined_text", ""),
-                "tags": inmoment_rec.get("tags", []),
-                "scores_by_category": inmoment_rec.get("scores_by_category", {}),
-                "incident_types": inmoment_rec.get("incident_types", []),
-                "metadata": inmoment_rec.get("metadata", {})
-            } if inmoment_rec else {},
-            "fullstory": {
-                "session_id": fullstory_rec.get("session_id"),
-                "platform": fullstory_rec.get("platform"),
-                "region": fullstory_rec.get("region"),
-                "session_start_time": fullstory_rec.get("session_start_time"),
-                "session_end_time": fullstory_rec.get("session_end_time"),
-                "signals": fullstory_rec.get("signals", []),
-                "journey_steps": fullstory_rec.get("journey_steps", []),
-                "journey_summary": fullstory_rec.get("journey_summary", "")
-            } if fullstory_rec else {}
+            "inmoment": inmoment_lookup.get(cust_id, {}),
+            "fullstory": fullstory_lookup.get(cust_id, {})
         }
-
         enriched_data.append(combined)
 
     return enriched_data
@@ -93,9 +86,9 @@ def main():
     inmoment_raw = fetch_json_via_api(INMOMENT_API_URL)
     fullstory_raw = fetch_json_via_api(FULLSTORY_API_URL)
 
-    # Extract relevant fields
-    inmoment_extracted = extract_relevant_fields_inmoment(inmoment_raw)
-    fullstory_extracted = extract_relevant_fields_fullstory(fullstory_raw)
+    # Extract only configured fields
+    inmoment_extracted = extract_fields(inmoment_raw, INMOMENT_FIELDS)
+    fullstory_extracted = extract_fields(fullstory_raw, FULLSTORY_FIELDS)
 
     # Merge datasets
     enriched_data = merge_datasets(inmoment_extracted, fullstory_extracted)

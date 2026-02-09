@@ -11,14 +11,12 @@ src/agents/__init__.py
 src/agents/agent_creator.py
 src/agents/agent_tester.py
 src/agents/orchestrator.py
+src/api/__init__.py
+src/api/data_api.py
 src/config/__init__.py
 src/config/paths.py
-src/extractors/__init__.py
-src/extractors/extract_relevant_fields.py
-src/extractors/fullstory_extractor.py
-src/extractors/inmoment_extractor.py
 src/pipelines/__init__.py
-src/pipelines/data_api.py
 src/pipelines/data_enricher.py
 src/pipelines/data_extractor.py
 src/pipelines/data_generator.py
+src/pipelines/orchestrator.py

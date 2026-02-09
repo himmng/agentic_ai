@@ -1,26 +1,26 @@
 {
   "inmoment": [
-    "id",
+    "contact.id",                
     "survey_id",
     "overall_score",
-    "answer_texts",
-    "combined_text",
-    "tags",
+    "answers",             
+    "tags",                      
     "scores_by_category",
-    "incidents",
-    "social_review",
-    "metadata"
+    "incidents",                 
+    "social_review",             
+    "metadata"                   
   ],
   "fullstory": [
     "customer_id",
+    "events",
     "session_id",
     "device_id",
     "platform",
     "region",
     "session_start_time",
     "session_end_time",
-    "signals",
-    "journey_steps",
-    "journey_summary"
+    "signals",                    
+    "journey_steps",              
+    "journey_summary"             
   ]
 }

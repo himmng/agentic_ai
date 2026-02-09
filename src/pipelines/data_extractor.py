@@ -1,18 +1,18 @@
 import json
 import requests
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Any
 from src.config.paths import EXTRACTED_DATA_DIR, FIELD_EXTRACTION_CONFIG_DIR
 
 # --------------------------------------------------
 # Config paths
 # --------------------------------------------------
-FIELDS_CONFIG_FILE = FIELD_EXTRACTION_CONFIG_DIR / "fields_to_extract.json"
+FIELDS_CONFIG_PATH = FIELD_EXTRACTION_CONFIG_DIR / "fields_to_extract.json"
 OUTPUT_FILE = EXTRACTED_DATA_DIR / "synergy_extracted.jsonl"
 EXTRACTED_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # --------------------------------------------------
-# API URLs (local dev simulation)
+# API URLs
 # --------------------------------------------------
 INMOMENT_API_URL = "http://127.0.0.1:8080/data/raw/synergy_inmoment.json"
 FULLSTORY_API_URL = "http://127.0.0.1:8080/data/raw/synergy_fullstory.json"
@@ -20,7 +20,7 @@ FULLSTORY_API_URL = "http://127.0.0.1:8080/data/raw/synergy_fullstory.json"
 # --------------------------------------------------
 # Load fields configuration
 # --------------------------------------------------
-with FIELDS_CONFIG_FILE.open("r", encoding="utf-8") as f:
+with FIELDS_CONFIG_PATH.open("r", encoding="utf-8") as f:
     fields_to_extract = json.load(f)
 INMOMENT_FIELDS = fields_to_extract.get("inmoment", [])
 FULLSTORY_FIELDS = fields_to_extract.get("fullstory", [])
@@ -40,19 +40,32 @@ def fetch_json_via_api(url: str) -> List[Dict]:
         return []
 
 # --------------------------------------------------
-# Generic extractor based on fields config
+# Helper to get nested value via dot notation
+# --------------------------------------------------
+def get_nested_value(d: Dict[str, Any], path: str, default=None):
+    keys = path.split(".")
+    for k in keys:
+        if isinstance(d, dict):
+            d = d.get(k, default)
+        else:
+            return default
+    return d
+
+# --------------------------------------------------
+# Generic extractor with nested fields
 # --------------------------------------------------
 def extract_fields(records: List[Dict], fields: List[str]) -> List[Dict]:
     extracted = []
     for r in records:
-        extracted.append({k: r.get(k) for k in fields})
+        record_extracted = {f: get_nested_value(r, f) for f in fields}
+        extracted.append(record_extracted)
     return extracted
 
 # --------------------------------------------------
-# Merge datasets by customer ID
+# Merge datasets by customer ID (InMoment.contact.id <-> FullStory.customer_id)
 # --------------------------------------------------
 def merge_datasets(inmoment_data: List[Dict], fullstory_data: List[Dict]) -> List[Dict]:
-    inmoment_lookup = {str(d.get("id") or d.get("customer_id")): d for d in inmoment_data}
+    inmoment_lookup = {str(d.get("contact.id") or d.get("id")): d for d in inmoment_data}
     fullstory_lookup = {str(d.get("customer_id") or d.get("id")): d for d in fullstory_data}
 
     all_ids = set(inmoment_lookup.keys()).union(fullstory_lookup.keys())

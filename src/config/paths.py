@@ -25,6 +25,9 @@ AGENT_PROMPTS_DIR = AGENTS_DIR / ".prompts"
 ## pipelines directory
 PIPELINES_DIR = SRC_DIR / "pipelines"
 
+## data api directory
+DATA_API_DIR = SRC_DIR / "api"
+
 ## logs directory
 LOGS_DIR = PROJECT_ROOT / "logs"
 

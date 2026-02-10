@@ -133,14 +133,14 @@ def save_jsonl(file_path, records: list[dict]):
 # Main pipeline
 # --------------------------------------------------
 def main():
-    # 1️⃣ Load extracted data
+    #Load extracted data
     print("Loading extracted data...")
     extracted_data = load_jsonl(EXTRACTED_FILE)
     if not extracted_data:
         print("No extracted data found. Exiting.")
         return
 
-    # 2️⃣ Enrichment: skip already enriched
+    #Enrichment: skip already enriched
     seen_enriched = load_seen_ids(ENRICHED_FILE)
     to_enrich = [r for r in extracted_data if r.get("id") not in seen_enriched]
 
@@ -152,7 +152,7 @@ def main():
         print("No new records to enrich.")
         enriched_records = load_jsonl(ENRICHED_FILE)
 
-    # 3️⃣ Escalation tagging: skip already escalated
+    #Escalation tagging: skip already escalated
     seen_escalated = load_seen_ids(ESCALATED_FILE)
     to_escalate = [r for r in enriched_records if r.get("id") not in seen_escalated]
 
@@ -165,4 +165,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

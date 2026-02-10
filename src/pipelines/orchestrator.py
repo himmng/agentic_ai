@@ -55,9 +55,14 @@ def call_agent(agent_env_key: str, prompt: dict):
     )
 
     try:
-        data = json.loads(response.output_text)
-        if not isinstance(data, list):
-            raise ValueError("Agent output must be a JSON array")
+        data = json.loads(response.output_text.strip())
+
+        # Wrap single object into a list for consistency
+        if isinstance(data, dict):
+            data = [data]
+        elif not isinstance(data, list):
+            raise ValueError("Agent output must be a JSON object or array")
+
         return data
     except json.JSONDecodeError as e:
         raise ValueError(f"Invalid JSON from agent: {e}")
@@ -77,7 +82,7 @@ def orchestrate_single_sample(customer_id: int):
 
     fullstory_prompt = {
         "customer_id": customer_id,
-        "total_sessions": 1,
+        "total_sessions": 1,  # single synthetic session per call
         "complaint_trigger": True,
         "complaint_type": "billing"
     }

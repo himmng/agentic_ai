@@ -14,6 +14,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
 EXTRACTED_DATA_DIR = DATA_DIR / "extracted"
 ENRICHED_DATA_DIR = DATA_DIR / "enriched"
+ESCALATED_DATA_DIR = DATA_DIR / "escalated"
 
 
 ## sources directory

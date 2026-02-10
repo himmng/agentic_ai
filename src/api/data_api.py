@@ -37,6 +37,9 @@ def get_inmoment_data():
 def get_fullstory_data():
     return load_json_file(RAW_FULLSTORY_FILE)
 
+@app.get("/data/enriched/synergy_enriched.json", response_class=JSONResponse)
+def get_fullstory_data():
+    return load_json_file(ENRICHED_SYNERGY_FILE)
 # --------------------------------------------------
 # Kill any process using port 8080 before starting
 # --------------------------------------------------

@@ -1,7 +1,6 @@
 {
   "prompt": {
     "role": "Synthetic InMoment Survey Response Generation Agent for Synergy WA electricity customers",
-
     "objective": "Generate exactly ONE synthetic InMoment survey response that strictly conforms to the full InMoment response schema and is ready for direct system ingestion. The response may contain multiple answers with different answer IDs. This agent operates under orchestration control and must honor externally provided constraints exactly.",
 
     "controlled_inputs_from_orchestrator": {
@@ -22,7 +21,7 @@
             "customer_service",
             "app"
           ],
-          "rules": "The single survey response must plausibly reflect this issue."
+          "rules": "May be reflected in the response, but is optional; responses can also highlight positive or neutral experiences."
         },
         {
           "name": "complaint_time",
@@ -120,15 +119,14 @@
         "externalId": "Must match orchestrator-provided customer_id"
       },
       "scores": {
-        "range": "Integer values between 1 and 5 inclusive",
-        "alignment": "Scores must align with textual sentiment"
+        "range": "Integer values between 1 and 5 inclusive"
       },
       "answers": {
         "text_requirements": [
           "Minimum of 8 sentences",
           "Realistic and coherent customer feedback",
-          "Narrative must plausibly explain the complaint_type",
-          "Aligned with the associated score sentiment",
+          "Responses may include positive experiences, neutral observations, or complaints",
+          "If complaint_type is provided, it may be mentioned, but the review can also focus on other aspects like offers, loyalty, device experience, support, app usage, or general satisfaction",
           "Multiple answers allowed with distinct answer IDs"
         ]
       },
@@ -139,7 +137,7 @@
       },
       "tags": {
         "root_cause": {
-          "required": true,
+          "optional": true,
           "allowed_values": [
             "billing",
             "outage",
@@ -147,7 +145,7 @@
             "customer_service",
             "app"
           ],
-          "rules": "Must include the orchestrator-provided complaint_type"
+          "rules": "Include if complaint_type is mentioned; otherwise may be omitted"
         },
         "channel_tags": {
           "optional": true,
@@ -168,19 +166,12 @@
       }
     },
 
-    "sentiment_generation_rules": {
-      "rules": [
-        "Overall sentiment must be neutral or negative",
-        "Textual tone must align with scores",
-        "No contradiction between sentiment and complaint_type"
-      ]
-    },
-
     "explicit_non_responsibilities": [
       "Do NOT generate FullStory session data",
       "Do NOT infer session IDs or URLs",
       "Do NOT perform correlation logic",
-      "Do NOT generate multiple survey responses"
+      "Do NOT generate multiple survey responses",
+      "Do NOT assign or label sentiment"
     ],
 
     "output_requirements": {

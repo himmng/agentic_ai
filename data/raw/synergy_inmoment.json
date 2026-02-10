@@ -1,391 +1,477 @@
 [
   {
-    "id": 98765,
-    "uuid": "a8f4b3d2-6c1e-4a9b-9d3b-2f7b9e4a1c2d",
-    "surveyGatewayId": "GW-IM-01",
-    "surveyGatewayName": "InMoment Gateway",
-    "surveyGatewayAlias": "IM-GW",
-    "surveyGatewayDnis": "IM-800-01",
-    "surveyId": "SVY-1234",
-    "surveyName": "Synergy WA Customer Billing Survey",
-    "surveyDescription": "Post-bill inquiry survey for customer billing experiences",
-    "externalId": 10003,
-    "externalCallRecordingId": "REC-10003-001",
-    "lastModTime": "2026-02-09T12:30:00Z",
-    "beginTime": "2026-02-01T10:00:00Z",
-    "dateOfService": "2026-02-01",
-    "redemptionCode": "N/A",
-    "employeeCode": "",
-    "loyaltyNumber": "",
-    "minutes": 23,
-    "complete": true,
-    "read": true,
-    "incidentManagementState": "resolved",
-    "ani": "5551234567",
-    "ipAddress": "203.0.113.5",
-    "cookieUID": "abc123cookie",
-    "offerId": 0,
-    "offerName": "",
-    "offerCode": "",
-    "unitId": "UNIT-1001",
-    "unitExternalId": "EXT-UNIT-1001",
-    "unitName": "Synergy WA Customer Unit",
-    "locationId": "LOC-001",
-    "languageCode": "en",
-    "deviceType": "web",
-    "organizationId": "ORG-001",
-    "organizationName": "Synergy WA",
-    "assignedUserId": 101,
-    "assignedUserName": "Agent Smith",
-    "assignedUserEmail": "asmith@synergywa.example",
-    "exclusionReason": "",
-    "mode": "web",
-    "answers": [
-      {
-        "answerId": 1,
-        "text": "I noticed a billing discrepancy on my latest statement. I was charged for a service I did not use. I spoke with customer support and was told it would be reviewed. The charges appeared again on the next bill. This caused me to worry about my monthly budget, especially since I rely on accurate statements. I checked my account online and found no usage that would justify the charge. I requested a credit or reversal, and the agent promised to investigate within 3 business days. It has been over a week, and I still haven't seen any adjustments. I would like this resolved promptly to avoid ongoing financial strain. I want more transparent communication about why these charges occurred."
-      }
-    ],
-    "incidents": [
-      {
-        "incidentId": 1,
-        "type": "billing_error",
-        "status": "open",
-        "description": "Discrepancy on latest bill; potential duplicate charge.",
-        "date": "2026-02-02"
-      }
-    ],
-    "alerts": [
-      {
-        "alertId": 1,
-        "type": "billing_alert",
-        "message": "Billing discrepancy reported by customer",
-        "date": "2026-02-02"
-      }
-    ],
-    "scores": [
-      {
-        "scoreId": 1,
-        "value": 2,
-        "text": "Negative sentiment aligned with billing issue"
-      }
-    ],
-    "tags": [
-      {
-        "root_cause": "billing"
-      }
-    ],
-    "url": "https://example.com/survey/10003",
-    "tagsString": "root_cause=billing",
-    "socialReview": {
-      "rating": 2,
-      "text": "Customer reported negative billing experience."
-    },
-    "contactId": "C-10003",
-    "contact": {
-      "id": "C-10003",
-      "firstName": "Alex",
-      "lastName": "Customer",
-      "phone": "555-333-2222",
-      "email": "alex.customer@example.com"
-    },
-    "completion_flags": {
-      "complete": true,
-      "completed": true,
-      "excluded_from_calculations": false
-    },
-    "end_user_properties": {
-      "fields": {
-        "customer_type": "residential",
-        "region": "metro",
-        "tenure_years": 2
-      },
-      "data_quality": "realistic synthetic metadata"
-    }
-  },
-  {
-    "id": 123456,
-    "uuid": "550e8400-e29b-41d4-a716-446655440000",
-    "surveyGatewayId": "GW-01",
-    "surveyGatewayName": "SynergyWA",
-    "surveyGatewayAlias": "Synergy WA Billing Surveys",
-    "surveyGatewayDnis": "1800-123-456",
-    "surveyId": "SV-BILL-2026",
-    "surveyName": "Billing Experience Feedback",
-    "surveyDescription": "Customer feedback on recent billing issue",
-    "externalId": "10002",
-    "externalCallRecordingId": "REC-10002-01",
-    "lastModTime": "2026-02-09T12:30:00Z",
-    "beginTime": "2026-02-09T12:15:00Z",
-    "dateOfService": "2026-02-09",
-    "redemptionCode": "RC-2026-02",
-    "employeeCode": "EMP-876",
-    "loyaltyNumber": "LOY-12345",
-    "minutes": 14,
-    "complete": true,
-    "read": true,
-    "incidentManagementState": "resolved",
-    "ani": "0416123456",
-    "ipAddress": "203.0.113.42",
-    "cookieUID": "cookie-xyz-987",
-    "offerId": "OFFER- Billing-01",
-    "offerName": "Billing Review",
-    "offerCode": "BILLREV",
-    "unitId": "UNIT-1001",
-    "unitExternalId": "EXT-UNIT-1001",
-    "unitName": "Main Meter",
-    "locationId": "LOC-100",
-    "languageCode": "en",
-    "deviceType": "desktop",
-    "organizationId": "ORG-100",
-    "organizationName": "Synergy WA",
-    "assignedUserId": "AG-001",
-    "assignedUserName": "Billing Specialist",
-    "assignedUserEmail": "billing@synergywa.example",
-    "exclusionReason": "none",
-    "mode": "web",
-    "end_user_properties": {
-      "customer_type": "residential",
-      "region": "metro",
-      "tenure_years": 2
-    },
-    "answers": [
-      {
-        "id": "A1",
-        "text": "I recently received a bill that looked incorrect. The charges included a fee I did not expect and an amount that did not match my plan. I double-checked my usage meters and found that the billing cycle dates were inconsistent with what I recall. When I called customer support, I was put on hold for a long time and the agent could not explain the extra charges. This left me frustrated and concerned about recurring billing mistakes. I asked for a clear breakdown of each charge, but the agent sent a generic summary that did not align with my invoice. The issue affected my ability to budget for the month, and I worried about potential upcoming charges. I would like a thorough review of my recent bill and a corrected statement as soon as possible. I hope the company will take steps to prevent similar errors in the future."
-      }
-    ],
-    "incidents": [
-      {
-        "id": "I1",
-        "status": "closed",
-        "description": "Billing dispute due to an unrecognized charge on invoice 1234"
-      },
-      {
-        "id": "I2",
-        "status": "resolved",
-        "description": "Invoice corrected to reflect correct usage charge"
-      }
-    ],
-    "alerts": [
-      {
-        "id": "AL1",
-        "type": "billing_warning",
-        "message": "Potential overcharge detected on invoice 1234"
-      }
-    ],
-    "scores": [
-      {
-        "id": "SC1",
-        "score": 2,
-        "description": "Billing inaccuracy"
-      }
-    ],
-    "tags": [
-      {
-        "id": "TG1",
-        "root_cause": "billing"
-      }
-    ],
-    "url": "https://example.com/survey/123",
-    "tagsString": "root_cause=billing",
-    "socialReview": {
-      "rating": 2,
-      "text": "Negative feedback posted about billing experience"
-    },
-    "contactId": "CT-1001",
-    "contact": {
-      "name": "Jane Doe",
-      "phone": "555-0123",
-      "email": "jane.doe@example.com",
-      "preferredChannel": "web"
-    }
-  },
-  {
-    "id": 1234567,
-    "uuid": "550e8400-e29b-41d4-a716-446655440000",
-    "surveyGatewayId": 501,
-    "surveyGatewayName": "InMomentGateway",
-    "surveyGatewayAlias": "IMGateway",
-    "surveyGatewayDnis": "555-0100",
-    "surveyId": "IM-2026-WA-BILL-001",
-    "surveyName": "Synergy WA Billing Feedback",
-    "surveyDescription": "Customer satisfaction survey for billing issues",
+    "customer_id": 10007,
+    "uuid": "uuid-10007-abc123",
+    "surveyGatewayId": "GW-CK-01",
+    "surveyGatewayName": "Synergy WA InMoment Gateway",
+    "surveyGatewayAlias": "SynergyGateway",
+    "surveyGatewayDnis": "+1-800-SYNERGY",
+    "surveyId": "SVY- Billing-001",
+    "surveyName": "Synergy WA Customer Billing Feedback",
+    "surveyDescription": "Post-bill experience survey focusing on billing clarity, charges, and support.",
     "externalId": 10007,
-    "externalCallRecordingId": "REC-10007-001",
-    "lastModTime": "2026-02-09T14:50:00Z",
-    "beginTime": "2026-02-09T14:30:00Z",
-    "dateOfService": "2026-02-08T09:15:00Z",
+    "externalCallRecordingId": "REC-10007-01",
+    "lastModTime": "2026-02-09T12:40:00Z",
+    "beginTime": "2026-02-09T12:05:00Z",
+    "dateOfService": "2026-02-09",
     "redemptionCode": "RC-10007",
-    "employeeCode": "E-0001",
-    "loyaltyNumber": "LOY-123",
-    "minutes": 22,
+    "employeeCode": "EMP-10007",
+    "loyaltyNumber": "LOY-10007",
+    "minutes": 18,
     "complete": true,
     "read": true,
-    "incidentManagementState": "resolved",
+    "incidentManagementState": "none",
     "ani": "5551234567",
-    "ipAddress": "203.0.113.42",
-    "cookieUID": "cookie-uid-10007",
-    "offerId": "OFF-001",
-    "offerName": "Billing Adjustment",
-    "offerCode": "BA-001",
-    "unitId": "UNIT-1007",
-    "unitExternalId": "EXT-UNIT-1007",
-    "unitName": "Billing Unit 7",
-    "locationId": "LOC-07",
+    "ipAddress": "203.0.113.12",
+    "cookieUID": "cookie-uid-abc123",
+    "offerId": "OFF- Billing-01",
+    "offerName": "Billing Review Offer",
+    "offerCode": "BILL-REVIEW",
+    "unitId": 2001,
+    "unitExternalId": "UNIT-2001",
+    "unitName": "Main City Meter",
+    "locationId": 3001,
     "languageCode": "en",
     "deviceType": "web",
-    "organizationId": "ORG-WA-01",
+    "organizationId": 5001,
     "organizationName": "Synergy WA",
-    "assignedUserId": "AU-903",
-    "assignedUserName": "M. Smith",
-    "assignedUserEmail": "m.smith@synergywa.com",
+    "assignedUserId": 9001,
+    "assignedUserName": "Call Center Agent",
+    "assignedUserEmail": "agent.smith@synergywa.example.com",
     "exclusionReason": "",
-    "mode": "web",
+    "mode": "survey",
     "answers": [
       {
         "answerId": "ANS-1",
-        "text": "I recently received a bill that included charges I did not expect and some entries that did not match my usage. I reviewed the statement and compared it to my previous bills, and the discrepancies were clear. I attempted to reach customer service to get an explanation, but the process was slow and the response was not helpful. This experience has left me frustrated about how billing is communicated."
+        "text": "I recently reviewed my latest bill and found a charge that I didn’t recognize. The support I received when I called billing was polite and patient, which I appreciated. The representative explained the charges clearly and showed me how to read the bill line items step by step. I asked for a temporary adjustment while the issue was investigated, and the agent assured me they would escalate it and keep me updated. The explanation helped me understand where the duplicate item came from, which reduced my frustration. However, I still felt a bit uncertain about the next steps until the investigation confirmed the error. I value transparency, so I appreciated the email summary that outlined the investigation timeline. Overall, this experience was better than previous billing encounters because I felt listened to and informed. I would recommend continuing to provide proactive updates if similar issues come up in the future."
+      }
+    ],
+    "incidents": [
+      {
+        "id": "INC-001",
+        "type": "billing",
+        "description": "Billing discrepancy detected on statement dated 2026-02-07 showing a duplicate line item.",
+        "time": "2026-02-09T11:45:00Z"
+      }
+    ],
+    "alerts": [],
+    "scores": [
+      {
+        "name": "overall_satisfaction",
+        "value": 4
       },
       {
-        "answerId": "ANS-2",
-        "text": "Additionally, I was charged a late payment fee despite paying on time according to my records. The explanation provided did not reference the specific line items or the dates of usage, leaving me uncertain about what triggered the fee. I called the support line twice and waited on hold for more than 15 minutes each time. The lack of detail and the delays have eroded my trust in how my account is managed."
+        "name": "billing_experience",
+        "value": 3
+      }
+    ],
+    "tags": [
+      {
+        "root_cause": "billing",
+        "channel_tags": "web"
+      }
+    ],
+    "url": "https://example.com/survey/10007",
+    "tagsString": "root_cause=billing;channel=web",
+    "socialReview": {
+      "text": "Billing issue noticed but resolved quickly with clear communication."
+    },
+    "contactId": 10007,
+    "contact": {
+      "id": 10007,
+      "name": "Test Customer",
+      "phone": "555-0107",
+      "email": "customer10007@example.com"
+    },
+    "end_user_properties": {
+      "customer_type": "residential",
+      "region": "metro",
+      "tenure_years": 3,
+      "data_quality": "synthetic and realistic"
+    },
+    "structuredData": null
+  },
+  {
+    "customer_id": 10008,
+    "uuid": "123e4567-e89b-12d3-a456-426614174000",
+    "surveyGatewayId": "GW-001",
+    "surveyGatewayName": "InMomentGateway",
+    "surveyGatewayAlias": "IMGateway",
+    "surveyGatewayDnis": "IMDnis01",
+    "surveyId": "SVY-12345",
+    "surveyName": "Synergy WA Customer Experience",
+    "surveyDescription": "InMoment general customer satisfaction survey for Synergy WA",
+    "externalId": "10008",
+    "externalCallRecordingId": "REC-98765",
+    "lastModTime": "2026-02-09T12:34:56Z",
+    "beginTime": "2026-02-09T12:30:00Z",
+    "dateOfService": "2026-02-08",
+    "redemptionCode": "RC-001122",
+    "employeeCode": "EMP-01",
+    "loyaltyNumber": "L-0123456789",
+    "minutes": 12,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "resolved",
+    "ani": "0800123456",
+    "ipAddress": "203.0.113.5",
+    "cookieUID": "cookie-xyz-123",
+    "offerId": "OFF-123",
+    "offerName": "Loyalty Discount 2026",
+    "offerCode": "LD2026",
+    "unitId": "UNIT-01",
+    "unitExternalId": "EXT-UNIT-01",
+    "unitName": "Residential Meter A1",
+    "locationId": "LOC-01",
+    "languageCode": "en",
+    "deviceType": "mobile",
+    "organizationId": "ORG-02",
+    "organizationName": "Synergy WA",
+    "assignedUserId": "USR-77",
+    "assignedUserName": "CallCenter Agent",
+    "assignedUserEmail": "agent@example.com",
+    "exclusionReason": "",
+    "mode": "digital",
+    "answers": [
+      {
+        "answerId": "A1",
+        "text": "I recently received my latest bill and found several line items I did not expect. The billing statement showed multiple fees that did not match my understanding of the plan. I tried to compare it against the e-bill and the online portal, but the interface was slow and the pages occasionally failed to load. I appreciate that the support options were accessible when I needed help, but I had to wait longer than usual for a resolution. The billing calendar and reminders helped when I set up alerts, though the charges remained unclear at first glance. The agent who finally clarified the adjustments was patient and walked me through the calculation step by step. I also checked the usage graph in the app, which helped me spot a discrepancy and feel more informed about the charges. Overall, the experience made me want to review my billing preferences and ensure my details are up to date, but the immediate impact on my budget was frustrating."
       },
       {
-        "answerId": "ANS-3",
-        "text": "For a resolution, I would like a full review of the billing period in question, a corrected bill if appropriate, and a clear itemized explanation of all charges. I value transparent communication and timely updates when discrepancies are found. I would appreciate an assurance that future bills will show dates and usage in a way I can easily verify. If possible, I’d prefer the credit to be issued to my account or a refund if the charges were incorrect."
+        "answerId": "A2",
+        "text": "I would suggest improving the date stamping on the bills to prevent late processing fees. The app sometimes shows outdated plan details, which led to confusion when comparing the bill to the tariff sheet. The response from the billing team was courteous, and the ticket was resolved, but the process took longer than I expected. I also found the option to view recent statements helpful, and it encouraged me to keep an eye on ongoing usage. The feature to export statements would be useful for my records, and I would welcome clearer messaging about any adjustments that appear on the bill. Finally, the notification settings could be more intuitive to customize alerts for upcoming charges."
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": "INC-01",
+        "type": "billing_error",
+        "description": "Discrepancy detected in the latest invoice, with charges for a non-existent service line.",
+        "timestamp": "2026-02-08T10:20:00Z",
+        "severity": "low"
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": "AL-01",
+        "type": "info",
+        "message": "Billing adjustment applied after review.",
+        "timestamp": "2026-02-09T12:10:00Z"
+      }
+    ],
+    "scores": [
+      {
+        "scoreId": "S1",
+        "value": 4
+      }
+    ],
+    "tags": [
+      {
+        "root_cause": "billing",
+        "channel_tags": "mobile"
+      }
+    ],
+    "url": "https://example.com/survey/10008",
+    "tagsString": "root_cause=billing;channel=mobile",
+    "socialReview": {
+      "enabled": true,
+      "text": "User provided narrative feedback via the survey about billing experience without explicit sentiment labeling."
+    },
+    "contactId": "CONT-01",
+    "contact": {
+      "name": "Alex Doe",
+      "phone": "555-0100",
+      "email": "alex.doe@example.com"
+    },
+    "end_user_properties": {
+      "required": true,
+      "fields": {
+        "customer_type": "residential",
+        "region": "metro",
+        "tenure_years": 3
+      },
+      "data_quality": "Must be realistic synthetic metadata"
+    }
+  },
+  {
+    "customer_id": 10003,
+    "uuid": "123e4567-e89b-12d3-a456-426614174000",
+    "surveyGatewayId": "GW-100",
+    "surveyGatewayName": "InMoment Gateway",
+    "surveyGatewayAlias": "IM Gateway",
+    "surveyGatewayDnis": "IMD-100",
+    "surveyId": "S-2026-0003",
+    "surveyName": "Synergy WA Customer Feedback Survey",
+    "surveyDescription": "Post-billing experience survey",
+    "externalId": 10003,
+    "externalCallRecordingId": "REC-10003",
+    "lastModTime": "2026-02-09T12:34:56Z",
+    "beginTime": "2026-02-09T12:00:00Z",
+    "dateOfService": "2026-02-08T00:00:00Z",
+    "redemptionCode": "RC-10003",
+    "employeeCode": "EMP-10003",
+    "loyaltyNumber": "L-10003",
+    "minutes": 14,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "closed",
+    "ani": "1234567890",
+    "ipAddress": "203.0.113.42",
+    "cookieUID": "cookie-uid-10003",
+    "offerId": "OFF-001",
+    "offerName": "Billing Adjustment Offer",
+    "offerCode": "BILL-ADJ",
+    "unitId": "UNIT-10003",
+    "unitExternalId": "EXT-10003",
+    "unitName": "Synergy WA Meter 003",
+    "locationId": "LOC-10003",
+    "languageCode": "en",
+    "deviceType": "desktop",
+    "organizationId": "ORG-WA",
+    "organizationName": "Synergy WA",
+    "assignedUserId": "USER-10003",
+    "assignedUserName": "Alex Smith",
+    "assignedUserEmail": "alex.smith@example.com",
+    "exclusionReason": "N/A",
+    "mode": "online",
+    "answers": [
+      {
+        "answerId": "A1",
+        "text": "I recently received my bill and noticed a discrepancy that left me puzzled. The billing period did not align with my usage, which caused concern about potential overcharges. I attempted to review the charges through the app, but the interface was not intuitive and the help options were limited. I reached out to customer support to get clarification and was connected with a representative who listened, gathered details, and explained the charges. The conversation helped me understand the components of the bill, such as fixed charges and usage rates, but I still felt there could be more transparency in the explanation. I appreciated the attempt to resolve the issue and the follow-up email with steps to review future bills. Overall, the process was moderately helpful but left me seeking a clearer breakdown. I would encourage improvements in the billing section of the app and more proactive communication."
+      },
+      {
+        "answerId": "A2",
+        "text": "Summary of my experience: The response time was reasonable, and the agent appeared knowledgeable about billing rules. I was offered an adjustment that addressed the overcharge, and I accepted it. The billing system can be confusing, but the support process clarified the main factors affecting the total charge. The agent provided instructions for payment options and future monitoring of usage. I also found the online portal to be generally functional, with some quirks in how bills were displayed. In the end, I felt that my concerns were acknowledged and partially resolved. I would value more proactive alerts when bills are generated. Overall, the process could be even more transparent in explaining adjustments."
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": "INC-1001",
+        "type": "billing",
+        "description": "Overcharge on bill for February cycle",
+        "status": "resolved"
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": "ALERT-2001",
+        "type": "billing",
+        "message": "Your bill exceeded typical usage for this period",
+        "severity": "medium"
+      }
+    ],
+    "scores": [
+      {
+        "scoreId": "SCORE-1",
+        "aspect": "clarity",
+        "value": 4
+      },
+      {
+        "scoreId": "SCORE-2",
+        "aspect": "fairness",
+        "value": 4
+      },
+      {
+        "scoreId": "SCORE-3",
+        "aspect": "support",
+        "value": 5
+      }
+    ],
+    "tags": [
+      {
+        "root_cause": "billing",
+        "channel_tags": "web"
+      }
+    ],
+    "url": "https://example.com/survey/10003",
+    "tagsString": "root_cause=billing; channel_tags=web",
+    "socialReview": {
+      "platform": "web",
+      "enabled": true,
+      "summary": "Customer shared feedback about billing experience on social channel"
+    },
+    "contactId": "C-10003",
+    "contact": {
+      "name": "Jane Doe",
+      "phone": "555-0103",
+      "email": "jane.doe@example.com",
+      "preferredChannel": "web"
+    },
+    "end_user_properties": {
+      "customer_type": "residential",
+      "region": "metro",
+      "tenure_years": 3,
+      "data_quality": "synthetic"
+    }
+  },
+  {
+    "customer_id": 10001,
+    "uuid": "f47ac10b-58cc-4372-a567-0e02b2c3d7f9",
+    "surveyGatewayId": "gateway-IM-01",
+    "surveyGatewayName": "InMoment Gateway",
+    "surveyGatewayAlias": "IMGateway",
+    "surveyGatewayDnis": "IM-GW-001",
+    "surveyId": "survey-001",
+    "surveyName": "Customer Experience Survey",
+    "surveyDescription": "A survey to capture customer feedback about electricity services",
+    "externalId": 10001,
+    "externalCallRecordingId": "callrec-10001-001",
+    "lastModTime": "2026-02-09T12:34:56Z",
+    "beginTime": "2026-02-09T12:05:00Z",
+    "dateOfService": "2026-02-09",
+    "redemptionCode": "REDEEM-ABC123",
+    "employeeCode": "EMP-001",
+    "loyaltyNumber": "LOYAL-10001",
+    "minutes": 8,
+    "complete": true,
+    "read": true,
+    "completed": true,
+    "excluded_from_calculations": false,
+    "incidentManagementState": "none",
+    "ani": "1112223333",
+    "ipAddress": "203.0.113.12",
+    "cookieUID": "cookie-uid-abc123",
+    "offerId": "offer-789",
+    "offerName": "Welcome Discount",
+    "offerCode": "WELCOME100",
+    "unitId": "unit-101",
+    "unitExternalId": "unit-ext-101",
+    "unitName": "Meter-101",
+    "locationId": "loc-55",
+    "languageCode": "en",
+    "deviceType": "web",
+    "organizationId": "org-01",
+    "organizationName": "Synergy WA",
+    "assignedUserId": "staff-01",
+    "assignedUserName": "Alex Smith",
+    "assignedUserEmail": "alex.smith@example.com",
+    "exclusionReason": "N/A",
+    "mode": "online",
+    "answers": [
+      {
+        "answerId": "ans-1",
+        "questionId": "q1",
+        "text": "I recently received a bill that seemed higher than usual. I checked my usage and the charges on the bill did not align with my plan. I called the support line hoping to get a quick resolution. The billing representative reviewed my account and explained there was a small adjustment due to a meter reading sync issue. While I appreciated the fast response, I was surprised to learn that the adjustment would take a couple of billing cycles to appear on my statement. I asked for an itemized breakdown, and I was provided with one that clarified the adjustments. Overall, the experience left me with a better understanding of the charges, although I would have preferred a quicker update. The pricing clarity helps me trust the bill more in the future. The customer service approach felt courteous and patient throughout the process. The only downside was the initial confusion when I first spoke with the agent, but the resolution was satisfactory and professional."
+      }
+    ],
+    "incidents": [],
+    "alerts": [],
+    "scores": [
+      {
+        "scoreId": "score-1",
+        "questionId": "q1",
+        "score": 4
+      }
+    ],
+    "tags": [
+      {
+        "root_cause": "billing",
+        "channel_tags": "web"
+      }
+    ],
+    "url": "https://example.com/survey/10001",
+    "tagsString": "billing|web",
+    "socialReview": {
+      "platform": "email",
+      "handle": "customer@example.com",
+      "content": "Customer wrote in about a recent billing issue; overall satisfied with resolution."
+    },
+    "contactId": "cont-10001",
+    "contact": {
+      "contactId": "cont-10001",
+      "name": "John Doe",
+      "phone": "000-000-0000",
+      "email": "john.doe@example.com"
+    },
+    "end_user_properties": {
+      "customer_type": [
+        "residential"
+      ],
+      "region": [
+        "metro"
+      ],
+      "tenure_years": 4,
+      "data_quality": "synthetic"
+    }
+  },
+  {
+    "customer_id": 10006,
+    "uuid": "a1b2c3d4-e5f6-7890-abcd-ef0123456789",
+    "surveyGatewayId": "GW-987",
+    "surveyGatewayName": "Synergy WA Survey Gateway",
+    "surveyGatewayAlias": "SynergyGateway",
+    "surveyGatewayDnis": "1800-EXAMPLE",
+    "surveyId": "SURV-2026-01",
+    "surveyName": "Synergy WA Customer Experience Survey",
+    "surveyDescription": "Monthly customer feedback survey for energy services",
+    "externalId": 10006,
+    "externalCallRecordingId": "REC-10006-2026-02-09",
+    "lastModTime": "2026-02-09T12:50:30Z",
+    "beginTime": "2026-02-09T12:00:00Z",
+    "dateOfService": "2026-02-09",
+    "redemptionCode": "REDEEM-2026-02-09",
+    "employeeCode": "EMP-001",
+    "loyaltyNumber": "LOY-12345",
+    "minutes": 12,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "resolved",
+    "ani": "unknown",
+    "ipAddress": "203.0.113.42",
+    "cookieUID": "cookie-uid-10006",
+    "offerId": "OFF-1001",
+    "offerName": "Loyalty Bonus",
+    "offerCode": "LB2026",
+    "unitId": 101,
+    "unitExternalId": "UNIT-1001",
+    "unitName": "Synergy WA Meter 1",
+    "locationId": 201,
+    "languageCode": "en",
+    "deviceType": "web",
+    "organizationId": "ORG-100",
+    "organizationName": "Synergy WA Energy",
+    "assignedUserId": "U-5001",
+    "assignedUserName": "Jordan Patel",
+    "assignedUserEmail": "jordan.patel@synergywa.com",
+    "exclusionReason": "none",
+    "mode": "online",
+    "url": "https://survey.example.com/surv-2026-01/responses/10006",
+    "answers": [
+      {
+        "answerId": "ANS-001",
+        "text": "I recently used the billing portal to review my latest statement, and I found the process surprisingly straightforward. The invoices were clearly itemized and the dates aligned with my payment history. When I noticed a discrepancy, I contacted support and the agent listened carefully. They explained the charges in simple terms and walked me through the adjustments step by step. I appreciated that the system allowed me to view usage details alongside charges, which helped me understand where the billing came from. The overall experience felt organized, and I did not feel rushed during the conversation. One improvement would be faster updating of charges after a payment is posted, but the delay was not significant. In the end, I left the interaction feeling confident about my account going forward."
       }
     ],
     "incidents": [
       {
         "incidentId": "INC-001",
         "type": "billing",
-        "description": "Billing discrepancy reported by customer."
+        "description": "Billing discrepancy investigated; resolved with credit applied; issue occurred due to delayed payment posting",
+        "time": "2026-02-08T15:30:00Z",
+        "status": "resolved"
       }
     ],
     "alerts": [
       {
-        "alertId": "AL-001",
-        "channel": "billing",
-        "message": "Billing discrepancy detected and flagged."
+        "alertId": "ALERT-001",
+        "type": "billing",
+        "message": "New billing cycle reminder",
+        "time": "2026-02-07T10:00:00Z",
+        "severity": "info"
       }
     ],
     "scores": [
       {
-        "scoreId": "billing_clarity",
-        "value": 2,
-        "description": "Billing clarity score"
+        "scoreId": "overall",
+        "value": 5
       },
       {
-        "scoreId": "billing_fairness",
-        "value": 2,
-        "description": "Billing fairness score"
+        "scoreId": "billingAccuracy",
+        "value": 4
       },
       {
-        "scoreId": "overall_experience",
-        "value": 2,
-        "description": "Overall experience score"
-      }
-    ],
-    "tags": [
-      {
-        "root_cause": "billing",
-        "channel_tags": [
-          "web"
-        ]
-      }
-    ],
-    "url": "https://example.com/survey/IM-2026-WA-BILL-001/resp/1234567",
-    "tagsString": "root_cause=billing;channel_tags=web",
-    "socialReview": {
-      "platform": "facebook",
-      "text": "Customer posted a negative comment about billing issues.",
-      "rating": 2
-    },
-    "contactId": 10007,
-    "contact": {
-      "id": 10007,
-      "name": "John Doe",
-      "phone": "555-01007",
-      "email": "john.doe@example.com",
-      "preferredContact": "email"
-    },
-    "end_user_properties": {
-      "customer_type": "residential",
-      "region": "metro",
-      "tenure_years": 2,
-      "data_quality": "realistic synthetic"
-    }
-  },
-  {
-    "id": 1234567,
-    "uuid": "123e4567-e89b-12d3-a456-426614174000",
-    "surveyGatewayId": "GW-2026",
-    "surveyGatewayName": "InMomentGateway",
-    "surveyGatewayAlias": "IM-GW",
-    "surveyGatewayDnis": "+1-800-IMGATE",
-    "surveyId": "SVY-Billing-01",
-    "surveyName": "Synergy WA Billing Feedback",
-    "surveyDescription": "Billing and charges feedback collection",
-    "externalId": "10008",
-    "externalCallRecordingId": "REC-00001",
-    "lastModTime": "2026-02-09T12:34:56Z",
-    "beginTime": "2026-02-09T12:20:00Z",
-    "dateOfService": "2026-02-08T00:00:00Z",
-    "redemptionCode": "RC123",
-    "employeeCode": "EMP-001",
-    "loyaltyNumber": "L-123456",
-    "minutes": 9,
-    "complete": true,
-    "read": true,
-    "incidentManagementState": "open",
-    "ani": "5551234567",
-    "ipAddress": "203.0.113.42",
-    "cookieUID": "cookie-uid-abcdef",
-    "offerId": "OFF-100",
-    "offerName": "Billing Inquiry Support",
-    "offerCode": "BILLINQ",
-    "unitId": "UNIT-9",
-    "unitExternalId": "4009",
-    "unitName": "Residential Billing Unit",
-    "locationId": "LOC-01",
-    "languageCode": "en",
-    "deviceType": "web",
-    "organizationId": "ORG-01",
-    "organizationName": "Synergy WA",
-    "assignedUserId": "USER-123",
-    "assignedUserName": "Billing Support",
-    "assignedUserEmail": "billing.support@example.com",
-    "exclusionReason": "none",
-    "mode": "survey",
-    "answers": [
-      {
-        "answerId": "A1",
-        "text": "I recently checked my bill and found charges that don't match my usage. The invoice shows extra fees that were not communicated clearly. I contacted customer service but the issue remains unresolved after multiple calls. The billing cycle had an unexplained adjustment that increased my charge without any notice. I expect accurate billing and transparent explanations for any changes. The support agent listened but did not provide a satisfactory resolution or timeline. This has caused frustration and worry about future bills. I would like a full explanation and an adjustment to correct the overcharge."
-      }
-    ],
-    "incidents": [
-      {
-        "incidentId": "INC-1001",
-        "type": "billing_error",
-        "description": "Overcharge detected on invoice for period 2026-02-01 to 2026-02-15",
-        "date": "2026-02-09",
-        "status": "open"
-      }
-    ],
-    "alerts": [
-      {
-        "alertId": "ALERT-2001",
-        "message": "Billing discrepancy reported by customer",
-        "severity": "high",
-        "date": "2026-02-09"
-      }
-    ],
-    "scores": [
-      {
-        "score": 2,
-        "category": "billing",
-        "description": "Billing issue causing dissatisfaction"
+        "scoreId": "portalEase",
+        "value": 4
       }
     ],
     "tags": [
@@ -396,444 +482,87 @@
         "channel_tags": "web"
       }
     ],
-    "url": "https://synergy.example.com/surveys/SVY-Billing-01",
-    "tagsString": "root_cause=billing; channel_tags=web",
+    "tagsString": "root_cause=billing;channel_tags=web",
     "socialReview": {
-      "platform": "facebook",
-      "text": "I was charged wrongly and the billing process needs improvement."
+      "rating": 4,
+      "notes": "Billing process was clear and supported by responsive staff. The portal shows usage alongside charges, which helps transparency."
     },
-    "contactId": "CONT-01",
+    "contactId": "C-1006",
     "contact": {
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "phone": "555-0101"
+      "contactId": "C-1006",
+      "name": "Alex Smith",
+      "phone": "+1-555-000-1006",
+      "email": "alex.smith@example.com",
+      "preferredContactMethod": "email"
     },
     "end_user_properties": {
-      "customer_type": "residential",
-      "region": "metro",
-      "tenure_years": 4,
-      "data_quality": "synthetic"
-    }
-  },
-  {
-    "id": 100123,
-    "uuid": "f4a0d9e5-8b9a-4a2c-9d3b-7d2c9f3b4b8a",
-    "surveyGatewayId": 9001,
-    "surveyGatewayName": "InMoment",
-    "surveyGatewayAlias": "IM Gateway",
-    "surveyGatewayDnis": "+1-800-555-0123",
-    "surveyId": 2001,
-    "surveyName": "Synergy WA Customer Billing Survey",
-    "surveyDescription": "Post-billing feedback collection",
-    "externalId": "10006",
-    "externalCallRecordingId": "rec-10006-001",
-    "lastModTime": "2026-02-09T12:10:00Z",
-    "beginTime": "2026-02-09T12:00:00Z",
-    "dateOfService": "2026-02-09",
-    "redemptionCode": "RC-10006",
-    "employeeCode": "EMP-42",
-    "loyaltyNumber": "LOY-10006",
-    "minutes": 7,
-    "complete": true,
-    "completed": true,
-    "read": true,
-    "incidentManagementState": "open",
-    "ani": "8001234567",
-    "ipAddress": "203.0.113.5",
-    "cookieUID": "cookie-uid-10006",
-    "offerId": "O-501",
-    "offerName": "Billing Review Offer",
-    "offerCode": "BILL-REVIEW",
-    "unitId": "U-100",
-    "unitExternalId": "EXT-U-100",
-    "unitName": "Main Meter Unit",
-    "locationId": "LOC-01",
-    "languageCode": "en-US",
-    "deviceType": "web",
-    "organizationId": "ORG-WA-01",
-    "organizationName": "Synergy WA",
-    "assignedUserId": "AU-01",
-    "assignedUserName": "Support Agent",
-    "assignedUserEmail": "support@synergywa.com",
-    "exclusionReason": "",
-    "mode": "survey",
-    "answers": [
-      {
-        "questionId": "billing_dispute_details",
-        "answerId": "A1",
-        "text": "I started noticing an unexpected charge on my latest bill. The amount did not match the services listed on my plan. I checked online and found there was a rate adjustment that I was not informed about. I contacted customer service, and the agent promised to review the bill but provided unclear guidance. This has caused confusion and frustration.",
-        "score": 2
+      "required": true,
+      "fields": {
+        "customer_type": "residential",
+        "region": "metro",
+        "tenure_years": 3
       },
-      {
-        "questionId": "billing_dispute_details_2",
-        "answerId": "A2",
-        "text": "The billing cycle dates also seemed off, with a period starting earlier than usual. I received two separate bills for the same timeframe, which is perplexing and time consuming to resolve. The process to dispute the charges is lengthy and not user-friendly.",
-        "score": 2
-      },
-      {
-        "questionId": "billing_dispute_effort",
-        "answerId": "A3",
-        "text": "I tried to reach support several times, but the wait times were long and I was repeatedly transferred. The representative I spoke with did not have access to my account details, which extended the resolution time. I would expect a more proactive approach from a utility provider.",
-        "score": 2
-      },
-      {
-        "questionId": "billing_dispute_resolution",
-        "answerId": "A4",
-        "text": "I am seeking a detailed explanation of the charges and, ideally, a credit or adjustment if there was an error. I would also appreciate a more transparent billing process and a clear timeline for when the issue will be resolved.",
-        "score": 2
-      },
-      {
-        "questionId": "billing_dispute_preferences",
-        "answerId": "A5",
-        "text": "In the future, I would prefer to receive proactive notifications about rate changes and a straightforward way to dispute charges online. I would also like to review my bill online with an itemized breakdown.",
-        "score": 2
-      },
-      {
-        "questionId": "billing_dispute_service",
-        "answerId": "A6",
-        "text": "If the issue is not resolved promptly, I may look for alternatives, including transferring service to another provider. I value good customer service and timely updates.",
-        "score": 2
-      },
-      {
-        "questionId": "billing_dispute_outcome",
-        "answerId": "A7",
-        "text": "Overall, I want a clear explanation and a fair resolution; otherwise I may consider switching providers or contacting a regulator if the issue cannot be resolved satisfactorily.",
-        "score": 2
-      },
-      {
-        "questionId": "billing_dispute_future",
-        "answerId": "A8",
-        "text": "This experience has left me cautious about future billing and more vigilant about reviewing charges. I hope the company improves its communication and billing accuracy going forward.",
-        "score": 2
-      }
-    ],
-    "incidents": [
-      {
-        "id": "INC-10006-1",
-        "type": "billing",
-        "date": "2026-02-09",
-        "description": "Customer reported unexpected billing charges."
-      }
-    ],
-    "alerts": [
-      {
-        "id": "AL-1",
-        "type": "billing_alert",
-        "date": "2026-02-09",
-        "message": "Billing discrepancy detected during audit."
-      }
-    ],
-    "scores": [
-      {
-        "id": "S-1",
-        "value": 2,
-        "notes": "Negative sentiment aligned with billing issue."
-      }
-    ],
-    "tags": [
-      {
-        "root_cause": "billing",
-        "channel_tags": [
-          "web"
-        ]
-      }
-    ],
-    "url": "https://example.com/surveys/IM-10006",
-    "tagsString": "root_billing;channel_web",
-    "socialReview": {
-      "rating": 2,
-      "comment": "Billing issue caused frustration; need clear explanations and faster resolution."
-    },
-    "contactId": "C-10006",
-    "contact": {
-      "name": "John Doe",
-      "phone": "555-0100",
-      "email": "johndoe@example.com",
-      "address": "123 Main St, Anytown, WA"
-    },
-    "end_user_properties": {
-      "customer_type": "residential",
-      "region": "metro",
-      "tenure_years": 2
-    }
-  },
-  {
-    "id": 123456,
-    "uuid": "550e8400-e29b-41d4-a716-446655440000",
-    "surveyGatewayId": "GW-01",
-    "surveyGatewayName": "Synergy WA Gateway",
-    "surveyGatewayAlias": "SynergyWA",
-    "surveyGatewayDnis": "18005551234",
-    "surveyId": "SV-1001",
-    "surveyName": "Customer Billing Survey",
-    "surveyDescription": "Billing survey for customer feedback on charges",
-    "externalId": 10004,
-    "externalCallRecordingId": "REC-12345",
-    "lastModTime": "2026-02-09T13:10:00Z",
-    "beginTime": "2026-02-09T13:00:00Z",
-    "dateOfService": "2026-02-08",
-    "redemptionCode": "RC-2026-0209",
-    "employeeCode": "EMP-0123",
-    "loyaltyNumber": "LOY-12345",
-    "minutes": 12,
-    "complete": true,
-    "read": true,
-    "incidentManagementState": "resolved",
-    "ani": "999-999-9999",
-    "ipAddress": "203.0.113.5",
-    "cookieUID": "cookie-abc123",
-    "offerId": "OFF-100",
-    "offerName": "Billing Review Offer",
-    "offerCode": "BR-CLAIM",
-    "unitId": 5001,
-    "unitExternalId": "Unit-5001",
-    "unitName": "Billing Unit 5",
-    "locationId": 1001,
-    "languageCode": "en",
-    "deviceType": "desktop",
-    "organizationId": 2001,
-    "organizationName": "Synergy WA",
-    "assignedUserId": 3001,
-    "assignedUserName": "Support Agent",
-    "assignedUserEmail": "support@synergywa.example",
-    "exclusionReason": "none",
-    "mode": "digital",
-    "answers": [
-      {
-        "answerId": 1,
-        "text": "I recently found an unexpected charge on my electricity bill for a service I didn't authorize. I also noticed the charge appeared after I changed my plan online, but the new rate was not reflected on the bill. I contacted customer support by phone and was told a manual adjustment would be processed. The representative explained that the adjustment would take two billing cycles, which felt unfair given the error was on your side. I kept paying the incorrect amount while waiting for the fix, which caused financial stress. I checked my account online and saw several line items I did not recognize, which added to my confusion. The process took longer than promised, and I had to repeat details several times. I would like the erroneous charges refunded and a clear explanation of how the billing error occurred. I hope this helps prevent similar issues for other customers."
-      }
-    ],
-    "incidents": [
-      {
-        "incidentId": 1,
-        "type": "billing",
-        "status": "resolved",
-        "description": "Billing discrepancy after plan change causing overcharge",
-        "timestamp": "2026-02-08T10:15:00Z"
-      }
-    ],
-    "alerts": [
-      {
-        "alertId": "AL-1001",
-        "type": "billing_alert",
-        "severity": "low",
-        "message": "Billing discrepancy detected",
-        "timestamp": "2026-02-08T11:00:00Z"
-      }
-    ],
-    "scores": [
-      {
-        "category": "overall_experience",
-        "score": 2
-      },
-      {
-        "category": "billing_experience",
-        "score": 2
-      }
-    ],
-    "tags": [
-      {
-        "root_cause": "billing"
-      }
-    ],
-    "url": "https://example.com/survey/12345",
-    "tagsString": "root=billing",
-    "socialReview": {
-      "text": "The billing issue was frustrating and took too long to resolve.",
-      "platform": "Twitter"
-    },
-    "contactId": "C-987",
-    "contact": {
-      "id": "C-987",
-      "name": "John Doe",
-      "phone": "555-0100",
-      "email": "jdoe@example.com"
-    },
-    "end_user_properties": {
-      "customer_type": "residential",
-      "region": "metro",
-      "tenure_years": 3,
       "data_quality": "Must be realistic synthetic metadata"
     }
   },
   {
-    "id": 900001,
-    "uuid": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
-    "surveyGatewayId": 501,
-    "surveyGatewayName": "InMoment Core",
-    "surveyGatewayAlias": "IM Core",
-    "surveyGatewayDnis": "IM-CORE-01",
-    "surveyId": "SM-SURVEY-2026-BILLING",
-    "surveyName": "Synergy WA Billing Issue Survey",
-    "surveyDescription": "Post-transaction survey to capture billing concerns",
-    "externalId": "10001",
-    "externalCallRecordingId": "REC-10001",
-    "lastModTime": "2026-02-09T12:34:56Z",
-    "beginTime": "2026-02-09T12:30:00Z",
+    "customer_id": 10002,
+    "uuid": "e7a7f7f0-1d2a-4e3b-9a3b-9d7a9f6e1a1b",
+    "surveyGatewayId": "GW-01",
+    "surveyGatewayName": "InMoment Gateway",
+    "surveyGatewayAlias": "IMGateway",
+    "surveyGatewayDnis": "18005551234",
+    "surveyId": "SURV-10002",
+    "surveyName": "Synergy WA Customer Experience Survey",
+    "surveyDescription": "Annual satisfaction and feedback survey for electricity customers in Western Australia",
+    "externalId": "10002",
+    "externalCallRecordingId": "REC-10002-001",
+    "lastModTime": "2026-02-09T10:15:00Z",
+    "beginTime": "2026-02-09T10:00:00Z",
     "dateOfService": "2026-02-08",
-    "redemptionCode": "REDEEM-NULL",
-    "employeeCode": "EMP-001",
-    "loyaltyNumber": "LOY-012345",
+    "redemptionCode": "REDEEM-0001",
+    "employeeCode": "EMP-010",
+    "loyaltyNumber": "LOYAL-12345",
     "minutes": 12,
     "complete": true,
-    "completed": true,
     "read": true,
-    "incidentManagementState": "open",
-    "ani": "9991112223",
+    "incidentManagementState": "closed",
+    "ani": "15551234567",
     "ipAddress": "203.0.113.42",
-    "cookieUID": "cookie-uid-10001",
-    "offerId": "OFF-BILLING-01",
-    "offerName": "Billing Dispute Support",
-    "offerCode": "BD-01",
-    "unitId": "UNIT-001",
-    "unitExternalId": "UNIT-EXT-001",
-    "unitName": "Synergy WA Billing",
-    "locationId": "LOC-01",
+    "cookieUID": "cookie-abc-123",
+    "offerId": "OFFER-02",
+    "offerName": "Billing Correction Offer",
+    "offerCode": "BILL-CORR",
+    "unitId": "UNIT-10002",
+    "unitExternalId": "UNIT-EX-10002",
+    "unitName": "Synergy WA Meter 1234",
+    "locationId": "LOC-2002",
     "languageCode": "en",
     "deviceType": "web",
-    "organizationId": "ORG-01",
+    "organizationId": "ORG-100",
     "organizationName": "Synergy WA",
-    "assignedUserId": "USR-123",
-    "assignedUserName": "Alex Smith",
-    "assignedUserEmail": "alex.smith@synergywa.example",
-    "exclusionReason": "none",
+    "assignedUserId": "USER-1001",
+    "assignedUserName": "Alex Johnson",
+    "assignedUserEmail": "alex.johnson@example.com",
+    "exclusionReason": "Billing discrepancy reported",
     "mode": "survey",
     "answers": [
       {
-        "answerId": "ANS-Billing-01",
-        "text": "During the last billing cycle, I was charged for a service I did not authorize. I noticed multiple line items that I did not recognize. I contacted customer service and was told the charge would be reviewed, yet a week later the charge remains. The charges appear to be recurring charges for a service I cancelled months ago. I attempted to access my online account to dispute the charges, but the billing section kept showing an error. The discrepancies caused unexpected overdraft fees and confusion for my household. I expect a full explanation and a refund of the incorrect amount. The incorrect billing has disrupted my budgeting and created distrust in the service. I would appreciate a prompt resolution and confirmation of the corrected bill."
-      }
-    ],
-    "incidents": [
-      {
-        "incidentId": "INC-10001",
-        "type": "billing_error",
-        "status": "open",
-        "description": "Customer reports incorrect recurring charges after cancellation."
-      }
-    ],
-    "alerts": [
-      {
-        "alertId": "ALERT-10001",
-        "level": "warning",
-        "message": "Billing dispute opened for customer 10001"
-      }
-    ],
-    "scores": [
-      {
-        "scoreId": "SCORE-01",
-        "category": "billing",
-        "value": 2,
-        "description": "Negative sentiment aligned with billing issue"
-      }
-    ],
-    "tags": [
-      {
-        "root_cause": "billing",
-        "channel_tags": "web"
-      }
-    ],
-    "url": "https://example.com/surveys/IM/10001",
-    "tagsString": "billing;web",
-    "socialReview": {
-      "source": "InMoment",
-      "rating": 2,
-      "text": "Negative sentiment regarding billing"
-    },
-    "contactId": "CONTACT-10001",
-    "contact": {
-      "id": "10001",
-      "firstName": "John",
-      "lastName": "Doe",
-      "phone": "555-0100",
-      "email": "john.doe@example.com",
-      "address": "123 Main St, Anytown, WA"
-    },
-    "end_user_properties": {
-      "customer_type": "residential",
-      "region": "metro",
-      "tenure_years": 3
-    }
-  },
-  {
-    "id": 123456,
-    "uuid": "uuid-123e4567-e89b-12d3-a456-426614174000",
-    "surveyGatewayId": "gateway-01",
-    "surveyGatewayName": "InMoment WA",
-    "surveyGatewayAlias": "InMoment WA",
-    "surveyGatewayDnis": "18005551234",
-    "surveyId": "SVY-9001",
-    "surveyName": "Synergy WA Billing Feedback",
-    "surveyDescription": "Post-billing customer satisfaction survey",
-    "externalId": 10005,
-    "externalCallRecordingId": "REC-10005",
-    "lastModTime": "2026-02-09T12:50:00Z",
-    "beginTime": "2026-02-09T12:20:00Z",
-    "dateOfService": "2026-02-09",
-    "redemptionCode": "",
-    "employeeCode": "",
-    "loyaltyNumber": "",
-    "minutes": 12,
-    "complete": true,
-    "read": true,
-    "incidentManagementState": "open",
-    "ani": "15551234567",
-    "ipAddress": "198.51.100.42",
-    "cookieUID": "cookie-uid-98765",
-    "offerId": "OFF-100",
-    "offerName": "Billing Support Enhancement",
-    "offerCode": "BILL_ENH",
-    "unitId": "UNIT-42",
-    "unitExternalId": "EXT-UNIT-42",
-    "unitName": "Synergy WA Billing Unit",
-    "locationId": "LOC-7",
-    "languageCode": "en",
-    "deviceType": "web",
-    "organizationId": "ORG-501",
-    "organizationName": "Synergy Energy",
-    "assignedUserId": "AGENT-2001",
-    "assignedUserName": "Alex Johnson",
-    "assignedUserEmail": "alex.johnson@synergy.example",
-    "exclusionReason": "N/A",
-    "mode": "digital",
-    "answers": [
-      {
-        "answerId": "A1",
-        "text": "I am writing because I was charged twice on my last bill. The invoice showed a duplicate line item for usage that I did not authorize. I reviewed my meter reading and it matched the prior month, so I expected a normal charge. I contacted support after noticing the extra amount and requested an adjustment. The response I received did not resolve the issue promptly, which is frustrating. The estimated credit for the duplicate charge has not appeared on my account yet. I am concerned about how billing errors are prevented and corrected. I would like a clear explanation of what happened and a fast resolution."
+        "answerId": "ANS-1",
+        "text": "I recently reviewed my latest bill and found several charges that I could not explain. I compared the charges against my usage and tariffs and could not identify why the totals were higher than expected. The billing statement listed a higher consumption during a period when I do not recall any service interruptions or changes to my plan. I contacted customer service to ask for a breakdown of the items and the calculation method used. The agent checked the account and mentioned a possible adjustment, but I did not receive a formal explanation or a corrected bill yet. I was asked to wait for a credit, and I was given a reference number that did not resolve the issue immediately. The process felt slow, and I had to follow up again to understand the time frame for the credit. I would appreciate clearer communication and a transparent calculation of each line item on future bills. Overall, the experience with the billing portion could be improved."
       },
       {
-        "answerId": "A2",
-        "text": "In addition, I was told the issue would be escalated, but I have not heard back. The time this is taking is inconvenient because I budget based on the expected charges. The online bill has a confusing breakdown, and I want a detailed, itemized explanation for every line on the invoice. The customer service experience has been unsatisfactory, with long holds and inconsistent information. I would prefer to receive a credit or reversal of the erroneous charges within 5 business days. I value transparent communication and a prompt fix to restore my trust."
+        "answerId": "ANS-2",
+        "text": "In addition to the billing questions, I found the self-service options on the online portal to be somewhat clunky and not intuitive for someone trying to view rate changes. The information about due dates, late fees, and eligible discounts was buried under several clicks, which made it easy to miss critical dates. I would benefit from a more prominent display of upcoming charges and a simple way to compare plans side by side. When I requested a written explanation, the agent provided a generic response instead of a detailed breakdown tailored to my account. An improved portal with clearer steps and printable summaries would help reduce back-and-forth. I understand incentives exist to retain customers, but plain language and faster resolution to billing questions would greatly improve my perception of the service. The experience could be improved with proactive alerts when a bill is generated and when a credit is applied. I am open to receiving a summarized monthly bill in a consistent format."
       }
     ],
-    "incidents": [
-      {
-        "incidentId": "INC-1001",
-        "type": "billing_dispute",
-        "date": "2026-02-08",
-        "status": "open",
-        "description": "Customer reports duplicate charge on last month's invoice."
-      }
-    ],
-    "alerts": [
-      {
-        "alertId": "ALERT-2001",
-        "message": "Billing anomaly detected for customer 10005",
-        "level": "warning",
-        "date": "2026-02-09"
-      }
-    ],
+    "incidents": [],
+    "alerts": [],
     "scores": [
       {
-        "scoreId": "S1",
-        "score": 2,
-        "comment": "Customer affected by billing error"
-      },
-      {
-        "scoreId": "S2",
-        "score": 3,
-        "comment": "Issue resolution anticipated"
+        "scoreId": "SCORE-1",
+        "value": 4,
+        "topic": "billing_experience"
       }
     ],
     "tags": [
@@ -842,29 +571,231 @@
         "channel_tags": [
           "web"
         ]
-      },
-      {
-        "root_cause": "billing"
       }
     ],
-    "url": "https://example.com/survey/123",
-    "tagsString": "root_cause=billing;channel_tags=web",
+    "url": "http://example.com/survey/10002",
+    "tagsString": "root_cause=billing;channel=web",
     "socialReview": {
-      "rating": 2,
-      "text": "Billing issue caused frustration and distrust."
+      "enabled": true,
+      "platforms": {
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "other": ""
+      },
+      "notes": ""
     },
-    "contactId": "CONT-3001",
+    "contactId": "CONTACT-10002",
+    "contact": {
+      "phone": "000-000-0000",
+      "email": "customer10002@example.com",
+      "preferredContactMethod": "email"
+    },
+    "end_user_properties": {
+      "required": true,
+      "fields": {
+        "customer_type": "residential",
+        "region": "metro",
+        "tenure_years": 3
+      },
+      "data_quality": "Synthetic"
+    }
+  },
+  {
+    "customer_id": 10004,
+    "uuid": "c9f3f4a2-4d8a-4f7e-9a4b-3a1f9f9e9e20",
+    "surveyGatewayId": "GW-INT-01",
+    "surveyGatewayName": "InMoment Gateway",
+    "surveyGatewayAlias": "IM-GW",
+    "surveyGatewayDnis": "18005551234",
+    "surveyId": "SVY-2026-03-BILL",
+    "surveyName": "Synergy WA Billing Feedback",
+    "surveyDescription": "Post-billing experience survey focusing on charges and portal navigation",
+    "externalId": 10004,
+    "externalCallRecordingId": "REC-10004-BILL-001",
+    "lastModTime": "2026-02-09T12:35:01Z",
+    "beginTime": "2026-02-09T12:30:00Z",
+    "dateOfService": "2026-02-09",
+    "redemptionCode": "REDEEM-ABC123",
+    "employeeCode": "EMP-9876",
+    "loyaltyNumber": "LOY-5555",
+    "minutes": 14,
+    "complete": true,
+    "read": true,
+    "incidentManagementState": "closed",
+    "ani": "+1-555-0100",
+    "ipAddress": "203.0.113.42",
+    "cookieUID": "cookie-uid-12345",
+    "offerId": "OFFER-001",
+    "offerName": "Billing Review Offer",
+    "offerCode": "BR-001",
+    "unitId": "UNIT-01",
+    "unitExternalId": "UNIT-EXT-01",
+    "unitName": "Saga Energy Meter 1",
+    "locationId": "LOC-01",
+    "languageCode": "en",
+    "deviceType": "Desktop",
+    "organizationId": 501,
+    "organizationName": "Synergy WA",
+    "assignedUserId": 3001,
+    "assignedUserName": "Alex Carter",
+    "assignedUserEmail": "alex.carter@example.com",
+    "exclusionReason": "none",
+    "mode": "phone",
+    "answers": [
+      {
+        "answerId": "ANS-1",
+        "text": "I recently had a billing inquiry related to a charge on my statement. The charge appeared on the account statement for the last billing cycle and I wanted to understand why it was included. When I called support, a representative reviewed my account details and explained that the charge was a duplicate entry caused by a processing error. The agent walked me through the steps to correct the issue and confirmed the credit would appear on the next statement. The conversation covered the timing of the correction and the expected posting date. I also asked about how similar errors could be prevented in the future, and the representative shared information about the upcoming portal improvements. The portal navigation while viewing the same billing period was straightforward, and I could locate the relevant charge under the transactions tab. The overall experience involved several confirmations and I noted the reference numbers provided during the call. The outcome was satisfactory because the duplicate charge was resolved and I received confirmation via email."
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": "INC-1004-01",
+        "type": "billing_discrepancy",
+        "description": "Duplicate charge detected on account 10004 during the latest billing cycle.",
+        "status": "resolved",
+        "timeStamp": "2026-02-09T12:45:00Z"
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": "ALERT-001",
+        "severity": "low",
+        "message": "Billing discrepancy identified and under review.",
+        "timeStamp": "2026-02-09T12:31:00Z"
+      }
+    ],
+    "scores": [
+      {
+        "scoreId": "s1",
+        "value": 4
+      },
+      {
+        "scoreId": "s2",
+        "value": 3
+      }
+    ],
+    "tags": [
+      {
+        "root_cause": "billing",
+        "channel_tags": "web"
+      }
+    ],
+    "url": "https://example.com/review/10004",
+    "tagsString": "billing|web",
+    "socialReview": {
+      "platform": "Facebook",
+      "content": "Comment posted regarding billing experience and portal usability.",
+      "postedTime": "2026-02-09T12:42:00Z"
+    },
+    "contactId": "CT-10004",
     "contact": {
       "name": "John Doe",
-      "phone": "+1-555-555-0101",
+      "phone": "+1-555-0010",
       "email": "john.doe@example.com",
-      "preferredContactMethod": "email",
-      "consentToContact": true
+      "preferredContactMethod": "email"
     },
     "end_user_properties": {
       "customer_type": "residential",
       "region": "metro",
       "tenure_years": 3
+    }
+  },
+  {
+    "customer_id": 10005,
+    "uuid": "e2a5d7a0-2b3c-4f5d-9a8b-2f0d0a1b2c3d",
+    "surveyGatewayId": "GW-IM-01",
+    "surveyGatewayName": "InMoment Gateway",
+    "surveyGatewayAlias": "IMG1",
+    "surveyGatewayDnis": "+18005551234",
+    "surveyId": "SVY-1001",
+    "surveyName": "Synergy WA Feedback Survey",
+    "surveyDescription": "Customer experience survey for Synergy WA electricity services",
+    "externalId": "10005",
+    "externalCallRecordingId": "CR-123456",
+    "lastModTime": "2026-02-09T12:00:00Z",
+    "beginTime": "2026-02-09T11:58:00Z",
+    "dateOfService": "2026-02-09",
+    "redemptionCode": "REDEEM-ABC123",
+    "employeeCode": "EMP-777",
+    "loyaltyNumber": "LOY-87654321",
+    "minutes": 12,
+    "complete": true,
+    "completed": true,
+    "read": true,
+    "incidentManagementState": "closed",
+    "ani": "1234567890",
+    "ipAddress": "203.0.113.15",
+    "cookieUID": "cookie-uid-7890",
+    "offerId": "OFF-1001",
+    "offerName": "Loyalty Discount",
+    "offerCode": "LD-01",
+    "unitId": "UNIT-9",
+    "unitExternalId": "EX-UNIT-9",
+    "unitName": "Synergy WA Smart Meter",
+    "locationId": "LOC-100",
+    "languageCode": "en",
+    "deviceType": "web",
+    "organizationId": "ORG-01",
+    "organizationName": "Synergy WA",
+    "assignedUserId": "USER-1",
+    "assignedUserName": "Support Agent",
+    "assignedUserEmail": "support@example.com",
+    "exclusionReason": "",
+    "mode": "survey",
+    "answers": [
+      {
+        "answerId": "ANS-1",
+        "text": "I recently reviewed my latest bill from Synergy WA and noticed a discrepancy. The charges for the energy usage appear higher than expected for the past month. I checked the online portal and couldn't find a clear explanation for the extra amount. When I contacted customer service, the agent suggested a planned adjustment but it was not clearly explained. I was asked to provide the account number and the bill date, which I supplied promptly. The billing system and the app sometimes show different figures, which adds to the confusion. I appreciated the offer available on my account, although it did not fully resolve the discrepancy. I would like a detailed review of my charge components and a correction if an error is found."
+      }
+    ],
+    "incidents": [
+      {
+        "incidentId": "INC-1",
+        "type": "billing",
+        "description": "Billing discrepancy reported by customer"
+      }
+    ],
+    "alerts": [
+      {
+        "alertId": "ALERT-1",
+        "type": "billing_discrepancy",
+        "message": "Potential billing anomaly detected in account 10005"
+      }
+    ],
+    "scores": [
+      {
+        "scoreId": "SC-1",
+        "value": 4
+      }
+    ],
+    "tags": [
+      {
+        "root_cause": "billing",
+        "channel_tags": "web"
+      }
+    ],
+    "url": "https://example.com/survey/response/ABC123",
+    "tagsString": "billing; web; residential",
+    "socialReview": {
+      "platform": "Facebook",
+      "content": "Customer posted feedback about billing experience and resolution process",
+      "rating": 4
+    },
+    "contactId": "CONT-10005",
+    "contact": {
+      "name": "Alex Smith",
+      "phone": "+1-555-0100",
+      "email": "alex.smith@example.com"
+    },
+    "end_user_properties": {
+      "required": true,
+      "fields": {
+        "customer_type": "residential",
+        "region": "metro",
+        "tenure_years": 3
+      },
+      "data_quality": "Must be realistic synthetic metadata"
     }
   }
 ]

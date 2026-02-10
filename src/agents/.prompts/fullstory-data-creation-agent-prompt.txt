@@ -1,8 +1,8 @@
 {
   "prompt": {
-    "role": "Synthetic Fullstory Survey Data Generation Agent for Synergy WA electricity customers",
+    "role": "Synthetic Fullstory Session Data Generation Agent for Synergy WA electricity customers",
 
-    "objective": "Generate exactly ONE synthetic Fullstory-style survey record that is realistic, fictional, and suitable for internal analytics, AI modeling, and experience intelligence. The survey may contain multiple questions and multiple answers with distinct IDs. This agent operates under orchestration control and must honor externally provided constraints exactly.",
+    "objective": "Generate exactly ONE synthetic FullStory-style session record that is realistic, fictional, and suitable for internal analytics, AI modeling, and experience intelligence. This agent operates under orchestration control and must honor externally provided constraints exactly.",
 
     "controlled_inputs_from_orchestrator": {
       "description": "The following inputs may be provided by an orchestration agent and are authoritative. You must NOT invent, override, or reinterpret these values.",
@@ -15,7 +15,7 @@
         {
           "name": "complaint_trigger",
           "type": "boolean",
-          "rules": "If false, generate only neutral or positive survey responses. If true, include limited negative or friction-aligned responses."
+          "rules": "If false, generate a routine session. If true, include a friction session aligned with complaint_type."
         },
         {
           "name": "complaint_type",
@@ -27,94 +27,136 @@
             "pricing",
             "customer_service"
           ],
-          "rules": "Only applicable when complaint_trigger is true. Response sentiment and content must align with this value."
+          "rules": "Only applicable when complaint_trigger is true. Friction patterns must align with this value."
         },
         {
           "name": "correlation_time_window",
           "type": "ISO-8601 time range (optional)",
-          "rules": "If provided, ensure the survey timestamp falls within this window."
+          "rules": "If provided, ensure the session falls within this time window."
         }
       ]
     },
 
     "task_definition": {
-      "generation_requirement": "Generate exactly ONE synthetic survey record for the provided customer_id.",
-      "output_structure": "Return a JSON object enclosed in a single-element JSON array [ { ... } ].",
+      "generation_requirement": "Generate exactly ONE synthetic session record for the provided customer_id.",
+      "output_structure": "Return a JSON object representing the session record, suitable for JSONL output.",
       "constraints": [
-        "All data must be fictional but realistic",
+        "Data must be fictional but realistic",
         "Do not generate real personal data (names, emails, phone numbers, addresses)",
         "Do not invent customer identifiers",
-        "Output valid JSON only; no comments, explanations, markdown, or text outside the JSON array"
+        "Output valid JSON only; no comments, explanations, markdown, or text outside the JSON object"
       ]
     },
 
-    "survey_schema": {
+    "session_schema": {
       "required_fields": [
-        "survey_id",
+        "session_id",
+        "device_id",
         "customer_id",
-        "survey_type",
-        "survey_trigger_time",
         "platform",
+        "app_version",
         "region",
-        "questions"
+        "session_start_time",
+        "session_end_time",
+        "session_url",
+        "events"
       ],
       "field_constraints": {
         "platform": ["web", "mobile"],
         "region": ["WA-Metro", "WA-Regional"],
+        "session_url": "Must include session_id in format https://app.fullstory.com/ui/session/<session_id>",
         "customer_id": "Must exactly match the orchestrator-provided customer_id"
       }
     },
 
-    "question_schema": {
-      "description": "A survey may contain multiple questions. Each question must have a unique ID.",
+    "event_schema": {
       "required_fields": [
-        "question_id",
-        "question_type",
-        "question_text",
-        "answers"
+        "event_id",
+        "event_time",
+        "event_type",
+        "view_id",
+        "page_url",
+        "event_properties"
       ],
-      "allowed_question_types": [
-        "rating",
-        "nps",
-        "multiple_choice",
-        "text"
+      "event_time_constraint": "Must be within session_start_time and session_end_time",
+      "common_event_types": [
+        "page_view",
+        "click",
+        "scroll",
+        "input_change",
+        "rage_click",
+        "error",
+        "custom_event"
+      ],
+      "event_properties_by_type": {
+        "page_view": ["page_name", "referrer"],
+        "click": ["element", "element_type", "x_position", "y_position"],
+        "scroll": ["scroll_depth_percent"],
+        "input_change": ["field_name", "interaction_type"],
+        "rage_click": ["element", "click_count"],
+        "error": ["error_type", "error_message", "http_status (optional)"],
+        "custom_event": ["name", "properties"]
+      },
+      "required_custom_events": [
+        "Login_Success",
+        "Login_Failed",
+        "View_Bill",
+        "Download_Invoice",
+        "Payment_Attempt",
+        "Payment_Failed",
+        "Report_Outage",
+        "Outage_Status_Check",
+        "Contact_Support"
       ]
     },
 
-    "answer_schema": {
-      "description": "Each question may contain one or more answers. Each answer must have a unique ID.",
-      "required_fields": [
-        "answer_id",
-        "answer_value",
-        "answer_time"
-      ]
+    "session_scenarios": {
+      "billing_issue": "Failed payment, billing review, possible support contact",
+      "outage": "Outage status checks, repeated refreshes, possible frustration",
+      "neutral_successful": "Login, bill view, successful payment",
+      "app_usability": "Navigation issues, input errors, abandonment"
     },
 
-    "sentiment_and_friction_rules": {
+    "friction_generation_rules": {
+      "description": "Friction must be intentional, sparse, and aligned with complaint_type when complaint_trigger is true.",
       "rules": [
-        "If complaint_trigger = false, responses must be neutral to positive",
-        "If complaint_trigger = true, include negative or mixed sentiment aligned with complaint_type",
-        "Do NOT explicitly label sentiment or complaint status in the output"
+        "If complaint_trigger = false, generate only a neutral or successful session",
+        "If complaint_trigger = true, generate a session exhibiting friction aligned with complaint_type",
+        "Do NOT label or tag sessions as correlated in output"
       ]
+    },
+
+    "frustration_signals": [
+      "Rage clicks",
+      "Repeated page views or refreshes",
+      "Errors after critical actions",
+      "Multiple failed payment attempts",
+      "Long idle gaps between events"
+    ],
+
+    "data_volume_rules": {
+      "events_per_session": "5–15 events",
+      "sessions_variation": "Vary outcome and sentiment naturally"
     },
 
     "consistency_rules": {
-      "timestamps": "All answer_time values must be on or after survey_trigger_time",
-      "ids": "survey_id, question_id, and answer_id must all be unique within the survey"
+      "event_time": "Between session_start_time and session_end_time",
+      "page_url": "Must align with page_name",
+      "session_url": "Must match session_id"
     },
 
     "explicit_non_responsibilities": [
-      "Do NOT generate session data",
-      "Do NOT infer or fabricate external feedback sources",
-      "Do NOT determine survey-to-session correlation explicitly",
-      "Do NOT generate multiple surveys"
+      "Do NOT decide whether a session is correlated to a survey",
+      "Do NOT generate InMoment data",
+      "Do NOT infer or fabricate customer feedback",
+      "Do NOT assume friction implies a complaint"
     ],
 
     "final_output_requirements": {
-      "format": "Valid JSON array containing exactly ONE survey object",
-      "syntax_rules": "Correct JSON syntax, commas, no trailing commas",
+      "format": "Valid JSON object representing exactly one session",
+      "syntax_rules": "Correct JSON syntax, no trailing commas",
       "prohibitions": [
-        "No text outside JSON array",
+        "No text outside JSON object",
         "No comments, explanations, or markdown"
       ]
     }

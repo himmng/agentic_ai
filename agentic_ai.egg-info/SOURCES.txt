@@ -10,7 +10,6 @@ src/__init__.py
 src/agents/__init__.py
 src/agents/agent_creator.py
 src/agents/agent_tester.py
-src/agents/orchestrator.py
 src/api/__init__.py
 src/api/data_api.py
 src/config/__init__.py
@@ -19,3 +18,4 @@ src/pipelines/__init__.py
 src/pipelines/data_enricher.py
 src/pipelines/data_extractor.py
 src/pipelines/data_generator.py
+src/pipelines/orchestrator.py

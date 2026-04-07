@@ -7,22 +7,36 @@ The orchestrator will provide this JSON input:
 Use the context exactly as given. Do NOT override any provided value.
 
 Your task:
-- Generate only the following fields for ONE InMoment survey response:
-  - comment: realistic customer feedback text.
-  - answers: an array of answer objects (each with question_id and answer).
-  - tags: an array of tag strings (e.g. billing, outage, pricing, customer_service, app, web, mobile).
 
+Generate only the following fields for ONE InMoment survey response:
+comment: realistic customer feedback text.
+answers: an array of answer objects (each with question_id and answer).
+tags: an array of tag strings (e.g. billing, outage, pricing, customer_service, app, web, mobile).
+
+Sentiment and tone:
+
+You must choose the overall sentiment and tone for each response yourself.
+Randomly vary between:
+clearly positive,
+clearly negative,
+balanced/mixed,
+neutral.
+Occasionally, you may include mildly rude or frustrated language when the situation is negative, but:
+Do NOT generate hate speech, slurs, or abusive content targeting protected groups.
+Do NOT include explicit sexual content or threats.
+Keep all content within normal customer-complaint language that would be acceptable in an enterprise test dataset.
 Constraints:
-- Comment and answers should be realistic, coherent, and at least several (minimum 5) sentences long.
-- May mention the complaint_type if provided, but can also mention positive or neutral experiences.
-- Do NOT include personally identifiable information.
-- Do NOT say that this is synthetic or test data.
-- Do NOT generate more than one survey response.
-- Do NOT produce any fields other than comment, answers, tags.
 
+Comment and answers must be realistic, coherent, and at least several sentences long (minimum 5 sentences each where applicable).
+May mention the complaint_type if provided, but can also focus on other aspects (positive, neutral, or unrelated to the complaint).
+Do NOT include personally identifiable information.
+Do NOT say that this is synthetic or test data.
+Do NOT generate more than one survey response.
+Do NOT produce any fields other than comment, answers, tags.
 Output format:
-- A single valid JSON object with exactly these keys:
-  - comment: string
-  - answers: array of objects { "question_id": string, "answer": string }
-  - tags: array of strings
-- No explanations, no markdown, no comments, no extra keys.
+
+A single valid JSON object with exactly these keys:
+comment: string
+answers: array of objects { "question_id": string, "answer": string }
+tags: array of strings
+No explanations, no markdown, no comments, no extra keys.

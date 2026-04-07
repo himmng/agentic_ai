@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "required": ["event_id", "timestamp", "event_type", "user", "session"],
+  "properties": {
+    "event_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "click",
+        "navigate",
+        "scroll",
+        "input",
+        "custom",
+        "error"
+      ]
+    },
+
+    "user": {
+      "type": "object",
+      "properties": {
+        "user_id": { "type": "string" },
+        "anonymous_id": { "type": "string" },
+        "properties": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    },
+
+    "session": {
+      "type": "object",
+      "properties": {
+        "session_id": { "type": "string" },
+        "device_id": { "type": "string" },
+        "view_id": { "type": "string" }
+      }
+    },
+
+    "page": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string" },
+        "path": { "type": "string" },
+        "referrer": { "type": "string" }
+      }
+    },
+
+    "event_properties": {
+      "type": "object",
+      "additionalProperties": true
+    },
+
+    "device": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "os": { "type": "string" },
+        "browser": { "type": "string" }
+      }
+    }
+  }
+}

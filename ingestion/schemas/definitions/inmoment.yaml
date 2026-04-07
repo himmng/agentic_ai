@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": ["response_id", "timestamp", "survey_id", "responses"],
+  "properties": {
+    "response_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "survey_id": { "type": "string" },
+
+    "customer_id": { "type": "string" },
+
+    "channel": {
+      "type": "string",
+      "enum": ["web", "mobile", "email", "in_store"]
+    },
+
+    "nps": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10
+    },
+
+    "comment": {
+      "type": "string"
+    },
+
+    "responses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": { "type": "string" },
+          "answer": {}
+        }
+      }
+    },
+
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

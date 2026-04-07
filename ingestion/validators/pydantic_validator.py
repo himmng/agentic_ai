@@ -1,6 +1,11 @@
-from pydantic import create_model
+from typing import Any, Dict
 
-class PydanticValidator:
-    def validate(self, data, schema):
-        # simplified for now
-        return data  # skip strict validation initially
+import jsonschema
+
+
+class JsonSchemaValidator:
+    def __init__(self, schema: Dict[str, Any]):
+        self._schema = schema
+
+    def validate(self, record: Dict[str, Any]) -> None:
+        jsonschema.validate(instance=record, schema=self._schema)

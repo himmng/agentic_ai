@@ -1,17 +1,25 @@
-import json
 from pathlib import Path
+from typing import Any, Dict
 
-class SchemaRegistry:
-    def __init__(self, path):
-        self.path = Path(path)
-        self.schemas = self._load()
+import yaml
 
-    def _load(self):
-        schemas = {}
-        for file in self.path.glob("*"):
-            if file.suffix == ".json":
-                schemas[file.stem] = json.loads(file.read_text())
-        return schemas
+_BASE_PATH = Path(__file__).parent / "definitions"
+_CACHE: dict[str, Dict[str, Any]] = {}
 
-    def get(self, name):
-        return self.schemas[name]
+
+def load_schema(name: str) -> Dict[str, Any]:
+    """
+    Load a JSON Schema-like dict from definitions/<name>.yaml.
+    """
+    if name in _CACHE:
+        return _CACHE[name]
+
+    path = _BASE_PATH / f"{name}.yaml"
+    if not path.exists():
+        raise ValueError(f"Schema {name!r} not found at {path}")
+
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError("Schema root must be a JSON object")
+    _CACHE[name] = data
+    return data

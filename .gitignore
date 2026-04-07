@@ -1,0 +1,36 @@
+# Secrets — never commit
+.env
+ingestion/providers/.env
+*.env.*
+!*.env.example
+
+# Python build noise
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data — may contain PII
+data/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.DS_Store
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
